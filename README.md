@@ -55,7 +55,7 @@ This checks structure, references, provenance, dates, and lineage cycles. It doe
 
 English is the canonical project language. Korean is supplementary when needed. Original source artifacts retain their source language; project summaries and labels are written in English.
 
-After dataset review, refine the public graph and service comparisons, then publish the approved scope to GitHub Pages. Public outputs should contain reviewed metadata, original summaries, brief evidence, and source links—not copied paper collections or private research conversations.
+The current public preview is an initial research snapshot. Future accepted releases will follow corpus review and refine the graph and service comparisons. Public outputs should contain reviewed metadata, original summaries, brief evidence, and source links—not copied paper collections or private research conversations.
 
 ## Website source and updates
 

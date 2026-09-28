@@ -66,7 +66,7 @@ The primary deliverable is a versioned dataset with stable identifiers, typed re
 
 For the first accepted release, every focal service must have an evidence-backed hardware-to-service path **or an explicitly documented break where public evidence is insufficient**. Core lineage edges and security claims must be reviewed against primary sources; metric versions and dates must be traceable; mechanical validation must pass. Corpus size alone is not completion.
 
-The initial exploration view already exists. Complete and review the underlying corpus before finalizing the public presentation and publishing to GitHub Pages.
+The user has authorized a public preview of the current research snapshot on GitHub Pages. Keep its incomplete coverage explicit. Complete and review the underlying corpus before declaring an accepted dataset-v1 release.
 
 ## Language
 
