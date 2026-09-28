@@ -1,0 +1,3402 @@
+[
+  {
+    "observed_at": "2026-09-28",
+    "entity_id": "p-saltzer-schroeder-1975",
+    "record": {
+      "id": "https://openalex.org/W2095881341",
+      "doi": "https://doi.org/10.1109/proc.1975.9939",
+      "title": "The protection of information in computer systems",
+      "publication_year": 1975,
+      "publication_date": "1975-01-01",
+      "cited_by_count": 1897,
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 75
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 70
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 62
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 47
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 53
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 67
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 65
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 58
+        },
+        {
+          "year": 2018,
+          "cited_by_count": 70
+        },
+        {
+          "year": 2017,
+          "cited_by_count": 63
+        },
+        {
+          "year": 2016,
+          "cited_by_count": 73
+        },
+        {
+          "year": 2015,
+          "cited_by_count": 76
+        },
+        {
+          "year": 2014,
+          "cited_by_count": 72
+        },
+        {
+          "year": 2013,
+          "cited_by_count": 62
+        },
+        {
+          "year": 2012,
+          "cited_by_count": 93
+        }
+      ],
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5088836636",
+            "display_name": "Jerome H. Saltzer",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "J.H. Saltzer",
+          "raw_affiliation_strings": [
+            "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, MA, USA",
+            "[Massachusetts Institute of Technology, Cambridge, Mass.]"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, MA, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "[Massachusetts Institute of Technology, Cambridge, Mass.]",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5016411406",
+            "display_name": "Michael D. Schroeder",
+            "orcid": "https://orcid.org/0000-0003-2848-6949",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-2848-6949"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "M.D. Schroeder",
+          "raw_affiliation_strings": [
+            "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, MA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, MA, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.1109/proc.1975.9939",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1109/proc.1975.9939",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S68686220",
+          "display_name": "Proceedings of the IEEE",
+          "issn_l": "0018-9219",
+          "issn": [
+            "0018-9219",
+            "1558-2256"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "jufo-3",
+            "norway-2"
+          ],
+          "host_organization": "https://openalex.org/P4310319808",
+          "host_organization_name": "Institute of Electrical and Electronics Engineers",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319808"
+          ],
+          "host_organization_lineage_names": [
+            "Institute of Electrical and Electronics Engineers"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Proceedings of the IEEE",
+        "raw_type": "journal-article"
+      }
+    }
+  },
+  {
+    "observed_at": "2026-09-28",
+    "entity_id": "p-haven-2014",
+    "record": {
+      "id": "https://openalex.org/W1852007091",
+      "doi": "https://doi.org/10.5555/2685048.2685070",
+      "title": "Shielding applications from an untrusted cloud with Haven",
+      "publication_year": 2014,
+      "publication_date": "2014-10-06",
+      "cited_by_count": 362,
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 5
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 4
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 24
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 38
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 63
+        },
+        {
+          "year": 2018,
+          "cited_by_count": 50
+        },
+        {
+          "year": 2017,
+          "cited_by_count": 75
+        },
+        {
+          "year": 2016,
+          "cited_by_count": 61
+        },
+        {
+          "year": 2015,
+          "cited_by_count": 36
+        },
+        {
+          "year": 2014,
+          "cited_by_count": 1
+        }
+      ],
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5001597905",
+            "display_name": "Andrew Baumann",
+            "orcid": "https://orcid.org/0009-0002-2927-7233",
+            "observed_orcids": [
+              "https://orcid.org/0009-0002-2927-7233"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1290206253",
+              "display_name": "Microsoft (United States)",
+              "ror": "https://ror.org/00d0nc645",
+              "country_code": "US",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I1290206253"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Andrew Baumann",
+          "raw_affiliation_strings": [
+            "Microsoft research#TAB#"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Microsoft research#TAB#",
+              "institution_ids": [
+                "https://openalex.org/I1290206253"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5085380425",
+            "display_name": "Marcus Peinado",
+            "orcid": "https://orcid.org/0009-0001-4711-0675",
+            "observed_orcids": [
+              "https://orcid.org/0009-0001-4711-0675"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1290206253",
+              "display_name": "Microsoft (United States)",
+              "ror": "https://ror.org/00d0nc645",
+              "country_code": "US",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I1290206253"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Marcus Peinado",
+          "raw_affiliation_strings": [
+            "Microsoft research#TAB#"
+          ],
+          "raw_orcid": "https://orcid.org/0009-0001-4711-0675",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Microsoft research#TAB#",
+              "institution_ids": [
+                "https://openalex.org/I1290206253"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5109068256",
+            "display_name": "Galen C. Hunt",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1290206253",
+              "display_name": "Microsoft (United States)",
+              "ror": "https://ror.org/00d0nc645",
+              "country_code": "US",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I1290206253"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Galen Hunt",
+          "raw_affiliation_strings": [
+            "Microsoft research#TAB#"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Microsoft research#TAB#",
+              "institution_ids": [
+                "https://openalex.org/I1290206253"
+              ]
+            }
+          ]
+        }
+      ],
+      "primary_location": {
+        "id": "mag:1852007091",
+        "is_oa": false,
+        "landing_page_url": "http://css.csail.mit.edu/6.858/2015/readings/haven.pdf",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306420647",
+          "display_name": "Operating Systems Design and Implementation",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "listed_in": [],
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "conference"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "Operating Systems Design and Implementation",
+        "raw_type": null
+      }
+    }
+  },
+  {
+    "observed_at": "2026-09-28",
+    "entity_id": "p-sgx-explained-2016",
+    "record": {
+      "id": "https://openalex.org/W2397423248",
+      "doi": null,
+      "title": "Intel SGX Explained.",
+      "publication_year": 2016,
+      "publication_date": "2016-01-01",
+      "cited_by_count": 751,
+      "counts_by_year": [
+        {
+          "year": 2023,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 7
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 174
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 186
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 161
+        },
+        {
+          "year": 2018,
+          "cited_by_count": 127
+        },
+        {
+          "year": 2017,
+          "cited_by_count": 72
+        },
+        {
+          "year": 2016,
+          "cited_by_count": 23
+        }
+      ],
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5069550416",
+            "display_name": "Victor Costan",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Victor Costan",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5000525449",
+            "display_name": "Srinivas Devadas",
+            "orcid": "https://orcid.org/0000-0001-8253-7714",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-8253-7714"
+            ]
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Srinivas Devadas",
+          "raw_affiliation_strings": [],
+          "raw_orcid": "https://orcid.org/0000-0001-8253-7714",
+          "affiliations": []
+        }
+      ],
+      "primary_location": {
+        "id": "mag:2397423248",
+        "is_oa": false,
+        "landing_page_url": "https://eprint.iacr.org/2016/086.pdf",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S2764847869",
+          "display_name": "IACR Cryptology ePrint Archive",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "listed_in": [],
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [
+            "https://openalex.org/P4322614454"
+          ],
+          "host_organization_lineage_names": [
+            "Cryptology ePrint Archive"
+          ],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "IACR Cryptology ePrint Archive",
+        "raw_type": null
+      }
+    }
+  },
+  {
+    "observed_at": "2026-09-28",
+    "entity_id": "p-sanctum-2016",
+    "record": {
+      "id": "https://openalex.org/W2463516579",
+      "doi": null,
+      "title": "Sanctum: Minimal Hardware Extensions for Strong Software Isolation",
+      "publication_year": 2016,
+      "publication_date": "2016-01-01",
+      "cited_by_count": 349,
+      "counts_by_year": [
+        {
+          "year": 2025,
+          "cited_by_count": 5
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 15
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 17
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 28
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 48
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 67
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 74
+        },
+        {
+          "year": 2018,
+          "cited_by_count": 46
+        },
+        {
+          "year": 2017,
+          "cited_by_count": 43
+        },
+        {
+          "year": 2016,
+          "cited_by_count": 6
+        }
+      ],
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5069550416",
+            "display_name": "Victor Costan",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Victor Costan",
+          "raw_affiliation_strings": [
+            "Massachusetts Institute Of Technology#TAB#"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Massachusetts Institute Of Technology#TAB#",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5103049395",
+            "display_name": "Ilia A. Lebedev",
+            "orcid": "https://orcid.org/0000-0002-1955-5343",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-1955-5343"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ilia A. Lebedev",
+          "raw_affiliation_strings": [
+            "Massachusetts Institute Of Technology#TAB#"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-1955-5343",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Massachusetts Institute Of Technology#TAB#",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5000525449",
+            "display_name": "Srinivas Devadas",
+            "orcid": "https://orcid.org/0000-0001-8253-7714",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-8253-7714"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4405258931",
+              "display_name": "MIT Computer Science and Artificial Intelligence Laboratory",
+              "ror": "https://ror.org/01e85r662",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4405258931",
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Srinivas Devadas",
+          "raw_affiliation_strings": [
+            "MIT - CSAIL"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-8253-7714",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "MIT - CSAIL",
+              "institution_ids": [
+                "https://openalex.org/I4405258931"
+              ]
+            }
+          ]
+        }
+      ],
+      "primary_location": {
+        "id": "pmh:oai:CiteSeerX.psu:10.1.1.736.3254",
+        "is_oa": false,
+        "landing_page_url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.736.3254",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "http://eprint.iacr.org/2015/564.pdf",
+        "raw_type": "text"
+      }
+    }
+  },
+  {
+    "observed_at": "2026-09-28",
+    "entity_id": "p-foreshadow-2018",
+    "record": {
+      "id": "https://openalex.org/W2888798936",
+      "doi": null,
+      "title": "Foreshadow: Extracting the keys to the Intel SGX kingdom with transient out-of-order execution",
+      "publication_year": 2018,
+      "publication_date": "2018-08-14",
+      "cited_by_count": 686,
+      "counts_by_year": [
+        {
+          "year": 2025,
+          "cited_by_count": 34
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 67
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 68
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 58
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 129
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 152
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 152
+        },
+        {
+          "year": 2018,
+          "cited_by_count": 23
+        },
+        {
+          "year": 2017,
+          "cited_by_count": 3
+        }
+      ],
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5072446627",
+            "display_name": "Jo Van Bulck",
+            "orcid": "https://orcid.org/0000-0002-5953-9196",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-5953-9196"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I196972281",
+              "display_name": "Imec the Netherlands",
+              "ror": "https://ror.org/01ezq2j76",
+              "country_code": "NL",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I196972281"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210114974",
+              "display_name": "IMEC",
+              "ror": "https://ror.org/02kcbn207",
+              "country_code": "BE",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I4210114974"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I99464096",
+              "display_name": "KU Leuven",
+              "ror": "https://ror.org/05f950310",
+              "country_code": "BE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I99464096"
+              ]
+            }
+          ],
+          "countries": [
+            "BE",
+            "NL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Van Bulck, Jo",
+          "raw_affiliation_strings": [
+            "imec-DistriNet , KU Leuven ,",
+            "imec - DistriNet, KU Leuven"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "imec-DistriNet , KU Leuven ,",
+              "institution_ids": [
+                "https://openalex.org/I196972281",
+                "https://openalex.org/I4210114974"
+              ]
+            },
+            {
+              "raw_affiliation_string": "imec - DistriNet, KU Leuven",
+              "institution_ids": [
+                "https://openalex.org/I196972281",
+                "https://openalex.org/I99464096"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5006198181",
+            "display_name": "Marina Minkin",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I174306211",
+              "display_name": "Technion – Israel Institute of Technology",
+              "ror": "https://ror.org/03qryx823",
+              "country_code": "IL",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I174306211"
+              ]
+            }
+          ],
+          "countries": [
+            "IL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Minkin, Marina",
+          "raw_affiliation_strings": [
+            "Technion ,",
+            "Technion"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Technion ,",
+              "institution_ids": [
+                "https://openalex.org/I174306211"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Technion",
+              "institution_ids": [
+                "https://openalex.org/I174306211"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5082705026",
+            "display_name": "Ofir Weisse",
+            "orcid": "https://orcid.org/0000-0001-7564-6007",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-7564-6007"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I27837315",
+              "display_name": "University of Michigan",
+              "ror": "https://ror.org/00jmfr291",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I27837315"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Weisse, Ofir",
+          "raw_affiliation_strings": [
+            "University of Michigan ,",
+            "†University of Michigan"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Michigan ,",
+              "institution_ids": [
+                "https://openalex.org/I27837315"
+              ]
+            },
+            {
+              "raw_affiliation_string": "†University of Michigan",
+              "institution_ids": [
+                "https://openalex.org/I27837315"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5029386182",
+            "display_name": "Daniel Genkin",
+            "orcid": "https://orcid.org/0000-0003-2720-9288",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-2720-9288"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I27837315",
+              "display_name": "University of Michigan",
+              "ror": "https://ror.org/00jmfr291",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I27837315"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Genkin, Daniel",
+          "raw_affiliation_strings": [
+            "University of Michigan ,",
+            "†University of Michigan"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Michigan ,",
+              "institution_ids": [
+                "https://openalex.org/I27837315"
+              ]
+            },
+            {
+              "raw_affiliation_string": "†University of Michigan",
+              "institution_ids": [
+                "https://openalex.org/I27837315"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5050964144",
+            "display_name": "Baris Kasikci",
+            "orcid": "https://orcid.org/0000-0001-6122-8998",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-6122-8998"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I27837315",
+              "display_name": "University of Michigan",
+              "ror": "https://ror.org/00jmfr291",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I27837315"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Kasikci, Baris",
+          "raw_affiliation_strings": [
+            "University of Michigan ,",
+            "†University of Michigan"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Michigan ,",
+              "institution_ids": [
+                "https://openalex.org/I27837315"
+              ]
+            },
+            {
+              "raw_affiliation_string": "†University of Michigan",
+              "institution_ids": [
+                "https://openalex.org/I27837315"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5008329832",
+            "display_name": "Frank Piessens",
+            "orcid": "https://orcid.org/0000-0001-5438-153X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-5438-153X"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I196972281",
+              "display_name": "Imec the Netherlands",
+              "ror": "https://ror.org/01ezq2j76",
+              "country_code": "NL",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I196972281"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210114974",
+              "display_name": "IMEC",
+              "ror": "https://ror.org/02kcbn207",
+              "country_code": "BE",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I4210114974"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I99464096",
+              "display_name": "KU Leuven",
+              "ror": "https://ror.org/05f950310",
+              "country_code": "BE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I99464096"
+              ]
+            }
+          ],
+          "countries": [
+            "BE",
+            "NL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Piessens, Frank",
+          "raw_affiliation_strings": [
+            "imec-DistriNet , KU Leuven ,",
+            "imec - DistriNet, KU Leuven"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "imec-DistriNet , KU Leuven ,",
+              "institution_ids": [
+                "https://openalex.org/I196972281",
+                "https://openalex.org/I4210114974"
+              ]
+            },
+            {
+              "raw_affiliation_string": "imec - DistriNet, KU Leuven",
+              "institution_ids": [
+                "https://openalex.org/I196972281",
+                "https://openalex.org/I99464096"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5022593894",
+            "display_name": "Mark Silberstein",
+            "orcid": "https://orcid.org/0000-0001-9659-068X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-9659-068X"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I174306211",
+              "display_name": "Technion – Israel Institute of Technology",
+              "ror": "https://ror.org/03qryx823",
+              "country_code": "IL",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I174306211"
+              ]
+            }
+          ],
+          "countries": [
+            "IL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Silberstein, Mark",
+          "raw_affiliation_strings": [
+            "Technion ,",
+            "Technion"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Technion ,",
+              "institution_ids": [
+                "https://openalex.org/I174306211"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Technion",
+              "institution_ids": [
+                "https://openalex.org/I174306211"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5018949021",
+            "display_name": "Thomas F. Wenisch",
+            "orcid": "https://orcid.org/0000-0001-9560-2124",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-9560-2124"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I27837315",
+              "display_name": "University of Michigan",
+              "ror": "https://ror.org/00jmfr291",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I27837315"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Wenisch, Thomas F.",
+          "raw_affiliation_strings": [
+            "University of Michigan ,",
+            "†University of Michigan"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Michigan ,",
+              "institution_ids": [
+                "https://openalex.org/I27837315"
+              ]
+            },
+            {
+              "raw_affiliation_string": "†University of Michigan",
+              "institution_ids": [
+                "https://openalex.org/I27837315"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5056484605",
+            "display_name": "Yuval Yarom",
+            "orcid": "https://orcid.org/0000-0003-0401-4197",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-0401-4197"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I42894916",
+              "display_name": "Data61",
+              "ror": "https://ror.org/03q397159",
+              "country_code": "AU",
+              "type": "other",
+              "lineage": [
+                "https://openalex.org/I1292875679",
+                "https://openalex.org/I2801453606",
+                "https://openalex.org/I42894916",
+                "https://openalex.org/I4387156119"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I5681781",
+              "display_name": "The University of Adelaide",
+              "ror": "https://ror.org/00892tw58",
+              "country_code": "AU",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I4405259444",
+                "https://openalex.org/I5681781"
+              ]
+            }
+          ],
+          "countries": [
+            "AU"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Yarom, Yuval",
+          "raw_affiliation_strings": [
+            "University of Adelaide and Data61",
+            "University of Adelaide & Data61#TAB#"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Adelaide and Data61",
+              "institution_ids": [
+                "https://openalex.org/I42894916",
+                "https://openalex.org/I5681781"
+              ]
+            },
+            {
+              "raw_affiliation_string": "University of Adelaide & Data61#TAB#",
+              "institution_ids": [
+                "https://openalex.org/I42894916",
+                "https://openalex.org/I5681781"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5014123300",
+            "display_name": "Raoul Strackx",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I196972281",
+              "display_name": "Imec the Netherlands",
+              "ror": "https://ror.org/01ezq2j76",
+              "country_code": "NL",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I196972281"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210114974",
+              "display_name": "IMEC",
+              "ror": "https://ror.org/02kcbn207",
+              "country_code": "BE",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I4210114974"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I99464096",
+              "display_name": "KU Leuven",
+              "ror": "https://ror.org/05f950310",
+              "country_code": "BE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I99464096"
+              ]
+            }
+          ],
+          "countries": [
+            "BE",
+            "NL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Strackx, Raoul",
+          "raw_affiliation_strings": [
+            "imec-DistriNet , KU Leuven ,",
+            "imec - DistriNet, KU Leuven"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "imec-DistriNet , KU Leuven ,",
+              "institution_ids": [
+                "https://openalex.org/I196972281",
+                "https://openalex.org/I4210114974"
+              ]
+            },
+            {
+              "raw_affiliation_string": "imec - DistriNet, KU Leuven",
+              "institution_ids": [
+                "https://openalex.org/I196972281",
+                "https://openalex.org/I99464096"
+              ]
+            }
+          ]
+        }
+      ],
+      "primary_location": {
+        "id": "pmh:oai:lirias2repo.kuleuven.be:123456789/626643",
+        "is_oa": true,
+        "landing_page_url": "https://lirias.kuleuven.be/handle/123456789/626643",
+        "pdf_url": "https://lirias.kuleuven.be/retrieve/3134b4fd-b0cf-4dd6-803f-58cd7a048711",
+        "source": {
+          "id": "https://openalex.org/S4306401954",
+          "display_name": "Lirias (KU Leuven)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "listed_in": [],
+          "host_organization": "https://openalex.org/I99464096",
+          "host_organization_name": "KU Leuven",
+          "host_organization_lineage": [
+            "https://openalex.org/I99464096"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "27th USENIX Security Symposium, Baltimore, MD, USA, 15-17 August 2018",
+        "raw_type": "info:eu-repo/semantics/conferenceObject"
+      }
+    }
+  },
+  {
+    "observed_at": "2026-09-28",
+    "entity_id": "p-graviton-2018",
+    "record": {
+      "id": "https://openalex.org/W2899435347",
+      "doi": "https://doi.org/10.5555/3291168.3291219",
+      "title": "Graviton: trusted execution environments on GPUs",
+      "publication_year": 2018,
+      "publication_date": "2018-10-08",
+      "cited_by_count": 130,
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 7
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 8
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 13
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 13
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 12
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 35
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 31
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 10
+        },
+        {
+          "year": 2018,
+          "cited_by_count": 1
+        }
+      ],
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5015602302",
+            "display_name": "Stavros Volos",
+            "orcid": "https://orcid.org/0009-0000-9183-1595",
+            "observed_orcids": [
+              "https://orcid.org/0009-0000-9183-1595"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210164937",
+              "display_name": "Microsoft Research (United Kingdom)",
+              "ror": "https://ror.org/05k87vq12",
+              "country_code": "GB",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I1290206253",
+                "https://openalex.org/I4210164937"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Stavros Volos",
+          "raw_affiliation_strings": [
+            "Microsoft Research#TAB#"
+          ],
+          "raw_orcid": "https://orcid.org/0009-0000-9183-1595",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Microsoft Research#TAB#",
+              "institution_ids": [
+                "https://openalex.org/I4210164937"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5011779401",
+            "display_name": "Kapil Vaswani",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210164937",
+              "display_name": "Microsoft Research (United Kingdom)",
+              "ror": "https://ror.org/05k87vq12",
+              "country_code": "GB",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I1290206253",
+                "https://openalex.org/I4210164937"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Kapil Vaswani",
+          "raw_affiliation_strings": [
+            "Microsoft Research#TAB#"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Microsoft Research#TAB#",
+              "institution_ids": [
+                "https://openalex.org/I4210164937"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5041696536",
+            "display_name": "Rodrigo Bruno",
+            "orcid": "https://orcid.org/0000-0003-1578-5149",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-1578-5149"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I121345201",
+              "display_name": "Instituto de Engenharia de Sistemas e Computadores Investigação e Desenvolvimento",
+              "ror": "https://ror.org/04mqy3p58",
+              "country_code": "PT",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I121345201",
+                "https://openalex.org/I4210125590"
+              ]
+            }
+          ],
+          "countries": [
+            "PT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Rodrigo Bruno",
+          "raw_affiliation_strings": [
+            "[INESC-ID/IST, University of Lisbon]"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-1578-5149",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "[INESC-ID/IST, University of Lisbon]",
+              "institution_ids": [
+                "https://openalex.org/I121345201"
+              ]
+            }
+          ]
+        }
+      ],
+      "primary_location": {
+        "id": "mag:2899435347",
+        "is_oa": false,
+        "landing_page_url": "https://www.usenix.org/system/files/osdi18-volos.pdf",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306420647",
+          "display_name": "Operating Systems Design and Implementation",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "listed_in": [],
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "conference"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "Operating Systems Design and Implementation",
+        "raw_type": null
+      }
+    }
+  },
+  {
+    "observed_at": "2026-09-28",
+    "entity_id": "p-keystone-2020",
+    "record": {
+      "id": "https://openalex.org/W3021475380",
+      "doi": "https://doi.org/10.1145/3342195.3387532",
+      "title": "Keystone",
+      "publication_year": 2020,
+      "publication_date": "2020-04-15",
+      "cited_by_count": 382,
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 33
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 71
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 71
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 61
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 55
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 62
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 27
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 2
+        }
+      ],
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5075689567",
+            "display_name": "Dayeol Lee",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134446601",
+              "display_name": "Berkeley College",
+              "ror": "https://ror.org/02xewxa75",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134446601"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Dayeol Lee",
+          "raw_affiliation_strings": [
+            "UC Berkeley"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "UC Berkeley",
+              "institution_ids": [
+                "https://openalex.org/I134446601",
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5019838475",
+            "display_name": "David Kohlbrenner",
+            "orcid": "https://orcid.org/0009-0000-9121-9734",
+            "observed_orcids": [
+              "https://orcid.org/0009-0000-9121-9734"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134446601",
+              "display_name": "Berkeley College",
+              "ror": "https://ror.org/02xewxa75",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134446601"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "David Kohlbrenner",
+          "raw_affiliation_strings": [
+            "UC Berkeley"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "UC Berkeley",
+              "institution_ids": [
+                "https://openalex.org/I134446601",
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5072251298",
+            "display_name": "Shweta Annasaheb Shinde",
+            "orcid": "https://orcid.org/0000-0003-0415-2960",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-0415-2960"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134446601",
+              "display_name": "Berkeley College",
+              "ror": "https://ror.org/02xewxa75",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134446601"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Shweta Shinde",
+          "raw_affiliation_strings": [
+            "UC Berkeley"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "UC Berkeley",
+              "institution_ids": [
+                "https://openalex.org/I134446601",
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5035134864",
+            "display_name": "Krste Asanović",
+            "orcid": "https://orcid.org/0000-0003-0754-3975",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-0754-3975"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134446601",
+              "display_name": "Berkeley College",
+              "ror": "https://ror.org/02xewxa75",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134446601"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Krste Asanović",
+          "raw_affiliation_strings": [
+            "UC Berkeley"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "UC Berkeley",
+              "institution_ids": [
+                "https://openalex.org/I134446601",
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5019426968",
+            "display_name": "Dawn Xiaodong Song",
+            "orcid": "https://orcid.org/0000-0001-9745-6802",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-9745-6802"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134446601",
+              "display_name": "Berkeley College",
+              "ror": "https://ror.org/02xewxa75",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134446601"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Dawn Song",
+          "raw_affiliation_strings": [
+            "UC Berkeley"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "UC Berkeley",
+              "institution_ids": [
+                "https://openalex.org/I134446601",
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.1145/3342195.3387532",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1145/3342195.3387532",
+        "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3342195.3387532",
+        "source": null,
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Proceedings of the Fifteenth European Conference on Computer Systems",
+        "raw_type": "proceedings-article"
+      }
+    }
+  },
+  {
+    "observed_at": "2026-09-28",
+    "entity_id": "p-flicker-2008",
+    "record": {
+      "id": "https://openalex.org/W2167804035",
+      "doi": "https://doi.org/10.1145/1352592.1352625",
+      "title": "Flicker",
+      "publication_year": 2008,
+      "cited_by_count": 642,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5108440910",
+            "display_name": "Jonathan M. McCune",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I74973139",
+              "display_name": "Carnegie Mellon University",
+              "ror": "https://ror.org/05x2bcf33",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jonathan M. McCune",
+          "raw_affiliation_strings": [
+            "Carnegie Mellon University, Pittsburgh, PA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Carnegie Mellon University, Pittsburgh, PA, USA",
+              "institution_ids": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5048461894",
+            "display_name": "Bryan Jeffery Parno",
+            "orcid": "https://orcid.org/0000-0002-9113-1684",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-9113-1684"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I74973139",
+              "display_name": "Carnegie Mellon University",
+              "ror": "https://ror.org/05x2bcf33",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Bryan J. Parno",
+          "raw_affiliation_strings": [
+            "Carnegie Mellon University, Pittsburgh, PA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Carnegie Mellon University, Pittsburgh, PA, USA",
+              "institution_ids": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5056518136",
+            "display_name": "Adrian Perrig",
+            "orcid": "https://orcid.org/0000-0002-5280-5412",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-5280-5412"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I74973139",
+              "display_name": "Carnegie Mellon University",
+              "ror": "https://ror.org/05x2bcf33",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Adrian Perrig",
+          "raw_affiliation_strings": [
+            "Carnegie Mellon University, Pittsburgh, PA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Carnegie Mellon University, Pittsburgh, PA, USA",
+              "institution_ids": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5074117167",
+            "display_name": "Michael K. Reiter",
+            "orcid": "https://orcid.org/0000-0001-7007-8274",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-7007-8274",
+              "https://orcid.org/0000-0001-9490-8746"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I114027177",
+              "display_name": "University of North Carolina at Chapel Hill",
+              "ror": "https://ror.org/0130frc33",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I114027177"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Michael K. Reiter",
+          "raw_affiliation_strings": [
+            "University of North Carolina, Chapel Hill, NC, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of North Carolina, Chapel Hill, NC, USA",
+              "institution_ids": [
+                "https://openalex.org/I114027177"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5103240435",
+            "display_name": "Hiroshi Isozaki",
+            "orcid": "https://orcid.org/0000-0003-1514-1351",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-1514-1351"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I74973139",
+              "display_name": "Carnegie Mellon University",
+              "ror": "https://ror.org/05x2bcf33",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Hiroshi Isozaki",
+          "raw_affiliation_strings": [
+            "Carnegie Mellon University, Pittsburgh, PA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Carnegie Mellon University, Pittsburgh, PA, USA",
+              "institution_ids": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "observed_at": "2026-09-28",
+    "entity_id": "p-trustvisor-2010",
+    "record": {
+      "id": "https://openalex.org/W2128159601",
+      "doi": "https://doi.org/10.1109/sp.2010.17",
+      "title": "TrustVisor: Efficient TCB Reduction and Attestation",
+      "publication_year": 2010,
+      "cited_by_count": 543,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5108440910",
+            "display_name": "Jonathan M. McCune",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I74973139",
+              "display_name": "Carnegie Mellon University",
+              "ror": "https://ror.org/05x2bcf33",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jonathan M. McCune",
+          "raw_affiliation_strings": [
+            "CyLaboratory, Carnegie Mellon University, USA",
+            "Cylab, Carnegie Mellon Univ., Pittsburgh, PA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "CyLaboratory, Carnegie Mellon University, USA",
+              "institution_ids": [
+                "https://openalex.org/I74973139"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Cylab, Carnegie Mellon Univ., Pittsburgh, PA, USA",
+              "institution_ids": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5100376043",
+            "display_name": "Yanlin Li",
+            "orcid": "https://orcid.org/0000-0002-0754-2561",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-0754-2561",
+              "https://orcid.org/0009-0007-7407-0780"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I74973139",
+              "display_name": "Carnegie Mellon University",
+              "ror": "https://ror.org/05x2bcf33",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Yanlin Li",
+          "raw_affiliation_strings": [
+            "CyLaboratory, Carnegie Mellon University, USA",
+            "Cylab, Carnegie Mellon Univ., Pittsburgh, PA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "CyLaboratory, Carnegie Mellon University, USA",
+              "institution_ids": [
+                "https://openalex.org/I74973139"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Cylab, Carnegie Mellon Univ., Pittsburgh, PA, USA",
+              "institution_ids": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5059938734",
+            "display_name": "Ning Qu",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I74973139",
+              "display_name": "Carnegie Mellon University",
+              "ror": "https://ror.org/05x2bcf33",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ning Qu",
+          "raw_affiliation_strings": [
+            "CyLaboratory, Carnegie Mellon University, USA",
+            "Cylab, Carnegie Mellon Univ., Pittsburgh, PA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "CyLaboratory, Carnegie Mellon University, USA",
+              "institution_ids": [
+                "https://openalex.org/I74973139"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Cylab, Carnegie Mellon Univ., Pittsburgh, PA, USA",
+              "institution_ids": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5084104975",
+            "display_name": "Zongwei Zhou",
+            "orcid": "https://orcid.org/0000-0002-3154-9851",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-3154-9851",
+              "https://orcid.org/0000-0002-4991-8424"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I74973139",
+              "display_name": "Carnegie Mellon University",
+              "ror": "https://ror.org/05x2bcf33",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Zongwei Zhou",
+          "raw_affiliation_strings": [
+            "CyLaboratory, Carnegie Mellon University, USA",
+            "Cylab, Carnegie Mellon Univ., Pittsburgh, PA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "CyLaboratory, Carnegie Mellon University, USA",
+              "institution_ids": [
+                "https://openalex.org/I74973139"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Cylab, Carnegie Mellon Univ., Pittsburgh, PA, USA",
+              "institution_ids": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5111177928",
+            "display_name": "Anupam Datta",
+            "orcid": "https://orcid.org/0000-0001-9520-5196",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-9520-5196",
+              "https://orcid.org/0000-0002-2751-068X"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I74973139",
+              "display_name": "Carnegie Mellon University",
+              "ror": "https://ror.org/05x2bcf33",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Anupam Datta",
+          "raw_affiliation_strings": [
+            "CyLaboratory, Carnegie Mellon University, USA",
+            "Cylab, Carnegie Mellon Univ., Pittsburgh, PA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "CyLaboratory, Carnegie Mellon University, USA",
+              "institution_ids": [
+                "https://openalex.org/I74973139"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Cylab, Carnegie Mellon Univ., Pittsburgh, PA, USA",
+              "institution_ids": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5113663304",
+            "display_name": "Virgil D. Gligor",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I74973139",
+              "display_name": "Carnegie Mellon University",
+              "ror": "https://ror.org/05x2bcf33",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Virgil Gligor",
+          "raw_affiliation_strings": [
+            "CyLaboratory, Carnegie Mellon University, USA",
+            "Cylab, Carnegie Mellon Univ., Pittsburgh, PA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "CyLaboratory, Carnegie Mellon University, USA",
+              "institution_ids": [
+                "https://openalex.org/I74973139"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Cylab, Carnegie Mellon Univ., Pittsburgh, PA, USA",
+              "institution_ids": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5056518136",
+            "display_name": "Adrian Perrig",
+            "orcid": "https://orcid.org/0000-0002-5280-5412",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-5280-5412"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I74973139",
+              "display_name": "Carnegie Mellon University",
+              "ror": "https://ror.org/05x2bcf33",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Adrian Perrig",
+          "raw_affiliation_strings": [
+            "CyLaboratory, Carnegie Mellon University, USA",
+            "Cylab, Carnegie Mellon Univ., Pittsburgh, PA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "CyLaboratory, Carnegie Mellon University, USA",
+              "institution_ids": [
+                "https://openalex.org/I74973139"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Cylab, Carnegie Mellon Univ., Pittsburgh, PA, USA",
+              "institution_ids": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ]
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.1109/sp.2010.17",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1109/sp.2010.17",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "2010 IEEE Symposium on Security and Privacy",
+        "raw_type": "proceedings-article"
+      }
+    }
+  },
+  {
+    "observed_at": "2026-09-28",
+    "entity_id": "p-cloudvisor-2011",
+    "record": {
+      "id": "https://openalex.org/W2043501224",
+      "doi": "https://doi.org/10.1145/2043556.2043576",
+      "title": "CloudVisor",
+      "publication_year": 2011,
+      "cited_by_count": 372,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5058922709",
+            "display_name": "Fengzhe Zhang",
+            "orcid": "https://orcid.org/0000-0002-7584-1045"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I24943067",
+              "display_name": "Fudan University",
+              "ror": "https://ror.org/013q1eq08",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I24943067"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Fengzhe Zhang",
+          "raw_affiliation_strings": [
+            "Fudan University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fudan University",
+              "institution_ids": [
+                "https://openalex.org/I24943067"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5019438276",
+            "display_name": "Jin Chen",
+            "orcid": "https://orcid.org/0000-0003-1369-1878"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I24943067",
+              "display_name": "Fudan University",
+              "ror": "https://ror.org/013q1eq08",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I24943067"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jin Chen",
+          "raw_affiliation_strings": [
+            "Fudan University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fudan University",
+              "institution_ids": [
+                "https://openalex.org/I24943067"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5100406215",
+            "display_name": "Haibo Chen",
+            "orcid": "https://orcid.org/0000-0002-9720-0361"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I24943067",
+              "display_name": "Fudan University",
+              "ror": "https://ror.org/013q1eq08",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I24943067"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Haibo Chen",
+          "raw_affiliation_strings": [
+            "Fudan University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fudan University",
+              "institution_ids": [
+                "https://openalex.org/I24943067"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5031955160",
+            "display_name": "Binyu Zang",
+            "orcid": "https://orcid.org/0000-0002-1968-7645"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I24943067",
+              "display_name": "Fudan University",
+              "ror": "https://ror.org/013q1eq08",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I24943067"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Binyu Zang",
+          "raw_affiliation_strings": [
+            "Fudan University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fudan University",
+              "institution_ids": [
+                "https://openalex.org/I24943067"
+              ]
+            }
+          ]
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.1145/2043556.2043576",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1145/2043556.2043576",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Proceedings of the Twenty-Third ACM Symposium on Operating Systems Principles",
+        "raw_type": "proceedings-article"
+      }
+    }
+  },
+  {
+    "observed_at": "2026-09-28",
+    "entity_id": "p-komodo-2017",
+    "record": {
+      "id": "https://openalex.org/W2762625979",
+      "doi": "https://doi.org/10.1145/3132747.3132782",
+      "title": "Komodo",
+      "publication_year": 2017,
+      "cited_by_count": 144,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5056820945",
+            "display_name": "Andrew Ferraiuolo",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I205783295",
+              "display_name": "Cornell University",
+              "ror": "https://ror.org/05bnh6r87",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I205783295"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Andrew Ferraiuolo",
+          "raw_affiliation_strings": [
+            "Cornell University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Cornell University",
+              "institution_ids": [
+                "https://openalex.org/I205783295"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5001597905",
+            "display_name": "Andrew Baumann",
+            "orcid": "https://orcid.org/0009-0002-2927-7233",
+            "observed_orcids": [
+              "https://orcid.org/0009-0002-2927-7233"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210164937",
+              "display_name": "Microsoft Research (United Kingdom)",
+              "ror": "https://ror.org/05k87vq12",
+              "country_code": "GB",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I1290206253",
+                "https://openalex.org/I4210164937"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Andrew Baumann",
+          "raw_affiliation_strings": [
+            "Microsoft Research"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Microsoft Research",
+              "institution_ids": [
+                "https://openalex.org/I4210164937"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5016958899",
+            "display_name": "Chris Hawblitzel",
+            "orcid": "https://orcid.org/0000-0002-5676-0362",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-5676-0362"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210164937",
+              "display_name": "Microsoft Research (United Kingdom)",
+              "ror": "https://ror.org/05k87vq12",
+              "country_code": "GB",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I1290206253",
+                "https://openalex.org/I4210164937"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Chris Hawblitzel",
+          "raw_affiliation_strings": [
+            "Microsoft Research"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Microsoft Research",
+              "institution_ids": [
+                "https://openalex.org/I4210164937"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5048461894",
+            "display_name": "Bryan Jeffery Parno",
+            "orcid": "https://orcid.org/0000-0002-9113-1684",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-9113-1684"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I74973139",
+              "display_name": "Carnegie Mellon University",
+              "ror": "https://ror.org/05x2bcf33",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Bryan Parno",
+          "raw_affiliation_strings": [
+            "Carnegie Mellon University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Carnegie Mellon University",
+              "institution_ids": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "observed_at": "2026-09-28",
+    "entity_id": "p-mi6-2019",
+    "record": {
+      "id": "https://openalex.org/W2979547870",
+      "doi": "https://doi.org/10.1145/3352460.3358310",
+      "title": "MI6",
+      "publication_year": 2019,
+      "cited_by_count": 113,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5031573662",
+            "display_name": "Thomas Bourgeat",
+            "orcid": "https://orcid.org/0000-0002-8468-8409",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-8468-8409"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Thomas Bourgeat",
+          "raw_affiliation_strings": [
+            "Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5054535288",
+            "display_name": "Ilya Lebedev",
+            "orcid": "https://orcid.org/0000-0001-6753-2181",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-6753-2181"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ilia Lebedev",
+          "raw_affiliation_strings": [
+            "Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5089370497",
+            "display_name": "Andrew Charles Wright",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Andrew Wright",
+          "raw_affiliation_strings": [
+            "Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5017975873",
+            "display_name": "Sizhuo Zhang",
+            "orcid": "https://orcid.org/0000-0001-8426-4510",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-8426-4510"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Sizhuo Zhang",
+          "raw_affiliation_strings": [
+            "Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5060692552",
+            "display_name": "Arvind Arvind",
+            "orcid": "https://orcid.org/0000-0003-0603-9865",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-0603-9865"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Arvind",
+          "raw_affiliation_strings": [
+            "Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5000525449",
+            "display_name": "Srinivas Devadas",
+            "orcid": "https://orcid.org/0000-0001-8253-7714",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-8253-7714"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Srinivas Devadas",
+          "raw_affiliation_strings": [
+            "Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.1145/3352460.3358310",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1145/3352460.3358310",
+        "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3352460.3358310",
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Proceedings of the 52nd Annual IEEE/ACM International Symposium on Microarchitecture",
+        "raw_type": "proceedings-article"
+      }
+    }
+  },
+  {
+    "observed_at": "2026-09-28",
+    "entity_id": "p-controlled-channel-2015",
+    "record": {
+      "id": "https://openalex.org/W2150620897",
+      "doi": "https://doi.org/10.1109/sp.2015.45",
+      "title": "Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems",
+      "publication_year": 2015,
+      "cited_by_count": 725,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5081428852",
+            "display_name": "Yuanzhong Xu",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I86519309",
+              "display_name": "The University of Texas at Austin",
+              "ror": "https://ror.org/00hj54h04",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I86519309"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Yuanzhong Xu",
+          "raw_affiliation_strings": [
+            "University of Texas at Austin"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Texas at Austin",
+              "institution_ids": [
+                "https://openalex.org/I86519309"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5112117974",
+            "display_name": "Weidong Cui",
+            "orcid": "https://orcid.org/0000-0002-2871-9485",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-2871-9485"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210164937",
+              "display_name": "Microsoft Research (United Kingdom)",
+              "ror": "https://ror.org/05k87vq12",
+              "country_code": "GB",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I1290206253",
+                "https://openalex.org/I4210164937"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Weidong Cui",
+          "raw_affiliation_strings": [
+            "Microsoft Research"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Microsoft Research",
+              "institution_ids": [
+                "https://openalex.org/I4210164937"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5085380425",
+            "display_name": "Marcus Peinado",
+            "orcid": "https://orcid.org/0009-0001-4711-0675",
+            "observed_orcids": [
+              "https://orcid.org/0009-0001-4711-0675"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210164937",
+              "display_name": "Microsoft Research (United Kingdom)",
+              "ror": "https://ror.org/05k87vq12",
+              "country_code": "GB",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I1290206253",
+                "https://openalex.org/I4210164937"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Marcus Peinado",
+          "raw_affiliation_strings": [
+            "Microsoft Research"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Microsoft Research",
+              "institution_ids": [
+                "https://openalex.org/I4210164937"
+              ]
+            }
+          ]
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.1109/sp.2015.45",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1109/sp.2015.45",
+        "pdf_url": "https://ieeexplore.ieee.org/ielx7/7160813/7163005/07163052.pdf",
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "2015 IEEE Symposium on Security and Privacy",
+        "raw_type": "proceedings-article"
+      }
+    }
+  },
+  {
+    "observed_at": "2026-09-28",
+    "entity_id": "p-terra-2003",
+    "record": {
+      "id": "https://openalex.org/W4206796831",
+      "doi": "https://doi.org/10.1145/945445.945464",
+      "title": "Terra",
+      "publication_year": 2003,
+      "cited_by_count": 408,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5064270205",
+            "display_name": "Tal Garfinkel",
+            "orcid": "https://orcid.org/0000-0003-4213-4755",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-4213-4755"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I97018004",
+              "display_name": "Stanford University",
+              "ror": "https://ror.org/00f54p054",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Tal Garfinkel",
+          "raw_affiliation_strings": [
+            "Stanford University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Stanford University",
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5007029542",
+            "display_name": "Ben Pfaff",
+            "orcid": "https://orcid.org/0000-0002-1526-4143",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-1526-4143"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I97018004",
+              "display_name": "Stanford University",
+              "ror": "https://ror.org/00f54p054",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ben Pfaff",
+          "raw_affiliation_strings": [
+            "Stanford University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Stanford University",
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5063153628",
+            "display_name": "Jim S. Chow",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I97018004",
+              "display_name": "Stanford University",
+              "ror": "https://ror.org/00f54p054",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jim Chow",
+          "raw_affiliation_strings": [
+            "Stanford University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Stanford University",
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5111830942",
+            "display_name": "Mendel Rosenblum",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I97018004",
+              "display_name": "Stanford University",
+              "ror": "https://ror.org/00f54p054",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Mendel Rosenblum",
+          "raw_affiliation_strings": [
+            "Stanford University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Stanford University",
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5027798962",
+            "display_name": "Dan Boneh",
+            "orcid": "https://orcid.org/0000-0003-0820-0421",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-0820-0421"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I97018004",
+              "display_name": "Stanford University",
+              "ror": "https://ror.org/00f54p054",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Dan Boneh",
+          "raw_affiliation_strings": [
+            "Stanford University"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Stanford University",
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

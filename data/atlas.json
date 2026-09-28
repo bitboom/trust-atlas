@@ -1,0 +1,5260 @@
+{
+  "schema_version": "0.3.0",
+  "project": "Trust Atlas",
+  "as_of": "2026-09-28",
+  "phase": "hardware_and_configuration_graph",
+  "coverage_note": "Hardware families, security technologies, modes, reference configurations, and a documented service are distinguished. This is not a complete compatibility catalogue.",
+  "entities": [
+    {
+      "id": "p-saltzer-schroeder-1975",
+      "type": "paper",
+      "name": "The Protection of Information in Computer Systems",
+      "year": 1975,
+      "branch": "foundations",
+      "review_status": "screened",
+      "source_ids": [
+        "s-saltzer"
+      ],
+      "details": {
+        "authors": [
+          "Jerome H. Saltzer",
+          "Michael D. Schroeder"
+        ],
+        "venue": "Proceedings of the IEEE",
+        "publication_type": "journal",
+        "reading_scope": "landing_page_or_abstract",
+        "full_text_reviewed": false,
+        "work_family": "saltzer-schroeder",
+        "threat_model_review": "pending_full_text",
+        "reading_difficulty": null,
+        "doi": "https://doi.org/10.1109/proc.1975.9939",
+        "openalex_id": "https://openalex.org/W2095881341",
+        "summary": "A starting point for studying protection architectures and design principles."
+      }
+    },
+    {
+      "id": "p-terra-2003",
+      "type": "paper",
+      "name": "Terra: A Virtual Machine-Based Platform for Trusted Computing",
+      "year": 2003,
+      "branch": "vm-isolation",
+      "review_status": "screened",
+      "source_ids": [
+        "s-terra"
+      ],
+      "details": {
+        "authors": [
+          "Tal Garfinkel",
+          "Ben Pfaff",
+          "Jim Chow",
+          "Mendel Rosenblum",
+          "Dan Boneh"
+        ],
+        "venue": "SOSP",
+        "publication_type": "conference",
+        "reading_scope": "landing_page_or_abstract",
+        "full_text_reviewed": false,
+        "work_family": "terra",
+        "threat_model_review": "pending_full_text",
+        "reading_difficulty": null,
+        "doi": "https://doi.org/10.1145/945445.945464",
+        "openalex_id": "https://openalex.org/W4206796831",
+        "summary": "Isolated VMs and remote software identification built around a trusted VMM."
+      }
+    },
+    {
+      "id": "p-haven-2014",
+      "type": "paper",
+      "name": "Shielding Applications from an Untrusted Cloud with Haven",
+      "year": 2014,
+      "branch": "enclaves",
+      "review_status": "screened",
+      "source_ids": [
+        "s-haven"
+      ],
+      "details": {
+        "authors": [
+          "Andrew Baumann",
+          "Marcus Peinado",
+          "Galen Hunt"
+        ],
+        "venue": "OSDI",
+        "publication_type": "conference",
+        "reading_scope": "landing_page_or_abstract",
+        "full_text_reviewed": false,
+        "work_family": "haven",
+        "threat_model_review": "pending_full_text",
+        "reading_difficulty": null,
+        "doi": "https://doi.org/10.5555/2685048.2685070",
+        "openalex_id": "https://openalex.org/W1852007091",
+        "summary": "Uses SGX to shield existing applications from an untrusted cloud platform."
+      }
+    },
+    {
+      "id": "p-sgx-explained-2016",
+      "type": "paper",
+      "name": "Intel SGX Explained",
+      "year": 2016,
+      "branch": "enclaves",
+      "review_status": "screened",
+      "source_ids": [
+        "s-sgx"
+      ],
+      "details": {
+        "authors": [
+          "Victor Costan",
+          "Srinivas Devadas"
+        ],
+        "venue": "IACR Cryptology ePrint Archive",
+        "publication_type": "preprint",
+        "reading_scope": "landing_page_or_abstract",
+        "full_text_reviewed": false,
+        "work_family": "sgx-explained",
+        "threat_model_review": "pending_full_text",
+        "reading_difficulty": null,
+        "doi": null,
+        "openalex_id": "https://openalex.org/W2397423248",
+        "summary": "A technical report analyzing SGX architecture and security assumptions; not a conference paper."
+      }
+    },
+    {
+      "id": "p-sanctum-2016",
+      "type": "paper",
+      "name": "Sanctum: Minimal Hardware Extensions for Strong Software Isolation",
+      "year": 2016,
+      "branch": "open-tee",
+      "review_status": "screened",
+      "source_ids": [
+        "s-sanctum"
+      ],
+      "details": {
+        "authors": [
+          "Victor Costan",
+          "Ilia Lebedev",
+          "Srinivas Devadas"
+        ],
+        "venue": "USENIX Security",
+        "publication_type": "conference",
+        "reading_scope": "landing_page_or_abstract",
+        "full_text_reviewed": false,
+        "work_family": "sanctum",
+        "threat_model_review": "pending_full_text",
+        "reading_difficulty": null,
+        "doi": null,
+        "openalex_id": "https://openalex.org/W2463516579",
+        "summary": "Combines minimal hardware extensions and a software monitor to address isolation and selected memory-access threats."
+      }
+    },
+    {
+      "id": "p-foreshadow-2018",
+      "type": "paper",
+      "name": "Foreshadow: Extracting the Keys to the Intel SGX Kingdom with Transient Out-of-Order Execution",
+      "year": 2018,
+      "branch": "attacks",
+      "review_status": "screened",
+      "source_ids": [
+        "s-foreshadow"
+      ],
+      "details": {
+        "authors": [
+          "Jo Van Bulck",
+          "Marina Minkin",
+          "Ofir Weisse",
+          "Daniel Genkin",
+          "Baris Kasikci",
+          "Frank Piessens",
+          "Mark Silberstein",
+          "Thomas F. Wenisch",
+          "Yuval Yarom",
+          "Raoul Strackx"
+        ],
+        "venue": "USENIX Security",
+        "publication_type": "conference",
+        "reading_scope": "landing_page_or_abstract",
+        "full_text_reviewed": false,
+        "work_family": "foreshadow",
+        "threat_model_review": "pending_full_text",
+        "reading_difficulty": null,
+        "doi": null,
+        "openalex_id": "https://openalex.org/W2888798936",
+        "summary": "A transient-execution attack study affecting secrets and attestation in the SGX implementations examined at publication."
+      }
+    },
+    {
+      "id": "p-graviton-2018",
+      "type": "paper",
+      "name": "Graviton: Trusted Execution Environments on GPUs",
+      "year": 2018,
+      "branch": "accelerators",
+      "review_status": "screened",
+      "source_ids": [
+        "s-graviton"
+      ],
+      "details": {
+        "authors": [
+          "Stavros Volos",
+          "Kapil Vaswani",
+          "Rodrigo Bruno"
+        ],
+        "venue": "OSDI",
+        "publication_type": "conference",
+        "reading_scope": "landing_page_or_abstract",
+        "full_text_reviewed": false,
+        "work_family": "graviton",
+        "threat_model_review": "pending_full_text",
+        "reading_difficulty": null,
+        "doi": "https://doi.org/10.5555/3291168.3291219",
+        "openalex_id": "https://openalex.org/W2899435347",
+        "summary": "An architecture for trusted execution on GPUs, distinct from the AWS Graviton CPU family."
+      }
+    },
+    {
+      "id": "p-keystone-2020",
+      "type": "paper",
+      "name": "Keystone: An Open Framework for Architecting Trusted Execution Environments",
+      "year": 2020,
+      "branch": "open-tee",
+      "review_status": "screened",
+      "source_ids": [
+        "s-keystone",
+        "s-keystone-full"
+      ],
+      "details": {
+        "authors": [
+          "Dayeol Lee",
+          "David Kohlbrenner",
+          "Shweta Shinde",
+          "Krste Asanovic",
+          "Dawn Song"
+        ],
+        "venue": "EuroSys",
+        "publication_type": "conference",
+        "reading_scope": "selected_sections",
+        "full_text_reviewed": false,
+        "work_family": "keystone",
+        "threat_model_review": "pending_full_text",
+        "reading_difficulty": null,
+        "doi": "https://doi.org/10.1145/3342195.3387532",
+        "openalex_id": "https://openalex.org/W3021475380",
+        "summary": "An open framework for building customizable RISC-V trusted execution environments."
+      }
+    },
+    {
+      "id": "c-least-privilege",
+      "type": "concept",
+      "name": "Least privilege",
+      "year": null,
+      "branch": "foundations",
+      "review_status": "screened",
+      "source_ids": [
+        "s-saltzer",
+        "s-muse26"
+      ],
+      "details": {
+        "taxonomy_status": "editorial_category",
+        "origin_claim": null
+      }
+    },
+    {
+      "id": "c-trusted-vmm",
+      "type": "concept",
+      "name": "Trusted virtual machine monitor",
+      "year": null,
+      "branch": "vm-isolation",
+      "review_status": "screened",
+      "source_ids": [
+        "s-terra"
+      ],
+      "details": {
+        "taxonomy_status": "editorial_category",
+        "origin_claim": null
+      }
+    },
+    {
+      "id": "c-attestation",
+      "type": "concept",
+      "name": "Remote attestation",
+      "year": null,
+      "branch": "foundations",
+      "review_status": "screened",
+      "source_ids": [
+        "s-terra",
+        "s-meta25"
+      ],
+      "details": {
+        "taxonomy_status": "editorial_category",
+        "origin_claim": null,
+        "summary": "Evidence about a remote execution environment helps a verifier decide whether to entrust data to it."
+      }
+    },
+    {
+      "id": "c-enclave",
+      "type": "concept",
+      "name": "Enclave isolation",
+      "year": null,
+      "branch": "enclaves",
+      "review_status": "screened",
+      "source_ids": [
+        "s-sgx",
+        "s-sanctum"
+      ],
+      "details": {
+        "taxonomy_status": "editorial_category",
+        "origin_claim": null,
+        "summary": "Isolates selected application code and state from other software."
+      }
+    },
+    {
+      "id": "c-gpu-tee",
+      "type": "concept",
+      "name": "GPU trusted execution",
+      "year": null,
+      "branch": "accelerators",
+      "review_status": "screened",
+      "source_ids": [
+        "s-graviton"
+      ],
+      "details": {
+        "taxonomy_status": "editorial_category",
+        "origin_claim": null,
+        "summary": "Extends the trusted-execution problem to accelerator code, memory, and transfers."
+      }
+    },
+    {
+      "id": "c-transparency",
+      "type": "concept",
+      "name": "Verifiable software transparency",
+      "year": null,
+      "branch": "private-ai",
+      "review_status": "screened",
+      "source_ids": [
+        "s-apple24",
+        "s-meta26"
+      ],
+      "details": {
+        "taxonomy_status": "editorial_category",
+        "origin_claim": null,
+        "summary": "Connects inspectable software artifacts to evidence about software actually deployed."
+      }
+    },
+    {
+      "id": "c-private-inference",
+      "type": "concept",
+      "name": "Private cloud AI inference",
+      "year": null,
+      "branch": "private-ai",
+      "review_status": "screened",
+      "source_ids": [
+        "s-apple24",
+        "s-google25"
+      ],
+      "details": {
+        "taxonomy_status": "editorial_category",
+        "origin_claim": null,
+        "summary": "A service-design category combining protected execution with attestation, key management, transparency, and routing. Implementations can have different threat models."
+      }
+    },
+    {
+      "id": "c-stateful-private-ai",
+      "type": "concept",
+      "name": "Stateful private AI",
+      "year": null,
+      "branch": "stateful-agents",
+      "review_status": "screened",
+      "source_ids": [
+        "s-google26",
+        "s-meta26"
+      ],
+      "details": {
+        "taxonomy_status": "editorial_category",
+        "origin_claim": null,
+        "summary": "Adds key, storage, and access-control lifecycles for state retained across requests."
+      }
+    },
+    {
+      "id": "c-runtime-sandbox",
+      "type": "concept",
+      "name": "Agent runtime sandbox",
+      "year": null,
+      "branch": "stateful-agents",
+      "review_status": "screened",
+      "source_ids": [
+        "s-muse26"
+      ],
+      "details": {
+        "taxonomy_status": "editorial_category",
+        "origin_claim": null
+      }
+    },
+    {
+      "id": "c-credential-separation",
+      "type": "concept",
+      "name": "Credential separation",
+      "year": null,
+      "branch": "stateful-agents",
+      "review_status": "screened",
+      "source_ids": [
+        "s-muse26"
+      ],
+      "details": {
+        "taxonomy_status": "editorial_category",
+        "origin_claim": null
+      }
+    },
+    {
+      "id": "c-nontargetability",
+      "type": "concept",
+      "name": "Non-targetability",
+      "year": null,
+      "branch": "private-ai",
+      "review_status": "screened",
+      "source_ids": [
+        "s-apple24",
+        "s-meta26"
+      ],
+      "details": {
+        "taxonomy_status": "editorial_category",
+        "origin_claim": null,
+        "summary": "A service requirement intended to reduce selective routing of a particular user to a compromised node."
+      }
+    },
+    {
+      "id": "t-intel-sgx",
+      "type": "technology",
+      "name": "Intel SGX",
+      "year": null,
+      "branch": "hardware",
+      "review_status": "screened",
+      "source_ids": [
+        "s-sgx"
+      ],
+      "details": {
+        "first_release_year": null,
+        "scope": "technical details pending platform documentation review"
+      }
+    },
+    {
+      "id": "t-intel-tdx",
+      "type": "technology",
+      "name": "Intel TDX",
+      "year": null,
+      "branch": "hardware",
+      "review_status": "screened",
+      "source_ids": [
+        "s-apple26",
+        "s-tdx",
+        "s-intel-hw-guide"
+      ],
+      "details": {
+        "first_release_year": null,
+        "scope": "technical details pending platform documentation review",
+        "summary": "A VM-scale architecture designed to isolate Trust Domains from the VMM and other host software.",
+        "support_scope": "CPU-family support is necessary but not sufficient; OEM/ODM, SKU, memory population, firmware, and software enablement must be checked."
+      }
+    },
+    {
+      "id": "t-nvidia-cc",
+      "type": "technology",
+      "name": "NVIDIA GPU Confidential Computing",
+      "year": null,
+      "branch": "hardware",
+      "review_status": "screened",
+      "source_ids": [
+        "s-apple26",
+        "s-nv-r595"
+      ],
+      "details": {
+        "first_release_year": null,
+        "scope": "technical details pending platform documentation review",
+        "summary": "GPU confidential-computing capability family. Product and mode support are recorded separately."
+      }
+    },
+    {
+      "id": "t-google-titan",
+      "type": "technology",
+      "name": "Google Titan",
+      "year": null,
+      "branch": "hardware",
+      "review_status": "screened",
+      "source_ids": [
+        "s-apple26"
+      ],
+      "details": {
+        "first_release_year": null,
+        "scope": "technical details pending platform documentation review"
+      }
+    },
+    {
+      "id": "i-apple-pcc-2024",
+      "type": "implementation",
+      "name": "Apple PCC — 2024 design",
+      "year": 2024,
+      "branch": "private-ai",
+      "review_status": "screened",
+      "source_ids": [
+        "s-apple24"
+      ],
+      "details": {
+        "organization": "Apple",
+        "product_family": "apple-pcc",
+        "version_label": "2024-06-10",
+        "as_of": "2024-06-10",
+        "deployment_status": "initial_design_announcement",
+        "description": "Custom Apple silicon; stateless processing and verifiable transparency are stated design requirements.",
+        "independent_validation_reviewed": false,
+        "threat_model_status": "preliminary_vendor_description",
+        "unknowns": [
+          "full TCB review",
+          "current deployment verification",
+          "independent audit scope"
+        ],
+        "summary": "Request-oriented private inference using Apple silicon and a constrained runtime."
+      }
+    },
+    {
+      "id": "i-apple-pcc-gcp-2026",
+      "type": "implementation",
+      "name": "Apple PCC on Google Cloud — 2026 expansion",
+      "year": 2026,
+      "branch": "private-ai",
+      "review_status": "screened",
+      "source_ids": [
+        "s-apple26"
+      ],
+      "details": {
+        "organization": "Apple / Google / NVIDIA",
+        "product_family": "apple-pcc",
+        "version_label": "2026-06-08",
+        "as_of": "2026-06-08",
+        "deployment_status": "expansion_announced_ramp_described",
+        "description": "Announcement identifies NVIDIA GPUs, Intel TDX and Google Titan; full rollout status requires follow-up.",
+        "independent_validation_reviewed": false,
+        "threat_model_status": "preliminary_vendor_description",
+        "unknowns": [
+          "full TCB review",
+          "current deployment verification",
+          "independent audit scope"
+        ],
+        "summary": "An announced PCC expansion using a Google Cloud configuration with TDX, NVIDIA GPUs, and Titan. Completed rollout requires separate evidence."
+      }
+    },
+    {
+      "id": "i-google-pac-2025",
+      "type": "implementation",
+      "name": "Google Private AI Compute — 2025 introduction",
+      "year": 2025,
+      "branch": "private-ai",
+      "review_status": "screened",
+      "source_ids": [
+        "s-google25"
+      ],
+      "details": {
+        "organization": "Google",
+        "product_family": "google-private-ai-compute",
+        "version_label": "2025-11-11",
+        "as_of": "2025-11-11",
+        "deployment_status": "introduced",
+        "description": "Private AI platform announcement; detailed hardware and assurance review pending.",
+        "independent_validation_reviewed": false,
+        "threat_model_status": "preliminary_vendor_description",
+        "unknowns": [
+          "full TCB review",
+          "current deployment verification",
+          "independent audit scope"
+        ],
+        "summary": "The 2025 introduction of a platform for private cloud processing with Gemini."
+      }
+    },
+    {
+      "id": "i-google-pac-memory-2026",
+      "type": "implementation",
+      "name": "Google Private AI Compute — server-side memory update",
+      "year": 2026,
+      "branch": "stateful-agents",
+      "review_status": "screened",
+      "source_ids": [
+        "s-google26"
+      ],
+      "details": {
+        "organization": "Google",
+        "product_family": "google-private-ai-compute",
+        "version_label": "2026-09-23",
+        "as_of": "2026-09-23",
+        "deployment_status": "technical_update_future_enablement",
+        "description": "Proposed persistent memory uses encrypted storage and device-held keys; deployment status not established.",
+        "independent_validation_reviewed": false,
+        "threat_model_status": "preliminary_vendor_description",
+        "unknowns": [
+          "full TCB review",
+          "current deployment verification",
+          "independent audit scope"
+        ],
+        "summary": "A persistent-memory design update using device-held keys and encrypted storage; this does not establish general deployment."
+      }
+    },
+    {
+      "id": "i-meta-private-processing-2025",
+      "type": "implementation",
+      "name": "Meta Private Processing — WhatsApp introduction",
+      "year": 2025,
+      "branch": "private-ai",
+      "review_status": "screened",
+      "source_ids": [
+        "s-meta25"
+      ],
+      "details": {
+        "organization": "Meta",
+        "product_family": "meta-private-processing",
+        "version_label": "2025-04-29",
+        "as_of": "2025-04-29",
+        "deployment_status": "prelaunch_design_overview",
+        "description": "Describes TEE processing, RA-TLS and transparency verification.",
+        "independent_validation_reviewed": false,
+        "threat_model_status": "preliminary_vendor_description",
+        "unknowns": [
+          "full TCB review",
+          "current deployment verification",
+          "independent audit scope"
+        ],
+        "summary": "A design for WhatsApp AI processing using TEEs, RA-TLS, and transparency verification."
+      }
+    },
+    {
+      "id": "i-meta-private-processing-glasses-2026",
+      "type": "implementation",
+      "name": "Meta Private Processing — AI glasses architecture",
+      "year": 2026,
+      "branch": "stateful-agents",
+      "review_status": "screened",
+      "source_ids": [
+        "s-meta26"
+      ],
+      "details": {
+        "organization": "Meta",
+        "product_family": "meta-private-processing",
+        "version_label": "2026-09-23",
+        "as_of": "2026-09-23",
+        "deployment_status": "architecture_described_product_rollout_unverified",
+        "description": "Extends processing to stateful context with encrypted storage; exact product rollout remains to verify.",
+        "independent_validation_reviewed": false,
+        "threat_model_status": "preliminary_vendor_description",
+        "unknowns": [
+          "full TCB review",
+          "current deployment verification",
+          "independent audit scope"
+        ],
+        "summary": "A design extending Private Processing to stateful context and encrypted storage for AI glasses."
+      }
+    },
+    {
+      "id": "i-muse-secure-vm-2026",
+      "type": "implementation",
+      "name": "Meta Muse Secure VM — launch architecture",
+      "year": 2026,
+      "branch": "stateful-agents",
+      "review_status": "screened",
+      "source_ids": [
+        "s-muse26"
+      ],
+      "details": {
+        "organization": "Meta",
+        "product_family": "meta-muse",
+        "version_label": "2026-09-08",
+        "as_of": "2026-09-08",
+        "deployment_status": "launch_design",
+        "description": "Per-user VM, isolated runtime cell and privileged service separation. Provider access is not cryptographically excluded by this launch design.",
+        "independent_validation_reviewed": false,
+        "threat_model_status": "preliminary_vendor_description",
+        "unknowns": [
+          "full TCB review",
+          "current deployment verification",
+          "independent audit scope"
+        ],
+        "summary": "Per-user VMs, runtime isolation, and separated credential/permission services. Distinct from an operator-excluding confidential VM."
+      }
+    },
+    {
+      "id": "i-muse-confidential-vm-announced-2026",
+      "type": "implementation",
+      "name": "Meta Muse Confidential VM — announced design",
+      "year": 2026,
+      "branch": "stateful-agents",
+      "review_status": "screened",
+      "source_ids": [
+        "s-muse26"
+      ],
+      "details": {
+        "organization": "Meta",
+        "product_family": "meta-muse",
+        "version_label": "2026-09-08",
+        "as_of": "2026-09-08",
+        "deployment_status": "announced_limited_testing",
+        "description": "Separate announced capability intended to prevent provider access. General availability not established from the checked source.",
+        "independent_validation_reviewed": false,
+        "threat_model_status": "preliminary_vendor_description",
+        "unknowns": [
+          "full TCB review",
+          "current deployment verification",
+          "independent audit scope"
+        ],
+        "summary": "Announced and in limited testing in the September 8 source. Intended to cryptographically exclude Meta from VM data; general availability remains unverified."
+      }
+    },
+    {
+      "id": "p-flicker-2008",
+      "type": "paper",
+      "name": "Flicker: An Execution Infrastructure for TCB Minimization",
+      "year": 2008,
+      "branch": "foundations",
+      "source_ids": [
+        "s-flicker-full"
+      ],
+      "review_status": "screened",
+      "details": {
+        "authors": [
+          "Jonathan M. McCune",
+          "Bryan Parno",
+          "Adrian Perrig",
+          "Michael K. Reiter",
+          "Hiroshi Isozaki"
+        ],
+        "venue": "EuroSys",
+        "publication_type": "conference",
+        "short_label": "Flicker",
+        "full_text_reviewed": false,
+        "reading_scope": "selected_sections",
+        "work_family": "flicker",
+        "doi": "https://doi.org/10.1145/1352592.1352625",
+        "openalex_id": "https://openalex.org/W2167804035",
+        "reading_difficulty": null,
+        "summary": "Isolates small code fragments and supports remote verification of their execution.",
+        "impact": "Uses TPM/DRTM mechanisms to reduce reliance on the OS.",
+        "limitation": "TPM latency and interruption of other platform execution remain costs."
+      }
+    },
+    {
+      "id": "p-trustvisor-2010",
+      "type": "paper",
+      "name": "TrustVisor: Efficient TCB Reduction and Attestation",
+      "year": 2010,
+      "branch": "foundations",
+      "source_ids": [
+        "s-trustvisor-full"
+      ],
+      "review_status": "screened",
+      "details": {
+        "authors": [
+          "Jonathan M. McCune",
+          "Yanlin Li",
+          "Ning Qu",
+          "Zongwei Zhou",
+          "Anupam Datta",
+          "Virgil Gligor",
+          "Adrian Perrig"
+        ],
+        "venue": "IEEE S&P",
+        "publication_type": "conference",
+        "short_label": "Trustvisor",
+        "full_text_reviewed": false,
+        "reading_scope": "selected_sections",
+        "work_family": "trustvisor",
+        "doi": "https://doi.org/10.1109/sp.2010.17",
+        "openalex_id": "https://openalex.org/W2128159601",
+        "reading_difficulty": null,
+        "summary": "A small hypervisor and software micro-TPM reduce the cost of isolated execution.",
+        "impact": "An alternative explicitly addressing performance limitations in Flicker.",
+        "limitation": "The small monitor and underlying hardware remain trusted."
+      }
+    },
+    {
+      "id": "p-cloudvisor-2011",
+      "type": "paper",
+      "name": "CloudVisor: Retrofitting Protection of Virtual Machines in Multi-tenant Cloud with Nested Virtualization",
+      "year": 2011,
+      "branch": "vm-isolation",
+      "source_ids": [
+        "s-cloudvisor-full"
+      ],
+      "review_status": "screened",
+      "details": {
+        "authors": [
+          "Fengzhe Zhang",
+          "Jin Chen",
+          "Haibo Chen",
+          "Binyu Zang"
+        ],
+        "venue": "SOSP",
+        "publication_type": "conference",
+        "short_label": "Cloudvisor",
+        "full_text_reviewed": false,
+        "reading_scope": "abstract_and_metadata",
+        "work_family": "cloudvisor",
+        "doi": "https://doi.org/10.1145/2043556.2043576",
+        "openalex_id": "https://openalex.org/W2043501224",
+        "reading_difficulty": null,
+        "summary": "Places a small security monitor beneath the resource-managing VMM.",
+        "impact": "Separates resource management from security protection.",
+        "limitation": "The additional security monitor and hardware remain in the TCB."
+      }
+    },
+    {
+      "id": "p-komodo-2017",
+      "type": "paper",
+      "name": "Komodo: Using verification to disentangle secure-enclave hardware from software",
+      "year": 2017,
+      "branch": "open-tee",
+      "source_ids": [
+        "s-komodo-full"
+      ],
+      "review_status": "screened",
+      "details": {
+        "authors": [
+          "Andrew Ferraiuolo",
+          "Andrew Baumann",
+          "Chris Hawblitzel",
+          "Bryan Parno"
+        ],
+        "venue": "SOSP",
+        "publication_type": "conference",
+        "short_label": "Komodo",
+        "full_text_reviewed": false,
+        "reading_scope": "selected_sections",
+        "work_family": "komodo",
+        "doi": "https://doi.org/10.1145/3132747.3132782",
+        "openalex_id": "https://openalex.org/W2762625979",
+        "reading_difficulty": null,
+        "summary": "Moves enclave management into a software monitor with machine-checkable proofs.",
+        "impact": "An Arm TrustZone prototype accompanied by machine-checkable proofs.",
+        "limitation": "Guarantees are bounded by verification tools, hardware assumptions, and the stated threat model."
+      }
+    },
+    {
+      "id": "p-mi6-2019",
+      "type": "paper",
+      "name": "MI6: Secure Enclaves in a Speculative Out-of-Order Processor",
+      "year": 2019,
+      "branch": "open-tee",
+      "source_ids": [
+        "s-mi6",
+        "s-mi6-venue"
+      ],
+      "review_status": "screened",
+      "details": {
+        "authors": [
+          "Thomas Bourgeat",
+          "Ilia Lebedev",
+          "Andrew Wright",
+          "Sizhuo Zhang",
+          "Arvind",
+          "Srinivas Devadas"
+        ],
+        "venue": "MICRO",
+        "publication_type": "conference",
+        "short_label": "MI6",
+        "full_text_reviewed": false,
+        "reading_scope": "selected_sections",
+        "work_family": "mi6",
+        "doi": "https://doi.org/10.1145/3352460.3358310",
+        "openalex_id": "https://openalex.org/W2979547870",
+        "reading_difficulty": null,
+        "summary": "Extends Sanctum-style isolation to a speculative out-of-order processor.",
+        "impact": "Explicitly attributes its technical extension in the abstract.",
+        "limitation": "Exclusions include denial of service and specified hardware-fault attacks."
+      }
+    },
+    {
+      "id": "p-controlled-channel-2015",
+      "type": "paper",
+      "name": "Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems",
+      "year": 2015,
+      "branch": "attacks",
+      "source_ids": [
+        "s-controlled"
+      ],
+      "review_status": "screened",
+      "details": {
+        "authors": [
+          "Yuanzhong Xu",
+          "Weidong Cui",
+          "Marcus Peinado"
+        ],
+        "venue": "IEEE S&P",
+        "publication_type": "conference",
+        "short_label": "Controlled-Channel",
+        "full_text_reviewed": false,
+        "reading_scope": "abstract_and_metadata",
+        "work_family": "controlled-channel",
+        "doi": "https://doi.org/10.1109/sp.2015.45",
+        "openalex_id": "https://openalex.org/W2150620897",
+        "reading_difficulty": null,
+        "summary": "Shows how a malicious OS can extract information from memory-access patterns.",
+        "impact": "Isolation alone does not remove observable execution patterns.",
+        "limitation": "Claims are limited to the targets and attacker assumptions in the original work."
+      }
+    },
+    {
+      "id": "p-slalom-2019",
+      "type": "paper",
+      "name": "Slalom: Fast, Verifiable and Private Execution of Neural Networks in Trusted Hardware",
+      "year": 2019,
+      "branch": "accelerators",
+      "source_ids": [
+        "s-slalom"
+      ],
+      "review_status": "screened",
+      "details": {
+        "authors": [
+          "Florian Tramèr",
+          "Dan Boneh"
+        ],
+        "venue": "ICLR",
+        "publication_type": "conference",
+        "short_label": "Slalom",
+        "full_text_reviewed": false,
+        "reading_scope": "abstract_and_metadata",
+        "work_family": "slalom",
+        "doi": null,
+        "openalex_id": null,
+        "reading_difficulty": null,
+        "summary": "Delegates selected DNN computation from a TEE to an untrusted GPU.",
+        "impact": "A different design direction from making the GPU itself a TEE.",
+        "limitation": "Supported operations and the conditions for verifiability and privacy must be distinguished."
+      }
+    },
+    {
+      "id": "t-amd-sev",
+      "type": "technology",
+      "name": "AMD SEV",
+      "year": null,
+      "branch": "hardware",
+      "source_ids": [
+        "s-sevsnp"
+      ],
+      "review_status": "screened",
+      "details": {
+        "year_semantics": "source milestone, not necessarily first release",
+        "summary": "Per-VM memory encryption; distinguish its guarantees from later generations."
+      }
+    },
+    {
+      "id": "t-amd-seves",
+      "type": "technology",
+      "name": "AMD SEV-ES",
+      "year": 2017,
+      "branch": "hardware",
+      "source_ids": [
+        "s-sevsnp"
+      ],
+      "review_status": "screened",
+      "details": {
+        "year_semantics": "source milestone, not necessarily first release",
+        "summary": "Adds protection of CPU register state to SEV memory protection."
+      }
+    },
+    {
+      "id": "t-amd-sevsnp",
+      "type": "technology",
+      "name": "AMD SEV-SNP",
+      "year": 2020,
+      "branch": "hardware",
+      "source_ids": [
+        "s-sevsnp",
+        "s-amd-epyc5-arch"
+      ],
+      "review_status": "screened",
+      "details": {
+        "year_semantics": "source milestone, not necessarily first release",
+        "summary": "The 2020 whitepaper design builds on SEV and SEV-ES with integrity-oriented VM protections."
+      }
+    },
+    {
+      "id": "t-arm-cca",
+      "type": "technology",
+      "name": "Arm CCA / Realms",
+      "year": null,
+      "branch": "hardware",
+      "source_ids": [
+        "s-cca"
+      ],
+      "review_status": "screened",
+      "details": {
+        "year_semantics": "source milestone, not necessarily first release",
+        "summary": "Separates resource management from access to protected Realm contents."
+      }
+    },
+    {
+      "id": "t-arm-trustzone",
+      "type": "technology",
+      "name": "Arm TrustZone",
+      "year": null,
+      "branch": "hardware",
+      "source_ids": [
+        "s-komodo-full"
+      ],
+      "review_status": "screened",
+      "details": {
+        "year_semantics": "source milestone, not necessarily first release",
+        "summary": "The isolation environment used by the Komodo prototype."
+      }
+    },
+    {
+      "id": "t-h100",
+      "type": "hardware",
+      "name": "NVIDIA H100 GPU family",
+      "year": null,
+      "branch": "hardware",
+      "source_ids": [
+        "s-h100",
+        "s-nv-r595",
+        "s-nv-coco-platforms"
+      ],
+      "review_status": "screened",
+      "details": {
+        "year_semantics": "source milestone, not necessarily first release",
+        "summary": "H100 hardware family. Confidential support is scoped to the variants and modes listed in the release documentation.",
+        "vendor": "NVIDIA",
+        "hardware_kind": "GPU",
+        "architecture": "Hopper",
+        "support_scope": "R595 lists H100 PCIe, H100 NVL, and named HGX H100 configurations. PPCIe requires a listed HGX configuration.",
+        "enablement": "Compatible CPU TEE, platform firmware, driver, CC mode, and attestation policy are required.",
+        "normalization_note": "Stable t-h100 ID retained; prior 2023 year was a document milestone, not a hardware launch date."
+      }
+    },
+    {
+      "id": "c-confidential-vm",
+      "type": "concept",
+      "name": "Confidential VM",
+      "year": null,
+      "branch": "vm-isolation",
+      "source_ids": [
+        "s-tdx"
+      ],
+      "review_status": "screened",
+      "details": {
+        "taxonomy_status": "editorial_category",
+        "summary": "A design category that places a VM-scale workload across a trust boundary from its host."
+      }
+    },
+    {
+      "id": "c-tcb",
+      "type": "concept",
+      "name": "TCB minimization",
+      "year": null,
+      "branch": "foundations",
+      "source_ids": [
+        "s-flicker-full"
+      ],
+      "review_status": "screened",
+      "details": {
+        "taxonomy_status": "editorial_category",
+        "summary": "The design goal of reducing hardware and software on which a security property depends."
+      }
+    },
+    {
+      "id": "c-verified-monitor",
+      "type": "concept",
+      "name": "Verifiable security monitor",
+      "year": null,
+      "branch": "open-tee",
+      "source_ids": [
+        "s-komodo-full"
+      ],
+      "review_status": "screened",
+      "details": {
+        "taxonomy_status": "editorial_category",
+        "summary": "An approach to checking correctness and security properties of a small privileged monitor."
+      }
+    },
+    {
+      "id": "std-rats",
+      "type": "standard",
+      "name": "RATS · RFC 9334",
+      "year": 2023,
+      "branch": "foundations",
+      "source_ids": [
+        "s-rats"
+      ],
+      "review_status": "screened",
+      "details": {
+        "summary": "Defines the roles of Attester, Verifier, and Relying Party in remote attestation."
+      }
+    },
+    {
+      "id": "std-ohttp",
+      "type": "standard",
+      "name": "OHTTP · RFC 9458",
+      "year": 2023,
+      "branch": "private-ai",
+      "source_ids": [
+        "s-ohttp"
+      ],
+      "review_status": "screened",
+      "details": {
+        "summary": "Separates relay roles to reduce the connection between client identity and request contents."
+      }
+    },
+    {
+      "id": "h-intel-xeon5",
+      "type": "hardware",
+      "name": "Intel Xeon Scalable, 5th Gen (Emerald Rapids)",
+      "year": null,
+      "branch": "hardware",
+      "source_ids": [
+        "s-intel-hw-guide",
+        "s-nv-coco-platforms"
+      ],
+      "review_status": "source_checked",
+      "details": {
+        "vendor": "Intel",
+        "hardware_kind": "CPU",
+        "architecture": "Emerald Rapids",
+        "summary": "CPU family listed by the TDX enabling guide.",
+        "support_scope": "Family-level support; check exact SKU and OEM platform enablement.",
+        "enablement": "SKU/platform, firmware, software, mode, and attestation must match the supporting source."
+      }
+    },
+    {
+      "id": "h-intel-xeon6-gr",
+      "type": "hardware",
+      "name": "Intel Xeon 6 P-core family (Granite Rapids)",
+      "year": null,
+      "branch": "hardware",
+      "source_ids": [
+        "s-intel-hw-guide",
+        "s-nv-coco-platforms"
+      ],
+      "review_status": "source_checked",
+      "details": {
+        "vendor": "Intel",
+        "hardware_kind": "CPU",
+        "architecture": "Granite Rapids",
+        "summary": "Granite Rapids host family listed for the NVIDIA TDX reference stack.",
+        "support_scope": "Does not assert identical support across every Xeon 6 SKU or platform.",
+        "enablement": "SKU/platform, firmware, software, mode, and attestation must match the supporting source."
+      }
+    },
+    {
+      "id": "h-amd-epyc7003",
+      "type": "hardware",
+      "name": "AMD EPYC 7003 (Milan)",
+      "year": null,
+      "branch": "hardware",
+      "source_ids": [
+        "s-amd-epyc5-arch",
+        "s-nv-coco-platforms"
+      ],
+      "review_status": "source_checked",
+      "details": {
+        "vendor": "AMD",
+        "hardware_kind": "CPU",
+        "architecture": "Milan",
+        "summary": "Third-generation EPYC family with SEV-SNP support.",
+        "support_scope": "Platform firmware, guest software, and attestation configuration remain prerequisites.",
+        "enablement": "SKU/platform, firmware, software, mode, and attestation must match the supporting source."
+      }
+    },
+    {
+      "id": "h-amd-epyc9004",
+      "type": "hardware",
+      "name": "AMD EPYC 9004 (Genoa)",
+      "year": null,
+      "branch": "hardware",
+      "source_ids": [
+        "s-amd-epyc5-arch",
+        "s-nv-coco-platforms",
+        "s-azure-ncc-spec"
+      ],
+      "review_status": "source_checked",
+      "details": {
+        "vendor": "AMD",
+        "hardware_kind": "CPU",
+        "architecture": "Genoa",
+        "summary": "EPYC family used in the documented Azure confidential H100 service.",
+        "support_scope": "Family support and service deployment are separate source-scoped claims.",
+        "enablement": "SKU/platform, firmware, software, mode, and attestation must match the supporting source."
+      }
+    },
+    {
+      "id": "h-amd-epyc9005",
+      "type": "hardware",
+      "name": "AMD EPYC 9005",
+      "year": null,
+      "branch": "hardware",
+      "source_ids": [
+        "s-amd-epyc5-arch"
+      ],
+      "review_status": "source_checked",
+      "details": {
+        "vendor": "AMD",
+        "hardware_kind": "CPU",
+        "architecture": "5th Gen EPYC",
+        "summary": "SEV-SNP support is listed in the EPYC security-feature comparison.",
+        "support_scope": "Not marked as validated by the checked NVIDIA Confidential Containers matrix, which lists Milan and Genoa.",
+        "enablement": "SKU/platform, firmware, software, mode, and attestation must match the supporting source."
+      }
+    },
+    {
+      "id": "h-nvidia-h200",
+      "type": "hardware",
+      "name": "NVIDIA H200 GPU family",
+      "year": null,
+      "branch": "hardware",
+      "source_ids": [
+        "s-nv-r595",
+        "s-nv-coco-platforms"
+      ],
+      "review_status": "source_checked",
+      "details": {
+        "vendor": "NVIDIA",
+        "hardware_kind": "GPU",
+        "architecture": "Hopper",
+        "summary": "H200 family with variant-specific confidential-computing modes.",
+        "support_scope": "SPT includes H200 NVL and listed HGX H200; PPCIe applies to listed HGX H200 configurations.",
+        "enablement": "SKU/platform, firmware, software, mode, and attestation must match the supporting source."
+      }
+    },
+    {
+      "id": "h-nvidia-b200",
+      "type": "hardware",
+      "name": "NVIDIA B200 GPU family",
+      "year": null,
+      "branch": "hardware",
+      "source_ids": [
+        "s-nv-r595",
+        "s-nv-coco-platforms"
+      ],
+      "review_status": "source_checked",
+      "details": {
+        "vendor": "NVIDIA",
+        "hardware_kind": "GPU",
+        "architecture": "Blackwell",
+        "summary": "Blackwell GPU family supported in named HGX B200 confidential configurations.",
+        "support_scope": "Support is scoped to the HGX variants named by R595 and the reference stack.",
+        "enablement": "SKU/platform, firmware, software, mode, and attestation must match the supporting source."
+      }
+    },
+    {
+      "id": "h-nvidia-b300",
+      "type": "hardware",
+      "name": "NVIDIA Blackwell Ultra GPU (HGX B300 component)",
+      "year": null,
+      "branch": "hardware",
+      "source_ids": [
+        "s-nv-hgx-b300",
+        "s-nv-r595"
+      ],
+      "review_status": "source_checked",
+      "details": {
+        "vendor": "NVIDIA",
+        "hardware_kind": "GPU",
+        "architecture": "Blackwell Ultra",
+        "summary": "GPU component represented separately from the eight-GPU HGX B300 platform.",
+        "support_scope": "This is a component/family node, not a claim that every B300-based board or cloud instance is enabled for CC.",
+        "enablement": "SKU/platform, firmware, software, mode, and attestation must match the supporting source."
+      }
+    },
+    {
+      "id": "h-nvidia-hgx-b300",
+      "type": "hardware",
+      "name": "NVIDIA HGX B300 platform",
+      "year": null,
+      "branch": "hardware",
+      "source_ids": [
+        "s-nv-hgx-b300",
+        "s-nv-r595",
+        "s-nv-coco-platforms"
+      ],
+      "review_status": "source_checked",
+      "details": {
+        "vendor": "NVIDIA",
+        "hardware_kind": "Platform",
+        "architecture": "Blackwell Ultra",
+        "summary": "Eight-GPU platform with explicitly listed confidential-computing configurations.",
+        "support_scope": "R595 names an air-cooled, eight-GPU SXM6 270GB HBM3e configuration. Check the current compatibility matrix before deployment.",
+        "enablement": "SKU/platform, firmware, software, mode, and attestation must match the supporting source."
+      }
+    },
+    {
+      "id": "cfg-nv-spt",
+      "type": "configuration",
+      "name": "NVIDIA Single GPU Passthrough (SPT CC)",
+      "year": null,
+      "branch": "accelerators",
+      "source_ids": [
+        "s-nv-r595"
+      ],
+      "review_status": "source_checked",
+      "details": {
+        "configuration_kind": "gpu_cc_mode",
+        "mode": "SPT CC",
+        "document_version": "R595 GA, RN-12817-001_v02 (April 2026)",
+        "as_of": "2026-09-28",
+        "summary": "A single GPU is assigned to each CVM; encrypted CPU–GPU transfers use a bounce buffer.",
+        "peer_link_protection": "Not applicable to peer traffic within a single-GPU CVM.",
+        "support_scope": "One passed-through GPU per CVM; multiple CVMs may be hosted on one node.",
+        "component_constraints": [
+          "Use the source-specific firmware, driver, host/guest OS, and verifier matrix.",
+          "CPU TEE and GPU attestation must be enabled."
+        ]
+      }
+    },
+    {
+      "id": "cfg-nv-ppcie",
+      "type": "configuration",
+      "name": "NVIDIA Hopper Protected PCIe (PPCIe)",
+      "year": null,
+      "branch": "accelerators",
+      "source_ids": [
+        "s-nv-r595"
+      ],
+      "review_status": "source_checked",
+      "details": {
+        "configuration_kind": "gpu_cc_mode",
+        "mode": "PPCIe",
+        "document_version": "R595 GA, RN-12817-001_v02 (April 2026)",
+        "as_of": "2026-09-28",
+        "summary": "Multiple supported Hopper GPUs are assigned to one CVM.",
+        "peer_link_protection": "NVLink/NVSwitch GPU-to-GPU traffic is not encrypted in this mode.",
+        "support_scope": "Listed HGX Hopper configurations only; do not equate this mode with encrypted peer links.",
+        "component_constraints": [
+          "Use the source-specific firmware, driver, host/guest OS, and verifier matrix.",
+          "CPU TEE and GPU attestation must be enabled."
+        ]
+      }
+    },
+    {
+      "id": "cfg-nv-mpt",
+      "type": "configuration",
+      "name": "NVIDIA Blackwell Multi-GPU Passthrough (MPT CC)",
+      "year": null,
+      "branch": "accelerators",
+      "source_ids": [
+        "s-nv-r595"
+      ],
+      "review_status": "source_checked",
+      "details": {
+        "configuration_kind": "gpu_cc_mode",
+        "mode": "MPT CC",
+        "document_version": "R595 GA, RN-12817-001_v02 (April 2026)",
+        "as_of": "2026-09-28",
+        "summary": "Up to eight supported Blackwell GPUs are assigned to one CVM.",
+        "peer_link_protection": "Peer GPU traffic uses encrypted NVLink connections.",
+        "support_scope": "R595 explicitly lists supported HGX B200 and HGX B300 variants.",
+        "component_constraints": [
+          "Use the source-specific firmware, driver, host/guest OS, and verifier matrix.",
+          "CPU TEE and GPU attestation must be enabled."
+        ]
+      }
+    },
+    {
+      "id": "cfg-nv-coco",
+      "type": "configuration",
+      "name": "NVIDIA Confidential Containers reference architecture",
+      "year": null,
+      "branch": "private-ai",
+      "source_ids": [
+        "s-nv-coco-platforms"
+      ],
+      "review_status": "source_checked",
+      "details": {
+        "configuration_kind": "reference_architecture",
+        "as_of": "2026-09-28",
+        "document_version": "latest page observed 2026-09-28",
+        "summary": "A reference integration with documented CPU, GPU, mode, and software support; distinct from a deployed commercial service.",
+        "support_scope": "Only rows explicitly listed in the checked platform table are linked as validated hardware.",
+        "component_constraints": [
+          "CPU backend alternatives: Intel TDX or AMD SEV-SNP.",
+          "Hopper multi-GPU requires PPCIe.",
+          "This reference stack assigns all host GPUs to one confidential-container VM.",
+          "Use the reference stack software matrix; do not substitute the separate R595 bare-VM matrix."
+        ]
+      }
+    },
+    {
+      "id": "i-azure-ncc-h100v5",
+      "type": "implementation",
+      "name": "Azure NCCads H100 v5 confidential GPU VMs",
+      "year": null,
+      "branch": "private-ai",
+      "source_ids": [
+        "s-azure-ncc-spec",
+        "s-azure-conf-gpu"
+      ],
+      "review_status": "source_checked",
+      "details": {
+        "organization": "Microsoft Azure",
+        "product_family": "azure-confidential-gpu",
+        "version_label": "NCCads H100 v5",
+        "as_of": "2026-09-28",
+        "deployment_status": "documented_service_offering",
+        "summary": "Microsoft documents this VM family with AMD EPYC Genoa, SEV-SNP, and an NVIDIA H100 NVL GPU.",
+        "support_scope": "Service-specific CPU/GPU path. Availability, quotas, region, guest image, and driver/attestation configuration must be checked separately.",
+        "independent_validation_reviewed": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-saltzer",
+      "title": "The Protection of Information in Computer Systems",
+      "url": "https://web.mit.edu/Saltzer/www/publications/protection/",
+      "publisher": "MIT / authors",
+      "kind": "author_paper",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-terra",
+      "title": "Terra: A Virtual Machine-Based Platform for Trusted Computing",
+      "url": "https://xenon.stanford.edu/~talg/papers/SOSP03/abstract.html",
+      "publisher": "Stanford / authors",
+      "kind": "author_abstract",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-haven",
+      "title": "Shielding Applications from an Untrusted Cloud with Haven",
+      "url": "https://www.usenix.org/conference/osdi14/technical-sessions/presentation/baumann",
+      "publisher": "USENIX",
+      "kind": "proceedings_page",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-sgx",
+      "title": "Intel SGX Explained",
+      "url": "https://eprint.iacr.org/2016/086",
+      "publisher": "IACR ePrint / authors",
+      "kind": "preprint_page",
+      "published_date": "2016-01-31",
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-sanctum",
+      "title": "Sanctum: Minimal Hardware Extensions for Strong Software Isolation",
+      "url": "https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/costan",
+      "publisher": "USENIX",
+      "kind": "proceedings_page",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-foreshadow",
+      "title": "Foreshadow: Extracting the Keys to the Intel SGX Kingdom with Transient Out-of-Order Execution",
+      "url": "https://www.usenix.org/conference/usenixsecurity18/presentation/bulck",
+      "publisher": "USENIX",
+      "kind": "proceedings_page",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-graviton",
+      "title": "Graviton: Trusted Execution Environments on GPUs",
+      "url": "https://www.usenix.org/conference/osdi18/presentation/volos",
+      "publisher": "USENIX",
+      "kind": "proceedings_page",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-keystone",
+      "title": "Keystone project and EuroSys 2020 citation",
+      "url": "https://keystone-enclave.org/",
+      "publisher": "Keystone authors",
+      "kind": "project_page",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-apple24",
+      "title": "Private Cloud Compute: A new frontier for AI privacy in the cloud",
+      "url": "https://security.apple.com/blog/private-cloud-compute/",
+      "publisher": "Apple",
+      "kind": "vendor_design",
+      "published_date": "2024-06-10",
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-apple26",
+      "title": "Expanding Private Cloud Compute",
+      "url": "https://security.apple.com/blog/expanding-pcc/",
+      "publisher": "Apple",
+      "kind": "vendor_design",
+      "published_date": "2026-06-08",
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-google25",
+      "title": "Private AI Compute: our next step in building private and helpful AI",
+      "url": "https://blog.google/innovation-and-ai/products/google-private-ai-compute/",
+      "publisher": "Google",
+      "kind": "vendor_announcement",
+      "published_date": "2025-11-11",
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-google26",
+      "title": "Advancing Private AI Compute with secure, server-side memory",
+      "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+      "publisher": "Google DeepMind",
+      "kind": "vendor_design",
+      "published_date": "2026-09-23",
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-meta25",
+      "title": "Building Private Processing for AI tools on WhatsApp",
+      "url": "https://engineering.fb.com/2025/04/29/security/whatsapp-private-processing-ai-tools/",
+      "publisher": "Meta",
+      "kind": "vendor_design",
+      "published_date": "2025-04-29",
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-meta26",
+      "title": "Bringing Private Processing to Meta AI Glasses",
+      "url": "https://engineering.fb.com/2026/09/23/security/private-processing-meta-ai-glasses/",
+      "publisher": "Meta",
+      "kind": "vendor_design",
+      "published_date": "2026-09-23",
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-muse26",
+      "title": "How We Built Safety Into Muse",
+      "url": "https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse",
+      "publisher": "Meta",
+      "kind": "vendor_design",
+      "published_date": "2026-09-08",
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-openalex-docs",
+      "title": "OpenAlex Works attributes",
+      "url": "https://help.openalex.org/data/works/attributes/",
+      "publisher": "OpenAlex",
+      "kind": "metadata_documentation",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-oa-W2095881341",
+      "title": "OpenAlex record: The protection of information in computer systems",
+      "url": "https://api.openalex.org/works/W2095881341",
+      "publisher": "OpenAlex",
+      "kind": "bibliographic_api",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-oa-W1852007091",
+      "title": "OpenAlex record: Shielding applications from an untrusted cloud with Haven",
+      "url": "https://api.openalex.org/works/W1852007091",
+      "publisher": "OpenAlex",
+      "kind": "bibliographic_api",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-oa-W2397423248",
+      "title": "OpenAlex record: Intel SGX Explained.",
+      "url": "https://api.openalex.org/works/W2397423248",
+      "publisher": "OpenAlex",
+      "kind": "bibliographic_api",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-oa-W2463516579",
+      "title": "OpenAlex record: Sanctum: Minimal Hardware Extensions for Strong Software Isolation",
+      "url": "https://api.openalex.org/works/W2463516579",
+      "publisher": "OpenAlex",
+      "kind": "bibliographic_api",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-oa-W2888798936",
+      "title": "OpenAlex record: Foreshadow: Extracting the keys to the Intel SGX kingdom with transient out-of-order execution",
+      "url": "https://api.openalex.org/works/W2888798936",
+      "publisher": "OpenAlex",
+      "kind": "bibliographic_api",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-oa-W2899435347",
+      "title": "OpenAlex record: Graviton: trusted execution environments on GPUs",
+      "url": "https://api.openalex.org/works/W2899435347",
+      "publisher": "OpenAlex",
+      "kind": "bibliographic_api",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-oa-W3021475380",
+      "title": "OpenAlex record: Keystone",
+      "url": "https://api.openalex.org/works/W3021475380",
+      "publisher": "OpenAlex",
+      "kind": "bibliographic_api",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-flicker-full",
+      "title": "Flicker author manuscript",
+      "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/eurosys053-mccune-cr.pdf",
+      "publisher": "Authors / Microsoft",
+      "kind": "author_paper",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-trustvisor-full",
+      "title": "TrustVisor author manuscript",
+      "url": "https://ptolemy.berkeley.edu/projects/truststc/pubs/750/mlqzdgp-oakland2010.pdf",
+      "publisher": "Authors / TRUST Berkeley",
+      "kind": "author_paper",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-cloudvisor-full",
+      "title": "CloudVisor SOSP 2011 paper",
+      "url": "https://sigops.org/s/conferences/sosp/2011/current/2011-Cascais/printable/15-zhang.pdf",
+      "publisher": "ACM SIGOPS",
+      "kind": "author_paper",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-komodo-full",
+      "title": "Komodo author manuscript",
+      "url": "https://www.andrew.cmu.edu/user/bparno/papers/komodo.pdf",
+      "publisher": "Authors / CMU",
+      "kind": "author_paper",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-mi6",
+      "title": "MI6 revised manuscript",
+      "url": "https://arxiv.org/abs/1812.09822",
+      "publisher": "Authors / arXiv",
+      "kind": "preprint_page",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-mi6-venue",
+      "title": "MI6 publication metadata",
+      "url": "https://dspace.mit.edu/entities/publication/c9f28fa7-6d0f-4429-92c7-942efaa06047",
+      "publisher": "MIT",
+      "kind": "publication_metadata",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-keystone-full",
+      "title": "Keystone author manuscript",
+      "url": "https://arxiv.org/abs/1907.10119",
+      "publisher": "Authors / arXiv",
+      "kind": "preprint_page",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-controlled",
+      "title": "Controlled-Channel Attacks paper",
+      "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/ctrlchannels-oakland-2015.pdf",
+      "publisher": "Authors / Microsoft",
+      "kind": "author_paper",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-slalom",
+      "title": "Slalom manuscript and ICLR 2019 acceptance metadata",
+      "url": "https://arxiv.org/abs/1806.03287",
+      "publisher": "Authors / arXiv",
+      "kind": "preprint_page",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-sevsnp",
+      "title": "AMD SEV-SNP whitepaper",
+      "url": "https://docs.amd.com/api/khub/documents/atTablNxGjuR5pX3kM7WdQ/content",
+      "publisher": "AMD",
+      "kind": "vendor_design",
+      "published_date": "2020-01-01",
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-tdx",
+      "title": "Intel TDX whitepaper February 2022",
+      "url": "https://cdrdv2-public.intel.com/690419/TDX-Whitepaper-February2022.pdf",
+      "publisher": "Intel",
+      "kind": "vendor_design",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-cca",
+      "title": "Arm CCA architecture overview",
+      "url": "https://www.arm.com/architecture/security-features/arm-confidential-compute-architecture",
+      "publisher": "Arm",
+      "kind": "vendor_design",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-h100",
+      "title": "Protecting Sensitive Data and AI Models with Confidential Computing",
+      "url": "https://developer.nvidia.com/blog/protecting-sensitive-data-and-ai-models-with-confidential-computing/",
+      "publisher": "NVIDIA",
+      "kind": "vendor_design",
+      "published_date": "2023-05-31",
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-rats",
+      "title": "RFC 9334: RATS Architecture",
+      "url": "https://www.rfc-editor.org/rfc/rfc9334",
+      "publisher": "IETF / RFC Editor",
+      "kind": "standard",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-ohttp",
+      "title": "RFC 9458: Oblivious HTTP",
+      "url": "https://www.rfc-editor.org/rfc/rfc9458",
+      "publisher": "IETF / RFC Editor",
+      "kind": "standard",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-sp10",
+      "title": "IEEE S&P 2010 conference report",
+      "url": "https://www.ieee-security.org/Cipher/ConfReports/2010/CR2010-SP-tech-2010.html",
+      "publisher": "IEEE TCSP Cipher",
+      "kind": "conference_report",
+      "published_date": "2010-05-31",
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-oa-W2167804035",
+      "title": "OpenAlex record: Flicker",
+      "url": "https://api.openalex.org/works/W2167804035",
+      "publisher": "OpenAlex",
+      "kind": "bibliographic_api",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-oa-W2128159601",
+      "title": "OpenAlex record: TrustVisor: Efficient TCB Reduction and Attestation",
+      "url": "https://api.openalex.org/works/W2128159601",
+      "publisher": "OpenAlex",
+      "kind": "bibliographic_api",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-oa-W2043501224",
+      "title": "OpenAlex record: CloudVisor",
+      "url": "https://api.openalex.org/works/W2043501224",
+      "publisher": "OpenAlex",
+      "kind": "bibliographic_api",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-oa-W2762625979",
+      "title": "OpenAlex record: Komodo",
+      "url": "https://api.openalex.org/works/W2762625979",
+      "publisher": "OpenAlex",
+      "kind": "bibliographic_api",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-oa-W2979547870",
+      "title": "OpenAlex record: MI6",
+      "url": "https://api.openalex.org/works/W2979547870",
+      "publisher": "OpenAlex",
+      "kind": "bibliographic_api",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-oa-W2150620897",
+      "title": "OpenAlex record: Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems",
+      "url": "https://api.openalex.org/works/W2150620897",
+      "publisher": "OpenAlex",
+      "kind": "bibliographic_api",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-oa-W4206796831",
+      "title": "OpenAlex record: Terra",
+      "url": "https://api.openalex.org/works/W4206796831",
+      "publisher": "OpenAlex",
+      "kind": "bibliographic_api",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-saltzer-basic",
+      "title": "Basic Principles of Information Protection",
+      "url": "https://web.mit.edu/Saltzer/www/publications/protection/Basic.html",
+      "publisher": "MIT / authors",
+      "kind": "author_paper",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-intel-hw-guide",
+      "title": "Intel TDX Enabling Guide: Hardware Selection",
+      "url": "https://cc-enabling.trustedservices.intel.com/intel-tdx-enabling-guide/03/hardware_selection/",
+      "publisher": "Intel",
+      "kind": "vendor_documentation",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-nv-coco-platforms",
+      "title": "NVIDIA Confidential Containers: Supported Platforms",
+      "url": "https://docs.nvidia.com/datacenter/cloud-native/confidential-containers/latest/supported-platforms.html",
+      "publisher": "NVIDIA",
+      "kind": "vendor_documentation",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-amd-epyc5-arch",
+      "title": "5th Gen AMD EPYC Processor Architecture",
+      "url": "https://docs.amd.com/api/khub/documents/UIqhAbjRhgnzgzzdVU4pUw/content",
+      "publisher": "AMD",
+      "kind": "vendor_documentation",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-nv-r595",
+      "title": "NVIDIA Trusted Computing Solutions R595 GA Release Notes, RN-12817-001_v02, April 2026",
+      "url": "https://docs.nvidia.com/595trd1-trusted-computing-solutions-release-notes.pdf",
+      "publisher": "NVIDIA",
+      "kind": "vendor_documentation",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-nv-hgx-b300",
+      "title": "NVIDIA HGX AI Factory: Abstract",
+      "url": "https://docs.nvidia.com/enterprise-reference-architectures/hgx-ai-factory/latest/abstract.html",
+      "publisher": "NVIDIA",
+      "kind": "vendor_documentation",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-azure-ncc-spec",
+      "title": "Azure NCCads H100 v5 size series",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nccadsh100v5-series",
+      "publisher": "Microsoft",
+      "kind": "vendor_documentation",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    },
+    {
+      "id": "s-azure-conf-gpu",
+      "title": "Azure Confidential GPU options",
+      "url": "https://learn.microsoft.com/en-us/azure/confidential-computing/gpu-options",
+      "publisher": "Microsoft",
+      "kind": "vendor_documentation",
+      "published_date": null,
+      "accessed_date": "2026-09-28",
+      "access_status": "read"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cl-001",
+      "subject_id": "p-terra-2003",
+      "statement": "Terra describes a trusted VMM as the isolating component.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-terra",
+          "locator": "Abstract, TVMM paragraph",
+          "supports": "Terra describes a trusted VMM as the isolating component."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Seed-level source observation; full-text review pending"
+    },
+    {
+      "id": "cl-002",
+      "subject_id": "p-terra-2003",
+      "statement": "Terra describes remote identification of software in closed-box VMs.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-terra",
+          "locator": "Abstract, remote parties paragraph",
+          "supports": "Terra describes remote identification of software in closed-box VMs."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Seed-level source observation; full-text review pending"
+    },
+    {
+      "id": "cl-003",
+      "subject_id": "p-haven-2014",
+      "statement": "Haven explicitly uses Intel SGX protection.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-haven",
+          "locator": "Abstract, final sentence",
+          "supports": "Haven explicitly uses Intel SGX protection."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Seed-level source observation; full-text review pending"
+    },
+    {
+      "id": "cl-004",
+      "subject_id": "p-sgx-explained-2016",
+      "statement": "The report analyzes SGX architecture and security properties.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-sgx",
+          "locator": "Abstract",
+          "supports": "The report analyzes SGX architecture and security properties."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Seed-level source observation; full-text review pending"
+    },
+    {
+      "id": "cl-005",
+      "subject_id": "p-sanctum-2016",
+      "statement": "Sanctum compares its isolation design with SGX and addresses additional memory-access-based threats.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-sanctum",
+          "locator": "Abstract, first paragraph",
+          "supports": "Sanctum compares its isolation design with SGX and addresses additional memory-access-based threats."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Seed-level source observation; full-text review pending"
+    },
+    {
+      "id": "cl-006",
+      "subject_id": "p-foreshadow-2018",
+      "statement": "Foreshadow demonstrates attacks against SGX implementations evaluated in 2018.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-foreshadow",
+          "locator": "Abstract, attack and attestation paragraphs",
+          "supports": "Foreshadow demonstrates attacks against SGX implementations evaluated in 2018."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Affected implementations in the original 2018 study; do not generalize to all later SGX systems."
+    },
+    {
+      "id": "cl-007",
+      "subject_id": "p-graviton-2018",
+      "statement": "Graviton proposes an architecture for trusted execution on GPUs.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-graviton",
+          "locator": "Abstract",
+          "supports": "Graviton proposes an architecture for trusted execution on GPUs."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Seed-level source observation; full-text review pending"
+    },
+    {
+      "id": "cl-008",
+      "subject_id": "p-keystone-2020",
+      "statement": "Keystone describes a framework for configurable RISC-V TEEs.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-keystone",
+          "locator": "What is Keystone Enclave?",
+          "supports": "Keystone describes a framework for configurable RISC-V TEEs."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Seed-level source observation; full-text review pending"
+    },
+    {
+      "id": "cl-009",
+      "subject_id": "i-apple-pcc-2024",
+      "statement": "Apple makes verifiable transparency a PCC design requirement.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-apple24",
+          "locator": "Designing Private Cloud Compute, requirement 5",
+          "supports": "Apple makes verifiable transparency a PCC design requirement."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor description at source publication date; not independently validated here."
+    },
+    {
+      "id": "cl-010",
+      "subject_id": "i-apple-pcc-2024",
+      "statement": "PCC is designed for cloud inference for Apple Intelligence.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-apple24",
+          "locator": "Introduction",
+          "supports": "PCC is designed for cloud inference for Apple Intelligence."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor description at source publication date; not independently validated here."
+    },
+    {
+      "id": "cl-011",
+      "subject_id": "i-apple-pcc-2024",
+      "statement": "PCC includes a non-targetability requirement.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-apple24",
+          "locator": "Designing Private Cloud Compute, requirement 4",
+          "supports": "PCC includes a non-targetability requirement."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor description at source publication date; not independently validated here."
+    },
+    {
+      "id": "cl-012",
+      "subject_id": "i-apple-pcc-gcp-2026",
+      "statement": "Apple explicitly describes the Google Cloud deployment as an expansion of PCC.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-apple26",
+          "locator": "Opening paragraphs",
+          "supports": "Apple explicitly describes the Google Cloud deployment as an expansion of PCC."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor description at source publication date; not independently validated here."
+    },
+    {
+      "id": "cl-013",
+      "subject_id": "i-apple-pcc-gcp-2026",
+      "statement": "The 2026 announcement names Intel TDX CPUs as part of the implementation.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-apple26",
+          "locator": "Paragraph beginning 'Our core PCC requirements remain exactly the same'",
+          "supports": "The 2026 announcement names Intel TDX CPUs as part of the implementation."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor description at source publication date; not independently validated here."
+    },
+    {
+      "id": "cl-014",
+      "subject_id": "i-apple-pcc-gcp-2026",
+      "statement": "The 2026 announcement names NVIDIA confidential computing GPUs as part of the implementation.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-apple26",
+          "locator": "Paragraph beginning 'Our core PCC requirements remain exactly the same'",
+          "supports": "The 2026 announcement names NVIDIA confidential computing GPUs as part of the implementation."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor description at source publication date; not independently validated here."
+    },
+    {
+      "id": "cl-015",
+      "subject_id": "i-apple-pcc-gcp-2026",
+      "statement": "The 2026 announcement names Google Titan as part of the implementation.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-apple26",
+          "locator": "Paragraph beginning 'Our core PCC requirements remain exactly the same'",
+          "supports": "The 2026 announcement names Google Titan as part of the implementation."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor description at source publication date; not independently validated here."
+    },
+    {
+      "id": "cl-016",
+      "subject_id": "i-google-pac-2025",
+      "statement": "Google introduces Private AI Compute for cloud AI processing.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-google25",
+          "locator": "Introduction",
+          "supports": "Google introduces Private AI Compute for cloud AI processing."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor description at source publication date; not independently validated here."
+    },
+    {
+      "id": "cl-017",
+      "subject_id": "i-google-pac-memory-2026",
+      "statement": "The memory update explicitly extends the previously introduced Private AI Compute platform.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-google26",
+          "locator": "Bringing on-device privacy to cloud-scale memory",
+          "supports": "The memory update explicitly extends the previously introduced Private AI Compute platform."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor description at source publication date; not independently validated here."
+    },
+    {
+      "id": "cl-018",
+      "subject_id": "i-google-pac-memory-2026",
+      "statement": "Google describes a future persistent memory layer with encrypted storage and device-held keys.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-google26",
+          "locator": "Bringing on-device privacy to cloud-scale memory",
+          "supports": "Google describes a future persistent memory layer with encrypted storage and device-held keys."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor description at source publication date; not independently validated here."
+    },
+    {
+      "id": "cl-019",
+      "subject_id": "i-meta-private-processing-2025",
+      "statement": "Meta describes RA-TLS with measurements checked against a third-party ledger.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-meta25",
+          "locator": "Application session establishment",
+          "supports": "Meta describes RA-TLS with measurements checked against a third-party ledger."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor description at source publication date; not independently validated here."
+    },
+    {
+      "id": "cl-020",
+      "subject_id": "i-meta-private-processing-glasses-2026",
+      "statement": "Meta explicitly links the glasses architecture to its 2025 Private Processing work.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-meta26",
+          "locator": "Introduction, 2025 predecessor paragraph",
+          "supports": "Meta explicitly links the glasses architecture to its 2025 Private Processing work."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor description at source publication date; not independently validated here."
+    },
+    {
+      "id": "cl-021",
+      "subject_id": "i-meta-private-processing-glasses-2026",
+      "statement": "Meta describes stateful encrypted storage within its processing boundary.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-meta26",
+          "locator": "Stateful Memory; Storage Inside the Boundary",
+          "supports": "Meta describes stateful encrypted storage within its processing boundary."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor description at source publication date; not independently validated here."
+    },
+    {
+      "id": "cl-022",
+      "subject_id": "i-muse-secure-vm-2026",
+      "statement": "The Muse launch architecture describes an isolated runtime container.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-muse26",
+          "locator": "Muse Secure VM",
+          "supports": "The Muse launch architecture describes an isolated runtime container."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor description at source publication date; not independently validated here."
+    },
+    {
+      "id": "cl-023",
+      "subject_id": "i-muse-secure-vm-2026",
+      "statement": "Muse separates credential services from the agent runtime cell.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-muse26",
+          "locator": "Muse Secure VM; Least Privilege",
+          "supports": "Muse separates credential services from the agent runtime cell."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor description at source publication date; not independently validated here."
+    },
+    {
+      "id": "cl-024",
+      "subject_id": "i-muse-confidential-vm-announced-2026",
+      "statement": "The source distinguishes launch Secure VM from a separate planned Confidential VM capability.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-muse26",
+          "locator": "Coming Soon: Muse Confidential VM",
+          "supports": "The source distinguishes launch Secure VM from a separate planned Confidential VM capability."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "As described on 2026-09-08; verify later launch status before changing classification."
+    },
+    {
+      "id": "cl-025",
+      "subject_id": "p-mi6-2019",
+      "statement": "MI6 explicitly extends Sanctum isolation to a speculative out-of-order processor.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-mi6",
+          "locator": "Abstract; manuscript section 3.3",
+          "supports": "MI6 explicitly extends Sanctum isolation to a speculative out-of-order processor."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-026",
+      "subject_id": "p-trustvisor-2010",
+      "statement": "TrustVisor addresses Flicker latency and platform monopolization; this does not establish code inheritance.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-trustvisor-full",
+          "locator": "Sections 3.2, 4.1, 4.3; PDF pages 2-6",
+          "supports": "TrustVisor addresses Flicker latency and platform monopolization; this does not establish code inheritance."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-027",
+      "subject_id": "p-keystone-2020",
+      "statement": "Keystone compares Sanctum in its design-space table and related work.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-keystone-full",
+          "locator": "Table 1; related work, PDF page 13",
+          "supports": "Keystone compares Sanctum in its design-space table and related work."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-028",
+      "subject_id": "p-komodo-2017",
+      "statement": "Komodo decouples enclave management from fixed hardware.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-komodo-full",
+          "locator": "Abstract and introduction",
+          "supports": "Komodo decouples enclave management from fixed hardware."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-029",
+      "subject_id": "p-komodo-2017",
+      "statement": "Komodo implements a verified monitor prototype on ARM TrustZone.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-komodo-full",
+          "locator": "Abstract",
+          "supports": "Komodo implements a verified monitor prototype on ARM TrustZone."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-030",
+      "subject_id": "p-komodo-2017",
+      "statement": "The monitor has machine-checkable correctness and security proofs.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-komodo-full",
+          "locator": "Abstract",
+          "supports": "The monitor has machine-checkable correctness and security proofs."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-031",
+      "subject_id": "p-flicker-2008",
+      "statement": "Flicker targets minimizing trusted code around security-sensitive execution.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-flicker-full",
+          "locator": "Abstract",
+          "supports": "Flicker targets minimizing trusted code around security-sensitive execution."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-032",
+      "subject_id": "p-flicker-2008",
+      "statement": "Flicker supports fine-grained remote attestation.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-flicker-full",
+          "locator": "Abstract",
+          "supports": "Flicker supports fine-grained remote attestation."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-033",
+      "subject_id": "p-trustvisor-2010",
+      "statement": "TrustVisor combines a small hypervisor with micro-TPM operations.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-trustvisor-full",
+          "locator": "Sections 4.1 and 4.3",
+          "supports": "TrustVisor combines a small hypervisor with micro-TPM operations."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-034",
+      "subject_id": "p-cloudvisor-2011",
+      "statement": "CloudVisor is placed on the VM-protection research branch; this is conceptual classification, not hardware-CVM product adoption.",
+      "epistemic_status": "analyst_inference",
+      "evidence": [
+        {
+          "source_id": "s-cloudvisor-full",
+          "locator": "Abstract",
+          "supports": "CloudVisor is placed on the VM-protection research branch; this is conceptual classification, not hardware-CVM product adoption."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-035",
+      "subject_id": "p-controlled-channel-2015",
+      "statement": "Controlled-channel work evaluates information leakage against the Haven shielded-execution setting.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-controlled",
+          "locator": "Section V.A; PDF pages 8–9; Haven prototype, not all SGX configurations",
+          "supports": "Controlled-channel work evaluates information leakage against the Haven shielded-execution setting."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-036",
+      "subject_id": "p-slalom-2019",
+      "statement": "The Slalom evaluation uses an SGX enclave and an untrusted GPU.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-slalom",
+          "locator": "Abstract",
+          "supports": "The Slalom evaluation uses an SGX enclave and an untrusted GPU."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-037",
+      "subject_id": "p-slalom-2019",
+      "statement": "Slalom is a contrasting GPU-outsourcing branch; the GPU itself is untrusted.",
+      "epistemic_status": "analyst_inference",
+      "evidence": [
+        {
+          "source_id": "s-slalom",
+          "locator": "Abstract",
+          "supports": "Slalom is a contrasting GPU-outsourcing branch; the GPU itself is untrusted."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-038",
+      "subject_id": "t-amd-seves",
+      "statement": "SEV-ES adds protection of CPU register state.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-sevsnp",
+          "locator": "Introduction, PDF page 3",
+          "supports": "SEV-ES adds protection of CPU register state."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-039",
+      "subject_id": "t-amd-sevsnp",
+      "statement": "SEV-SNP builds on SEV and SEV-ES, adding integrity-oriented protections.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-sevsnp",
+          "locator": "Introduction and Summary",
+          "supports": "SEV-SNP builds on SEV and SEV-ES, adding integrity-oriented protections."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-040",
+      "subject_id": "t-amd-sevsnp",
+      "statement": "The design protects VM-scale workloads across a host trust boundary.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-sevsnp",
+          "locator": "Threat Model Details",
+          "supports": "The design protects VM-scale workloads across a host trust boundary."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-041",
+      "subject_id": "t-intel-tdx",
+      "statement": "The design protects VM-scale workloads across a host trust boundary.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-tdx",
+          "locator": "Introduction",
+          "supports": "The design protects VM-scale workloads across a host trust boundary."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-042",
+      "subject_id": "t-arm-cca",
+      "statement": "The design protects VM-scale workloads across a host trust boundary.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-cca",
+          "locator": "How Confidential Computing on Arm Works",
+          "supports": "The design protects VM-scale workloads across a host trust boundary."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-043",
+      "subject_id": "t-h100",
+      "statement": "H100 supplies GPU confidential computing features.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-h100",
+          "locator": "Secure AI on NVIDIA H100",
+          "supports": "H100 supplies GPU confidential computing features."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-045",
+      "subject_id": "std-rats",
+      "statement": "RATS specifies the roles and conceptual messages used for remote attestation.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-rats",
+          "locator": "Architecture overview",
+          "supports": "RATS specifies the roles and conceptual messages used for remote attestation."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-046",
+      "subject_id": "i-meta-private-processing-glasses-2026",
+      "statement": "Meta describes third-party OHTTP relays for decoupling identity.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-meta26",
+          "locator": "Decoupling Identity",
+          "supports": "Meta describes third-party OHTTP relays for decoupling identity."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-047",
+      "subject_id": "i-meta-private-processing-2025",
+      "statement": "RA-TLS measurements are checked against a ledger.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-meta25",
+          "locator": "Application session establishment",
+          "supports": "RA-TLS measurements are checked against a ledger."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-048",
+      "subject_id": "i-google-pac-memory-2026",
+      "statement": "The update describes a public record for verification of server software.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-google26",
+          "locator": "Building trust, looking ahead",
+          "supports": "The update describes a public record for verification of server software."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-049",
+      "subject_id": "i-meta-private-processing-glasses-2026",
+      "statement": "Meta describes CVMs as the execution boundary.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-meta26",
+          "locator": "Introduction",
+          "supports": "Meta describes CVMs as the execution boundary."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-050",
+      "subject_id": "i-muse-secure-vm-2026",
+      "statement": "Muse documents privilege separation as part of agent safety.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-muse26",
+          "locator": "Least Privilege",
+          "supports": "Muse documents privilege separation as part of agent safety."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-051",
+      "subject_id": "c-tcb",
+      "statement": "An editorial connection between least privilege and a small TCB, not a claim of direct inheritance.",
+      "epistemic_status": "analyst_inference",
+      "evidence": [
+        {
+          "source_id": "s-saltzer",
+          "locator": "Design contribution / requirements",
+          "supports": "An editorial connection between least privilege and a small TCB, not a claim of direct inheritance."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-052",
+      "subject_id": "p-terra-2003",
+      "statement": "VM isolation is a foundational comparison point, not the established ancestor of every CVM.",
+      "epistemic_status": "analyst_inference",
+      "evidence": [
+        {
+          "source_id": "s-terra",
+          "locator": "Design contribution / requirements",
+          "supports": "VM isolation is a foundational comparison point, not the established ancestor of every CVM."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-053",
+      "subject_id": "c-enclave",
+      "statement": "Enclaves move selected code inside a smaller trust boundary.",
+      "epistemic_status": "analyst_inference",
+      "evidence": [
+        {
+          "source_id": "s-sanctum",
+          "locator": "Design contribution / requirements",
+          "supports": "Enclaves move selected code inside a smaller trust boundary."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-054",
+      "subject_id": "c-confidential-vm",
+      "statement": "VM-scale isolation is a different granularity choice from application enclaves.",
+      "epistemic_status": "analyst_inference",
+      "evidence": [
+        {
+          "source_id": "s-tdx",
+          "locator": "Design contribution / requirements",
+          "supports": "VM-scale isolation is a different granularity choice from application enclaves."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-055",
+      "subject_id": "c-gpu-tee",
+      "statement": "GPU TEEs extend the trusted-execution problem to accelerators.",
+      "epistemic_status": "analyst_inference",
+      "evidence": [
+        {
+          "source_id": "s-graviton",
+          "locator": "Design contribution / requirements",
+          "supports": "GPU TEEs extend the trusted-execution problem to accelerators."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-056",
+      "subject_id": "c-private-inference",
+      "statement": "Private inference composes an execution boundary with service-level controls.",
+      "epistemic_status": "analyst_inference",
+      "evidence": [
+        {
+          "source_id": "s-meta26",
+          "locator": "Design contribution / requirements",
+          "supports": "Private inference composes an execution boundary with service-level controls."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-057",
+      "subject_id": "c-private-inference",
+      "statement": "Transparency is a complementary service-level assurance mechanism.",
+      "epistemic_status": "analyst_inference",
+      "evidence": [
+        {
+          "source_id": "s-apple24",
+          "locator": "Design contribution / requirements",
+          "supports": "Transparency is a complementary service-level assurance mechanism."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-058",
+      "subject_id": "c-private-inference",
+      "statement": "Remote verification connects the client to a trusted execution boundary.",
+      "epistemic_status": "analyst_inference",
+      "evidence": [
+        {
+          "source_id": "s-apple24",
+          "locator": "Design contribution / requirements",
+          "supports": "Remote verification connects the client to a trusted execution boundary."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-059",
+      "subject_id": "c-stateful-private-ai",
+      "statement": "Persistent memory adds a state lifecycle to request-time inference.",
+      "epistemic_status": "analyst_inference",
+      "evidence": [
+        {
+          "source_id": "s-google26",
+          "locator": "Design contribution / requirements",
+          "supports": "Persistent memory adds a state lifecycle to request-time inference."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Source-specific relationship; vendor claims are not independently validated."
+    },
+    {
+      "id": "cl-060",
+      "subject_id": "c-tcb",
+      "statement": "The map connects small protection mechanisms to TCB minimization as conceptual background, not as a claim of invention or direct inheritance.",
+      "epistemic_status": "analyst_inference",
+      "evidence": [
+        {
+          "source_id": "s-saltzer-basic",
+          "locator": "Section I.A.3(a), Economy of mechanism",
+          "supports": "The map connects small protection mechanisms to TCB minimization as conceptual background, not as a claim of invention or direct inheritance."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Design principle, not a claim of direct implementation inheritance."
+    },
+    {
+      "id": "cl-061",
+      "subject_id": "p-saltzer-schroeder-1975",
+      "statement": "The paper presents least privilege as a protection design principle.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-saltzer-basic",
+          "locator": "Section I.A.3, Design Principles",
+          "supports": "The paper presents least privilege as a protection design principle."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Design principle, not a claim of direct implementation inheritance."
+    },
+    {
+      "id": "cl-062",
+      "subject_id": "h-intel-xeon5",
+      "statement": "The documented CPU family supports the stated TDX platform role.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-intel-hw-guide",
+          "locator": "CPU Requirements",
+          "supports": "The documented CPU family supports the stated TDX platform role."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Family-level capability, not blanket SKU qualification or proof of enabled runtime."
+    },
+    {
+      "id": "cl-063",
+      "subject_id": "h-intel-xeon6-gr",
+      "statement": "The documented CPU family supports the stated TDX platform role.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-coco-platforms",
+          "locator": "Host Platforms: Granite Rapids / Intel TDX",
+          "supports": "The documented CPU family supports the stated TDX platform role."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Family-level capability, not blanket SKU qualification or proof of enabled runtime."
+    },
+    {
+      "id": "cl-064",
+      "subject_id": "h-amd-epyc7003",
+      "statement": "SEV-SNP is included for this EPYC generation in the security-feature comparison.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-amd-epyc5-arch",
+          "locator": "AMD Infinity Guard; security-feature comparison, PDF page 15",
+          "supports": "SEV-SNP is included for this EPYC generation in the security-feature comparison."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Generation-level capability, subject to SKU/platform and firmware enablement."
+    },
+    {
+      "id": "cl-065",
+      "subject_id": "h-amd-epyc9004",
+      "statement": "SEV-SNP is included for this EPYC generation in the security-feature comparison.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-amd-epyc5-arch",
+          "locator": "AMD Infinity Guard; security-feature comparison, PDF page 15",
+          "supports": "SEV-SNP is included for this EPYC generation in the security-feature comparison."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Generation-level capability, subject to SKU/platform and firmware enablement."
+    },
+    {
+      "id": "cl-066",
+      "subject_id": "h-amd-epyc9005",
+      "statement": "SEV-SNP is included for this EPYC generation in the security-feature comparison.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-amd-epyc5-arch",
+          "locator": "AMD Infinity Guard; security-feature comparison, PDF page 15",
+          "supports": "SEV-SNP is included for this EPYC generation in the security-feature comparison."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Generation-level capability, subject to SKU/platform and firmware enablement."
+    },
+    {
+      "id": "cl-067",
+      "subject_id": "t-h100",
+      "statement": "The vendor lists confidential-computing support for named configurations of this hardware.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-r595",
+          "locator": "Feature Summary: supported hardware SKUs, PDF pages 5–7",
+          "supports": "The vendor lists confidential-computing support for named configurations of this hardware."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Only listed variants and documented CC modes; not every deployment of this hardware."
+    },
+    {
+      "id": "cl-068",
+      "subject_id": "h-nvidia-h200",
+      "statement": "The vendor lists confidential-computing support for named configurations of this hardware.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-r595",
+          "locator": "Feature Summary: supported hardware SKUs, PDF pages 5–7",
+          "supports": "The vendor lists confidential-computing support for named configurations of this hardware."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Only listed variants and documented CC modes; not every deployment of this hardware."
+    },
+    {
+      "id": "cl-069",
+      "subject_id": "h-nvidia-b200",
+      "statement": "The vendor lists confidential-computing support for named configurations of this hardware.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-r595",
+          "locator": "Feature Summary: supported hardware SKUs, PDF pages 5–7",
+          "supports": "The vendor lists confidential-computing support for named configurations of this hardware."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Only listed variants and documented CC modes; not every deployment of this hardware."
+    },
+    {
+      "id": "cl-070",
+      "subject_id": "h-nvidia-hgx-b300",
+      "statement": "The vendor lists confidential-computing support for named configurations of this hardware.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-r595",
+          "locator": "Feature Summary: supported hardware SKUs, PDF pages 5–7",
+          "supports": "The vendor lists confidential-computing support for named configurations of this hardware."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Only listed variants and documented CC modes; not every deployment of this hardware."
+    },
+    {
+      "id": "cl-071",
+      "subject_id": "h-nvidia-hgx-b300",
+      "statement": "HGX B300 combines eight Blackwell Ultra GPU components.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-hgx-b300",
+          "locator": "Abstract",
+          "supports": "HGX B300 combines eight Blackwell Ultra GPU components."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Physical composition only; this edge itself does not establish a security guarantee."
+    },
+    {
+      "id": "cl-072",
+      "subject_id": "cfg-nv-spt",
+      "statement": "The release notes list this hardware configuration for the selected CC mode.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-r595",
+          "locator": "SPT / PPCIe / MPT hardware lists, PDF pages 5–7",
+          "supports": "The release notes list this hardware configuration for the selected CC mode."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "H100 PCIe, H100 NVL and listed HGX H100 variants."
+    },
+    {
+      "id": "cl-073",
+      "subject_id": "cfg-nv-spt",
+      "statement": "The release notes list this hardware configuration for the selected CC mode.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-r595",
+          "locator": "SPT / PPCIe / MPT hardware lists, PDF pages 5–7",
+          "supports": "The release notes list this hardware configuration for the selected CC mode."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "H200 NVL and listed HGX H200 variants."
+    },
+    {
+      "id": "cl-074",
+      "subject_id": "cfg-nv-spt",
+      "statement": "The release notes list this hardware configuration for the selected CC mode.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-r595",
+          "locator": "SPT / PPCIe / MPT hardware lists, PDF pages 5–7",
+          "supports": "The release notes list this hardware configuration for the selected CC mode."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Named HGX B200 variants."
+    },
+    {
+      "id": "cl-075",
+      "subject_id": "cfg-nv-spt",
+      "statement": "The release notes list this hardware configuration for the selected CC mode.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-r595",
+          "locator": "SPT / PPCIe / MPT hardware lists, PDF pages 5–7",
+          "supports": "The release notes list this hardware configuration for the selected CC mode."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "R595-listed air-cooled HGX B300 variant."
+    },
+    {
+      "id": "cl-076",
+      "subject_id": "cfg-nv-ppcie",
+      "statement": "The release notes list this hardware configuration for the selected CC mode.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-r595",
+          "locator": "SPT / PPCIe / MPT hardware lists, PDF pages 5–7",
+          "supports": "The release notes list this hardware configuration for the selected CC mode."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "PPCIe support is limited here to listed HGX H100 platforms, not arbitrary H100 boards."
+    },
+    {
+      "id": "cl-077",
+      "subject_id": "cfg-nv-ppcie",
+      "statement": "The release notes list this hardware configuration for the selected CC mode.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-r595",
+          "locator": "SPT / PPCIe / MPT hardware lists, PDF pages 5–7",
+          "supports": "The release notes list this hardware configuration for the selected CC mode."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "PPCIe support is limited here to listed HGX H200 platforms."
+    },
+    {
+      "id": "cl-078",
+      "subject_id": "cfg-nv-mpt",
+      "statement": "The release notes list this hardware configuration for the selected CC mode.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-r595",
+          "locator": "SPT / PPCIe / MPT hardware lists, PDF pages 5–7",
+          "supports": "The release notes list this hardware configuration for the selected CC mode."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Named HGX B200 variants; up to eight GPUs per CVM."
+    },
+    {
+      "id": "cl-079",
+      "subject_id": "cfg-nv-mpt",
+      "statement": "The release notes list this hardware configuration for the selected CC mode.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-r595",
+          "locator": "SPT / PPCIe / MPT hardware lists, PDF pages 5–7",
+          "supports": "The release notes list this hardware configuration for the selected CC mode."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "R595-listed HGX B300 variant; up to eight GPUs per CVM."
+    },
+    {
+      "id": "cl-080",
+      "subject_id": "cfg-nv-spt",
+      "statement": "The GPU is assigned to a confidential VM boundary.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-r595",
+          "locator": "Feature Summary",
+          "supports": "The GPU is assigned to a confidential VM boundary."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "CPU and GPU attestation/configuration requirements remain separate."
+    },
+    {
+      "id": "cl-081",
+      "subject_id": "cfg-nv-coco",
+      "statement": "The reference architecture documents the corresponding passthrough option.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-coco-platforms",
+          "locator": "NVIDIA GPUs; notes on passthrough",
+          "supports": "The reference architecture documents the corresponding passthrough option."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Reference-stack constraints apply, including all GPUs assigned to one confidential-container VM."
+    },
+    {
+      "id": "cl-082",
+      "subject_id": "cfg-nv-ppcie",
+      "statement": "The GPU is assigned to a confidential VM boundary.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-r595",
+          "locator": "Feature Summary",
+          "supports": "The GPU is assigned to a confidential VM boundary."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "CPU and GPU attestation/configuration requirements remain separate."
+    },
+    {
+      "id": "cl-083",
+      "subject_id": "cfg-nv-coco",
+      "statement": "The reference architecture documents the corresponding passthrough option.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-coco-platforms",
+          "locator": "NVIDIA GPUs; notes on passthrough",
+          "supports": "The reference architecture documents the corresponding passthrough option."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Reference-stack constraints apply, including all GPUs assigned to one confidential-container VM."
+    },
+    {
+      "id": "cl-084",
+      "subject_id": "cfg-nv-mpt",
+      "statement": "The GPU is assigned to a confidential VM boundary.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-r595",
+          "locator": "Feature Summary",
+          "supports": "The GPU is assigned to a confidential VM boundary."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "CPU and GPU attestation/configuration requirements remain separate."
+    },
+    {
+      "id": "cl-085",
+      "subject_id": "cfg-nv-coco",
+      "statement": "The reference architecture documents the corresponding passthrough option.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-coco-platforms",
+          "locator": "NVIDIA GPUs; notes on passthrough",
+          "supports": "The reference architecture documents the corresponding passthrough option."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Reference-stack constraints apply, including all GPUs assigned to one confidential-container VM."
+    },
+    {
+      "id": "cl-086",
+      "subject_id": "cfg-nv-coco",
+      "statement": "This hardware family/platform is explicitly listed in the reference architecture support table.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-coco-platforms",
+          "locator": "NVIDIA GPUs / Host Platforms",
+          "supports": "This hardware family/platform is explicitly listed in the reference architecture support table."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor-listed reference integration, not evidence of a specific end-user deployment. Respect variant/mode constraints."
+    },
+    {
+      "id": "cl-087",
+      "subject_id": "cfg-nv-coco",
+      "statement": "This hardware family/platform is explicitly listed in the reference architecture support table.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-coco-platforms",
+          "locator": "NVIDIA GPUs / Host Platforms",
+          "supports": "This hardware family/platform is explicitly listed in the reference architecture support table."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor-listed reference integration, not evidence of a specific end-user deployment. Respect variant/mode constraints."
+    },
+    {
+      "id": "cl-088",
+      "subject_id": "cfg-nv-coco",
+      "statement": "This hardware family/platform is explicitly listed in the reference architecture support table.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-coco-platforms",
+          "locator": "NVIDIA GPUs / Host Platforms",
+          "supports": "This hardware family/platform is explicitly listed in the reference architecture support table."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor-listed reference integration, not evidence of a specific end-user deployment. Respect variant/mode constraints."
+    },
+    {
+      "id": "cl-089",
+      "subject_id": "cfg-nv-coco",
+      "statement": "This hardware family/platform is explicitly listed in the reference architecture support table.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-coco-platforms",
+          "locator": "NVIDIA GPUs / Host Platforms",
+          "supports": "This hardware family/platform is explicitly listed in the reference architecture support table."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor-listed reference integration, not evidence of a specific end-user deployment. Respect variant/mode constraints."
+    },
+    {
+      "id": "cl-090",
+      "subject_id": "cfg-nv-coco",
+      "statement": "This hardware family/platform is explicitly listed in the reference architecture support table.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-coco-platforms",
+          "locator": "NVIDIA GPUs / Host Platforms",
+          "supports": "This hardware family/platform is explicitly listed in the reference architecture support table."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor-listed reference integration, not evidence of a specific end-user deployment. Respect variant/mode constraints."
+    },
+    {
+      "id": "cl-091",
+      "subject_id": "cfg-nv-coco",
+      "statement": "This hardware family/platform is explicitly listed in the reference architecture support table.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-coco-platforms",
+          "locator": "NVIDIA GPUs / Host Platforms",
+          "supports": "This hardware family/platform is explicitly listed in the reference architecture support table."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor-listed reference integration, not evidence of a specific end-user deployment. Respect variant/mode constraints."
+    },
+    {
+      "id": "cl-092",
+      "subject_id": "cfg-nv-coco",
+      "statement": "This hardware family/platform is explicitly listed in the reference architecture support table.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-coco-platforms",
+          "locator": "NVIDIA GPUs / Host Platforms",
+          "supports": "This hardware family/platform is explicitly listed in the reference architecture support table."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor-listed reference integration, not evidence of a specific end-user deployment. Respect variant/mode constraints."
+    },
+    {
+      "id": "cl-093",
+      "subject_id": "cfg-nv-coco",
+      "statement": "This hardware family/platform is explicitly listed in the reference architecture support table.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-coco-platforms",
+          "locator": "NVIDIA GPUs / Host Platforms",
+          "supports": "This hardware family/platform is explicitly listed in the reference architecture support table."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Vendor-listed reference integration, not evidence of a specific end-user deployment. Respect variant/mode constraints."
+    },
+    {
+      "id": "cl-094",
+      "subject_id": "cfg-nv-coco",
+      "statement": "The reference stack supports this CPU TEE as an alternative backend.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-coco-platforms",
+          "locator": "Host Platforms",
+          "supports": "The reference stack supports this CPU TEE as an alternative backend."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Alternative CPU backend; this does not require both CPU TEEs in one deployment."
+    },
+    {
+      "id": "cl-095",
+      "subject_id": "cfg-nv-coco",
+      "statement": "The reference stack supports this CPU TEE as an alternative backend.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-nv-coco-platforms",
+          "locator": "Host Platforms",
+          "supports": "The reference stack supports this CPU TEE as an alternative backend."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "Alternative CPU backend; this does not require both CPU TEEs in one deployment."
+    },
+    {
+      "id": "cl-096",
+      "subject_id": "i-azure-ncc-h100v5",
+      "statement": "Microsoft identifies this component/capability in the confidential GPU VM offering.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-azure-ncc-spec",
+          "locator": "Introduction and Host specifications",
+          "supports": "Microsoft identifies this component/capability in the confidential GPU VM offering."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "AMD EPYC Genoa family; no exact CPU SKU asserted."
+    },
+    {
+      "id": "cl-097",
+      "subject_id": "i-azure-ncc-h100v5",
+      "statement": "Microsoft identifies this component/capability in the confidential GPU VM offering.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-azure-ncc-spec",
+          "locator": "Introduction and Accelerators",
+          "supports": "Microsoft identifies this component/capability in the confidential GPU VM offering."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "The documented service uses H100 NVL 94GB; family node retained for navigation."
+    },
+    {
+      "id": "cl-098",
+      "subject_id": "i-azure-ncc-h100v5",
+      "statement": "Microsoft identifies this component/capability in the confidential GPU VM offering.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-azure-conf-gpu",
+          "locator": "Introduction and Sizes",
+          "supports": "Microsoft identifies this component/capability in the confidential GPU VM offering."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "CPU TEE capability used by this documented service family."
+    },
+    {
+      "id": "cl-099",
+      "subject_id": "i-azure-ncc-h100v5",
+      "statement": "Microsoft identifies this component/capability in the confidential GPU VM offering.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-azure-conf-gpu",
+          "locator": "Introduction and Sizes",
+          "supports": "Microsoft identifies this component/capability in the confidential GPU VM offering."
+        }
+      ],
+      "valid_at": "2026-09-28",
+      "scope": "GPU CC is part of the documented CPU/GPU TEE; no connection to B300 is asserted."
+    }
+  ],
+  "relations": [
+    {
+      "id": "r-001",
+      "from_id": "p-terra-2003",
+      "to_id": "c-trusted-vmm",
+      "type": "uses",
+      "claim_id": "cl-001",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-002",
+      "from_id": "p-terra-2003",
+      "to_id": "c-attestation",
+      "type": "studies",
+      "claim_id": "cl-002",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-003",
+      "from_id": "p-haven-2014",
+      "to_id": "t-intel-sgx",
+      "type": "uses",
+      "claim_id": "cl-003",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-004",
+      "from_id": "p-sgx-explained-2016",
+      "to_id": "t-intel-sgx",
+      "type": "studies",
+      "claim_id": "cl-004",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-005",
+      "from_id": "p-sanctum-2016",
+      "to_id": "t-intel-sgx",
+      "type": "alternative_to",
+      "claim_id": "cl-005",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-006",
+      "from_id": "p-foreshadow-2018",
+      "to_id": "t-intel-sgx",
+      "type": "attacks",
+      "claim_id": "cl-006",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-007",
+      "from_id": "p-graviton-2018",
+      "to_id": "c-gpu-tee",
+      "type": "studies",
+      "claim_id": "cl-007",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-008",
+      "from_id": "p-keystone-2020",
+      "to_id": "c-enclave",
+      "type": "studies",
+      "claim_id": "cl-008",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-009",
+      "from_id": "i-apple-pcc-2024",
+      "to_id": "c-transparency",
+      "type": "uses",
+      "claim_id": "cl-009",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-010",
+      "from_id": "i-apple-pcc-2024",
+      "to_id": "c-private-inference",
+      "type": "uses",
+      "claim_id": "cl-010",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-011",
+      "from_id": "i-apple-pcc-2024",
+      "to_id": "c-nontargetability",
+      "type": "uses",
+      "claim_id": "cl-011",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-012",
+      "from_id": "i-apple-pcc-gcp-2026",
+      "to_id": "i-apple-pcc-2024",
+      "type": "evolves_from",
+      "claim_id": "cl-012",
+      "lineage": true,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-013",
+      "from_id": "i-apple-pcc-gcp-2026",
+      "to_id": "t-intel-tdx",
+      "type": "uses",
+      "claim_id": "cl-013",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-014",
+      "from_id": "i-apple-pcc-gcp-2026",
+      "to_id": "t-nvidia-cc",
+      "type": "uses",
+      "claim_id": "cl-014",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-015",
+      "from_id": "i-apple-pcc-gcp-2026",
+      "to_id": "t-google-titan",
+      "type": "uses",
+      "claim_id": "cl-015",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-016",
+      "from_id": "i-google-pac-2025",
+      "to_id": "c-private-inference",
+      "type": "uses",
+      "claim_id": "cl-016",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-017",
+      "from_id": "i-google-pac-memory-2026",
+      "to_id": "i-google-pac-2025",
+      "type": "evolves_from",
+      "claim_id": "cl-017",
+      "lineage": true,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-018",
+      "from_id": "i-google-pac-memory-2026",
+      "to_id": "c-stateful-private-ai",
+      "type": "uses",
+      "claim_id": "cl-018",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-019",
+      "from_id": "i-meta-private-processing-2025",
+      "to_id": "c-attestation",
+      "type": "uses",
+      "claim_id": "cl-019",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-020",
+      "from_id": "i-meta-private-processing-glasses-2026",
+      "to_id": "i-meta-private-processing-2025",
+      "type": "evolves_from",
+      "claim_id": "cl-020",
+      "lineage": true,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-021",
+      "from_id": "i-meta-private-processing-glasses-2026",
+      "to_id": "c-stateful-private-ai",
+      "type": "uses",
+      "claim_id": "cl-021",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-022",
+      "from_id": "i-muse-secure-vm-2026",
+      "to_id": "c-runtime-sandbox",
+      "type": "uses",
+      "claim_id": "cl-022",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-023",
+      "from_id": "i-muse-secure-vm-2026",
+      "to_id": "c-credential-separation",
+      "type": "uses",
+      "claim_id": "cl-023",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-024",
+      "from_id": "i-muse-confidential-vm-announced-2026",
+      "to_id": "i-muse-secure-vm-2026",
+      "type": "related_to",
+      "claim_id": "cl-024",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-025",
+      "from_id": "p-mi6-2019",
+      "to_id": "p-sanctum-2016",
+      "type": "extends",
+      "claim_id": "cl-025",
+      "lineage": true,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-026",
+      "from_id": "p-trustvisor-2010",
+      "to_id": "p-flicker-2008",
+      "type": "alternative_to",
+      "claim_id": "cl-026",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-027",
+      "from_id": "p-keystone-2020",
+      "to_id": "p-sanctum-2016",
+      "type": "cites",
+      "claim_id": "cl-027",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-028",
+      "from_id": "p-komodo-2017",
+      "to_id": "t-intel-sgx",
+      "type": "alternative_to",
+      "claim_id": "cl-028",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-029",
+      "from_id": "p-komodo-2017",
+      "to_id": "t-arm-trustzone",
+      "type": "uses",
+      "claim_id": "cl-029",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-030",
+      "from_id": "p-komodo-2017",
+      "to_id": "c-verified-monitor",
+      "type": "studies",
+      "claim_id": "cl-030",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-031",
+      "from_id": "p-flicker-2008",
+      "to_id": "c-tcb",
+      "type": "studies",
+      "claim_id": "cl-031",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-032",
+      "from_id": "p-flicker-2008",
+      "to_id": "c-attestation",
+      "type": "uses",
+      "claim_id": "cl-032",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-033",
+      "from_id": "p-trustvisor-2010",
+      "to_id": "c-tcb",
+      "type": "studies",
+      "claim_id": "cl-033",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-034",
+      "from_id": "p-cloudvisor-2011",
+      "to_id": "c-confidential-vm",
+      "type": "studies",
+      "claim_id": "cl-034",
+      "lineage": false,
+      "review_status": "screened"
+    },
+    {
+      "id": "r-035",
+      "from_id": "p-controlled-channel-2015",
+      "to_id": "p-haven-2014",
+      "type": "attacks",
+      "claim_id": "cl-035",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-036",
+      "from_id": "p-slalom-2019",
+      "to_id": "t-intel-sgx",
+      "type": "uses",
+      "claim_id": "cl-036",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-037",
+      "from_id": "p-slalom-2019",
+      "to_id": "c-gpu-tee",
+      "type": "related_to",
+      "claim_id": "cl-037",
+      "lineage": false,
+      "review_status": "screened"
+    },
+    {
+      "id": "r-038",
+      "from_id": "t-amd-seves",
+      "to_id": "t-amd-sev",
+      "type": "extends",
+      "claim_id": "cl-038",
+      "lineage": true,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-039",
+      "from_id": "t-amd-sevsnp",
+      "to_id": "t-amd-seves",
+      "type": "extends",
+      "claim_id": "cl-039",
+      "lineage": true,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-040",
+      "from_id": "t-amd-sevsnp",
+      "to_id": "c-confidential-vm",
+      "type": "uses",
+      "claim_id": "cl-040",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-041",
+      "from_id": "t-intel-tdx",
+      "to_id": "c-confidential-vm",
+      "type": "uses",
+      "claim_id": "cl-041",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-042",
+      "from_id": "t-arm-cca",
+      "to_id": "c-confidential-vm",
+      "type": "uses",
+      "claim_id": "cl-042",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-043",
+      "from_id": "t-h100",
+      "to_id": "c-gpu-tee",
+      "type": "uses",
+      "claim_id": "cl-043",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-045",
+      "from_id": "std-rats",
+      "to_id": "c-attestation",
+      "type": "studies",
+      "claim_id": "cl-045",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-046",
+      "from_id": "i-meta-private-processing-glasses-2026",
+      "to_id": "std-ohttp",
+      "type": "uses",
+      "claim_id": "cl-046",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-047",
+      "from_id": "i-meta-private-processing-2025",
+      "to_id": "c-transparency",
+      "type": "uses",
+      "claim_id": "cl-047",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-048",
+      "from_id": "i-google-pac-memory-2026",
+      "to_id": "c-transparency",
+      "type": "uses",
+      "claim_id": "cl-048",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-049",
+      "from_id": "i-meta-private-processing-glasses-2026",
+      "to_id": "c-confidential-vm",
+      "type": "uses",
+      "claim_id": "cl-049",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-050",
+      "from_id": "i-muse-secure-vm-2026",
+      "to_id": "c-least-privilege",
+      "type": "uses",
+      "claim_id": "cl-050",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-051",
+      "from_id": "c-tcb",
+      "to_id": "c-least-privilege",
+      "type": "related_to",
+      "claim_id": "cl-051",
+      "lineage": false,
+      "review_status": "screened"
+    },
+    {
+      "id": "r-052",
+      "from_id": "p-terra-2003",
+      "to_id": "c-tcb",
+      "type": "related_to",
+      "claim_id": "cl-052",
+      "lineage": false,
+      "review_status": "screened"
+    },
+    {
+      "id": "r-053",
+      "from_id": "c-enclave",
+      "to_id": "c-tcb",
+      "type": "related_to",
+      "claim_id": "cl-053",
+      "lineage": false,
+      "review_status": "screened"
+    },
+    {
+      "id": "r-054",
+      "from_id": "c-confidential-vm",
+      "to_id": "c-tcb",
+      "type": "related_to",
+      "claim_id": "cl-054",
+      "lineage": false,
+      "review_status": "screened"
+    },
+    {
+      "id": "r-055",
+      "from_id": "c-gpu-tee",
+      "to_id": "c-enclave",
+      "type": "related_to",
+      "claim_id": "cl-055",
+      "lineage": false,
+      "review_status": "screened"
+    },
+    {
+      "id": "r-056",
+      "from_id": "c-private-inference",
+      "to_id": "c-confidential-vm",
+      "type": "related_to",
+      "claim_id": "cl-056",
+      "lineage": false,
+      "review_status": "screened"
+    },
+    {
+      "id": "r-057",
+      "from_id": "c-private-inference",
+      "to_id": "c-transparency",
+      "type": "related_to",
+      "claim_id": "cl-057",
+      "lineage": false,
+      "review_status": "screened"
+    },
+    {
+      "id": "r-058",
+      "from_id": "c-private-inference",
+      "to_id": "c-attestation",
+      "type": "related_to",
+      "claim_id": "cl-058",
+      "lineage": false,
+      "review_status": "screened"
+    },
+    {
+      "id": "r-059",
+      "from_id": "c-stateful-private-ai",
+      "to_id": "c-private-inference",
+      "type": "related_to",
+      "claim_id": "cl-059",
+      "lineage": false,
+      "review_status": "screened"
+    },
+    {
+      "id": "r-060",
+      "from_id": "c-tcb",
+      "to_id": "p-saltzer-schroeder-1975",
+      "type": "related_to",
+      "claim_id": "cl-060",
+      "lineage": false,
+      "review_status": "screened"
+    },
+    {
+      "id": "r-061",
+      "from_id": "p-saltzer-schroeder-1975",
+      "to_id": "c-least-privilege",
+      "type": "studies",
+      "claim_id": "cl-061",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-062",
+      "from_id": "h-intel-xeon5",
+      "to_id": "t-intel-tdx",
+      "type": "supports",
+      "claim_id": "cl-062",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-063",
+      "from_id": "h-intel-xeon6-gr",
+      "to_id": "t-intel-tdx",
+      "type": "supports",
+      "claim_id": "cl-063",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-064",
+      "from_id": "h-amd-epyc7003",
+      "to_id": "t-amd-sevsnp",
+      "type": "supports",
+      "claim_id": "cl-064",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-065",
+      "from_id": "h-amd-epyc9004",
+      "to_id": "t-amd-sevsnp",
+      "type": "supports",
+      "claim_id": "cl-065",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-066",
+      "from_id": "h-amd-epyc9005",
+      "to_id": "t-amd-sevsnp",
+      "type": "supports",
+      "claim_id": "cl-066",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-067",
+      "from_id": "t-h100",
+      "to_id": "t-nvidia-cc",
+      "type": "supports",
+      "claim_id": "cl-067",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-068",
+      "from_id": "h-nvidia-h200",
+      "to_id": "t-nvidia-cc",
+      "type": "supports",
+      "claim_id": "cl-068",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-069",
+      "from_id": "h-nvidia-b200",
+      "to_id": "t-nvidia-cc",
+      "type": "supports",
+      "claim_id": "cl-069",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-070",
+      "from_id": "h-nvidia-hgx-b300",
+      "to_id": "t-nvidia-cc",
+      "type": "supports",
+      "claim_id": "cl-070",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-071",
+      "from_id": "h-nvidia-hgx-b300",
+      "to_id": "h-nvidia-b300",
+      "type": "contains",
+      "claim_id": "cl-071",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-072",
+      "from_id": "cfg-nv-spt",
+      "to_id": "t-h100",
+      "type": "validated_with",
+      "claim_id": "cl-072",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-073",
+      "from_id": "cfg-nv-spt",
+      "to_id": "h-nvidia-h200",
+      "type": "validated_with",
+      "claim_id": "cl-073",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-074",
+      "from_id": "cfg-nv-spt",
+      "to_id": "h-nvidia-b200",
+      "type": "validated_with",
+      "claim_id": "cl-074",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-075",
+      "from_id": "cfg-nv-spt",
+      "to_id": "h-nvidia-hgx-b300",
+      "type": "validated_with",
+      "claim_id": "cl-075",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-076",
+      "from_id": "cfg-nv-ppcie",
+      "to_id": "t-h100",
+      "type": "validated_with",
+      "claim_id": "cl-076",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-077",
+      "from_id": "cfg-nv-ppcie",
+      "to_id": "h-nvidia-h200",
+      "type": "validated_with",
+      "claim_id": "cl-077",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-078",
+      "from_id": "cfg-nv-mpt",
+      "to_id": "h-nvidia-b200",
+      "type": "validated_with",
+      "claim_id": "cl-078",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-079",
+      "from_id": "cfg-nv-mpt",
+      "to_id": "h-nvidia-hgx-b300",
+      "type": "validated_with",
+      "claim_id": "cl-079",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-080",
+      "from_id": "cfg-nv-spt",
+      "to_id": "c-confidential-vm",
+      "type": "uses",
+      "claim_id": "cl-080",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-081",
+      "from_id": "cfg-nv-coco",
+      "to_id": "cfg-nv-spt",
+      "type": "supports_mode",
+      "claim_id": "cl-081",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-082",
+      "from_id": "cfg-nv-ppcie",
+      "to_id": "c-confidential-vm",
+      "type": "uses",
+      "claim_id": "cl-082",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-083",
+      "from_id": "cfg-nv-coco",
+      "to_id": "cfg-nv-ppcie",
+      "type": "supports_mode",
+      "claim_id": "cl-083",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-084",
+      "from_id": "cfg-nv-mpt",
+      "to_id": "c-confidential-vm",
+      "type": "uses",
+      "claim_id": "cl-084",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-085",
+      "from_id": "cfg-nv-coco",
+      "to_id": "cfg-nv-mpt",
+      "type": "supports_mode",
+      "claim_id": "cl-085",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-086",
+      "from_id": "cfg-nv-coco",
+      "to_id": "h-intel-xeon5",
+      "type": "validated_with",
+      "claim_id": "cl-086",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-087",
+      "from_id": "cfg-nv-coco",
+      "to_id": "h-intel-xeon6-gr",
+      "type": "validated_with",
+      "claim_id": "cl-087",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-088",
+      "from_id": "cfg-nv-coco",
+      "to_id": "h-amd-epyc7003",
+      "type": "validated_with",
+      "claim_id": "cl-088",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-089",
+      "from_id": "cfg-nv-coco",
+      "to_id": "h-amd-epyc9004",
+      "type": "validated_with",
+      "claim_id": "cl-089",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-090",
+      "from_id": "cfg-nv-coco",
+      "to_id": "t-h100",
+      "type": "validated_with",
+      "claim_id": "cl-090",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-091",
+      "from_id": "cfg-nv-coco",
+      "to_id": "h-nvidia-h200",
+      "type": "validated_with",
+      "claim_id": "cl-091",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-092",
+      "from_id": "cfg-nv-coco",
+      "to_id": "h-nvidia-b200",
+      "type": "validated_with",
+      "claim_id": "cl-092",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-093",
+      "from_id": "cfg-nv-coco",
+      "to_id": "h-nvidia-hgx-b300",
+      "type": "validated_with",
+      "claim_id": "cl-093",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-094",
+      "from_id": "cfg-nv-coco",
+      "to_id": "t-intel-tdx",
+      "type": "supports",
+      "claim_id": "cl-094",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-095",
+      "from_id": "cfg-nv-coco",
+      "to_id": "t-amd-sevsnp",
+      "type": "supports",
+      "claim_id": "cl-095",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-096",
+      "from_id": "i-azure-ncc-h100v5",
+      "to_id": "h-amd-epyc9004",
+      "type": "uses",
+      "claim_id": "cl-096",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-097",
+      "from_id": "i-azure-ncc-h100v5",
+      "to_id": "t-h100",
+      "type": "uses",
+      "claim_id": "cl-097",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-098",
+      "from_id": "i-azure-ncc-h100v5",
+      "to_id": "t-amd-sevsnp",
+      "type": "uses",
+      "claim_id": "cl-098",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-099",
+      "from_id": "i-azure-ncc-h100v5",
+      "to_id": "t-nvidia-cc",
+      "type": "uses",
+      "claim_id": "cl-099",
+      "lineage": false,
+      "review_status": "source_checked"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "m-cites-saltzer-schroeder-1975",
+      "entity_id": "p-saltzer-schroeder-1975",
+      "name": "citation_count",
+      "value": 1897,
+      "unit": "citations",
+      "provider": "OpenAlex",
+      "observed_at": "2026-09-28",
+      "source_id": "s-oa-W2095881341",
+      "status": "observed",
+      "details": {
+        "record_id": "https://openalex.org/W2095881341",
+        "record_title": "The protection of information in computer systems",
+        "matched_by": "title/authors/year; Keystone additionally matched DOI on author project link",
+        "counts_by_year": [
+          {
+            "year": 2026,
+            "cited_by_count": 75
+          },
+          {
+            "year": 2025,
+            "cited_by_count": 70
+          },
+          {
+            "year": 2024,
+            "cited_by_count": 62
+          },
+          {
+            "year": 2023,
+            "cited_by_count": 47
+          },
+          {
+            "year": 2022,
+            "cited_by_count": 53
+          },
+          {
+            "year": 2021,
+            "cited_by_count": 67
+          },
+          {
+            "year": 2020,
+            "cited_by_count": 65
+          },
+          {
+            "year": 2019,
+            "cited_by_count": 58
+          },
+          {
+            "year": 2018,
+            "cited_by_count": 70
+          },
+          {
+            "year": 2017,
+            "cited_by_count": 63
+          },
+          {
+            "year": 2016,
+            "cited_by_count": 73
+          },
+          {
+            "year": 2015,
+            "cited_by_count": 76
+          },
+          {
+            "year": 2014,
+            "cited_by_count": 72
+          },
+          {
+            "year": 2013,
+            "cited_by_count": 62
+          },
+          {
+            "year": 2012,
+            "cited_by_count": 93
+          }
+        ],
+        "aggregation": "single_manifestation_not_family",
+        "caveat": "Provider-index count, not an exhaustive or deduplicated work-family total."
+      }
+    },
+    {
+      "id": "m-cites-haven-2014",
+      "entity_id": "p-haven-2014",
+      "name": "citation_count",
+      "value": 362,
+      "unit": "citations",
+      "provider": "OpenAlex",
+      "observed_at": "2026-09-28",
+      "source_id": "s-oa-W1852007091",
+      "status": "observed",
+      "details": {
+        "record_id": "https://openalex.org/W1852007091",
+        "record_title": "Shielding applications from an untrusted cloud with Haven",
+        "matched_by": "title/authors/year; Keystone additionally matched DOI on author project link",
+        "counts_by_year": [
+          {
+            "year": 2026,
+            "cited_by_count": 1
+          },
+          {
+            "year": 2025,
+            "cited_by_count": 5
+          },
+          {
+            "year": 2024,
+            "cited_by_count": 1
+          },
+          {
+            "year": 2023,
+            "cited_by_count": 4
+          },
+          {
+            "year": 2022,
+            "cited_by_count": 3
+          },
+          {
+            "year": 2021,
+            "cited_by_count": 24
+          },
+          {
+            "year": 2020,
+            "cited_by_count": 38
+          },
+          {
+            "year": 2019,
+            "cited_by_count": 63
+          },
+          {
+            "year": 2018,
+            "cited_by_count": 50
+          },
+          {
+            "year": 2017,
+            "cited_by_count": 75
+          },
+          {
+            "year": 2016,
+            "cited_by_count": 61
+          },
+          {
+            "year": 2015,
+            "cited_by_count": 36
+          },
+          {
+            "year": 2014,
+            "cited_by_count": 1
+          }
+        ],
+        "aggregation": "single_manifestation_not_family",
+        "caveat": "Provider-index count, not an exhaustive or deduplicated work-family total."
+      }
+    },
+    {
+      "id": "m-cites-sgx-explained-2016",
+      "entity_id": "p-sgx-explained-2016",
+      "name": "citation_count",
+      "value": 751,
+      "unit": "citations",
+      "provider": "OpenAlex",
+      "observed_at": "2026-09-28",
+      "source_id": "s-oa-W2397423248",
+      "status": "observed",
+      "details": {
+        "record_id": "https://openalex.org/W2397423248",
+        "record_title": "Intel SGX Explained.",
+        "matched_by": "title/authors/year; Keystone additionally matched DOI on author project link",
+        "counts_by_year": [
+          {
+            "year": 2023,
+            "cited_by_count": 1
+          },
+          {
+            "year": 2022,
+            "cited_by_count": 7
+          },
+          {
+            "year": 2021,
+            "cited_by_count": 174
+          },
+          {
+            "year": 2020,
+            "cited_by_count": 186
+          },
+          {
+            "year": 2019,
+            "cited_by_count": 161
+          },
+          {
+            "year": 2018,
+            "cited_by_count": 127
+          },
+          {
+            "year": 2017,
+            "cited_by_count": 72
+          },
+          {
+            "year": 2016,
+            "cited_by_count": 23
+          }
+        ],
+        "aggregation": "single_manifestation_not_family",
+        "caveat": "Provider-index count, not an exhaustive or deduplicated work-family total."
+      }
+    },
+    {
+      "id": "m-cites-sanctum-2016",
+      "entity_id": "p-sanctum-2016",
+      "name": "citation_count",
+      "value": 349,
+      "unit": "citations",
+      "provider": "OpenAlex",
+      "observed_at": "2026-09-28",
+      "source_id": "s-oa-W2463516579",
+      "status": "observed",
+      "details": {
+        "record_id": "https://openalex.org/W2463516579",
+        "record_title": "Sanctum: Minimal Hardware Extensions for Strong Software Isolation",
+        "matched_by": "title/authors/year; Keystone additionally matched DOI on author project link",
+        "counts_by_year": [
+          {
+            "year": 2025,
+            "cited_by_count": 5
+          },
+          {
+            "year": 2024,
+            "cited_by_count": 15
+          },
+          {
+            "year": 2023,
+            "cited_by_count": 17
+          },
+          {
+            "year": 2022,
+            "cited_by_count": 28
+          },
+          {
+            "year": 2021,
+            "cited_by_count": 48
+          },
+          {
+            "year": 2020,
+            "cited_by_count": 67
+          },
+          {
+            "year": 2019,
+            "cited_by_count": 74
+          },
+          {
+            "year": 2018,
+            "cited_by_count": 46
+          },
+          {
+            "year": 2017,
+            "cited_by_count": 43
+          },
+          {
+            "year": 2016,
+            "cited_by_count": 6
+          }
+        ],
+        "aggregation": "single_manifestation_not_family",
+        "caveat": "Provider-index count, not an exhaustive or deduplicated work-family total."
+      }
+    },
+    {
+      "id": "m-cites-foreshadow-2018",
+      "entity_id": "p-foreshadow-2018",
+      "name": "citation_count",
+      "value": 686,
+      "unit": "citations",
+      "provider": "OpenAlex",
+      "observed_at": "2026-09-28",
+      "source_id": "s-oa-W2888798936",
+      "status": "observed",
+      "details": {
+        "record_id": "https://openalex.org/W2888798936",
+        "record_title": "Foreshadow: Extracting the keys to the Intel SGX kingdom with transient out-of-order execution",
+        "matched_by": "title/authors/year; Keystone additionally matched DOI on author project link",
+        "counts_by_year": [
+          {
+            "year": 2025,
+            "cited_by_count": 34
+          },
+          {
+            "year": 2024,
+            "cited_by_count": 67
+          },
+          {
+            "year": 2023,
+            "cited_by_count": 68
+          },
+          {
+            "year": 2022,
+            "cited_by_count": 58
+          },
+          {
+            "year": 2021,
+            "cited_by_count": 129
+          },
+          {
+            "year": 2020,
+            "cited_by_count": 152
+          },
+          {
+            "year": 2019,
+            "cited_by_count": 152
+          },
+          {
+            "year": 2018,
+            "cited_by_count": 23
+          },
+          {
+            "year": 2017,
+            "cited_by_count": 3
+          }
+        ],
+        "aggregation": "single_manifestation_not_family",
+        "caveat": "Provider-index count, not an exhaustive or deduplicated work-family total."
+      }
+    },
+    {
+      "id": "m-cites-graviton-2018",
+      "entity_id": "p-graviton-2018",
+      "name": "citation_count",
+      "value": 130,
+      "unit": "citations",
+      "provider": "OpenAlex",
+      "observed_at": "2026-09-28",
+      "source_id": "s-oa-W2899435347",
+      "status": "observed",
+      "details": {
+        "record_id": "https://openalex.org/W2899435347",
+        "record_title": "Graviton: trusted execution environments on GPUs",
+        "matched_by": "title/authors/year; Keystone additionally matched DOI on author project link",
+        "counts_by_year": [
+          {
+            "year": 2026,
+            "cited_by_count": 7
+          },
+          {
+            "year": 2025,
+            "cited_by_count": 8
+          },
+          {
+            "year": 2024,
+            "cited_by_count": 13
+          },
+          {
+            "year": 2023,
+            "cited_by_count": 13
+          },
+          {
+            "year": 2022,
+            "cited_by_count": 12
+          },
+          {
+            "year": 2021,
+            "cited_by_count": 35
+          },
+          {
+            "year": 2020,
+            "cited_by_count": 31
+          },
+          {
+            "year": 2019,
+            "cited_by_count": 10
+          },
+          {
+            "year": 2018,
+            "cited_by_count": 1
+          }
+        ],
+        "aggregation": "single_manifestation_not_family",
+        "caveat": "Provider-index count, not an exhaustive or deduplicated work-family total."
+      }
+    },
+    {
+      "id": "m-cites-keystone-2020",
+      "entity_id": "p-keystone-2020",
+      "name": "citation_count",
+      "value": 382,
+      "unit": "citations",
+      "provider": "OpenAlex",
+      "observed_at": "2026-09-28",
+      "source_id": "s-oa-W3021475380",
+      "status": "observed",
+      "details": {
+        "record_id": "https://openalex.org/W3021475380",
+        "record_title": "Keystone",
+        "matched_by": "title/authors/year; Keystone additionally matched DOI on author project link",
+        "counts_by_year": [
+          {
+            "year": 2026,
+            "cited_by_count": 33
+          },
+          {
+            "year": 2025,
+            "cited_by_count": 71
+          },
+          {
+            "year": 2024,
+            "cited_by_count": 71
+          },
+          {
+            "year": 2023,
+            "cited_by_count": 61
+          },
+          {
+            "year": 2022,
+            "cited_by_count": 55
+          },
+          {
+            "year": 2021,
+            "cited_by_count": 62
+          },
+          {
+            "year": 2020,
+            "cited_by_count": 27
+          },
+          {
+            "year": 2019,
+            "cited_by_count": 2
+          }
+        ],
+        "aggregation": "single_manifestation_not_family",
+        "caveat": "Provider-index count, not an exhaustive or deduplicated work-family total."
+      }
+    },
+    {
+      "id": "m-accept-p-terra-2003",
+      "entity_id": "p-terra-2003",
+      "name": "venue_acceptance_rate",
+      "value": null,
+      "unit": "percent",
+      "provider": null,
+      "observed_at": "2026-09-28",
+      "source_id": null,
+      "status": "not_collected",
+      "details": {
+        "venue": "SOSP",
+        "year": 2003,
+        "track": "main research track",
+        "submitted": null,
+        "accepted": null,
+        "reason": "Official year/track statistics not yet validated."
+      }
+    },
+    {
+      "id": "m-accept-p-haven-2014",
+      "entity_id": "p-haven-2014",
+      "name": "venue_acceptance_rate",
+      "value": null,
+      "unit": "percent",
+      "provider": null,
+      "observed_at": "2026-09-28",
+      "source_id": null,
+      "status": "not_collected",
+      "details": {
+        "venue": "OSDI",
+        "year": 2014,
+        "track": "main research track",
+        "submitted": null,
+        "accepted": null,
+        "reason": "Official year/track statistics not yet validated."
+      }
+    },
+    {
+      "id": "m-accept-p-sanctum-2016",
+      "entity_id": "p-sanctum-2016",
+      "name": "venue_acceptance_rate",
+      "value": null,
+      "unit": "percent",
+      "provider": null,
+      "observed_at": "2026-09-28",
+      "source_id": null,
+      "status": "not_collected",
+      "details": {
+        "venue": "USENIX Security",
+        "year": 2016,
+        "track": "main research track",
+        "submitted": null,
+        "accepted": null,
+        "reason": "Official year/track statistics not yet validated."
+      }
+    },
+    {
+      "id": "m-accept-p-foreshadow-2018",
+      "entity_id": "p-foreshadow-2018",
+      "name": "venue_acceptance_rate",
+      "value": null,
+      "unit": "percent",
+      "provider": null,
+      "observed_at": "2026-09-28",
+      "source_id": null,
+      "status": "not_collected",
+      "details": {
+        "venue": "USENIX Security",
+        "year": 2018,
+        "track": "main research track",
+        "submitted": null,
+        "accepted": null,
+        "reason": "Official year/track statistics not yet validated."
+      }
+    },
+    {
+      "id": "m-accept-p-graviton-2018",
+      "entity_id": "p-graviton-2018",
+      "name": "venue_acceptance_rate",
+      "value": null,
+      "unit": "percent",
+      "provider": null,
+      "observed_at": "2026-09-28",
+      "source_id": null,
+      "status": "not_collected",
+      "details": {
+        "venue": "OSDI",
+        "year": 2018,
+        "track": "main research track",
+        "submitted": null,
+        "accepted": null,
+        "reason": "Official year/track statistics not yet validated."
+      }
+    },
+    {
+      "id": "m-accept-p-keystone-2020",
+      "entity_id": "p-keystone-2020",
+      "name": "venue_acceptance_rate",
+      "value": null,
+      "unit": "percent",
+      "provider": null,
+      "observed_at": "2026-09-28",
+      "source_id": null,
+      "status": "not_collected",
+      "details": {
+        "venue": "EuroSys",
+        "year": 2020,
+        "track": "main research track",
+        "submitted": null,
+        "accepted": null,
+        "reason": "Official year/track statistics not yet validated."
+      }
+    },
+    {
+      "id": "m-award-haven",
+      "entity_id": "p-haven-2014",
+      "name": "paper_award",
+      "value": "Best Paper",
+      "unit": "award",
+      "provider": "USENIX",
+      "observed_at": "2026-09-28",
+      "source_id": "s-haven",
+      "status": "observed",
+      "details": {
+        "locator": "Official paper page, Awarded Best Paper"
+      }
+    },
+    {
+      "id": "m-cites-flicker-2008",
+      "entity_id": "p-flicker-2008",
+      "name": "citation_count",
+      "value": 642,
+      "unit": "citations",
+      "provider": "OpenAlex",
+      "observed_at": "2026-09-28",
+      "source_id": "s-oa-W2167804035",
+      "status": "observed",
+      "details": {
+        "record_id": "https://openalex.org/W2167804035",
+        "matched_by": "title/DOI, authors, publication year",
+        "aggregation": "single_manifestation_not_family"
+      }
+    },
+    {
+      "id": "m-cites-trustvisor-2010",
+      "entity_id": "p-trustvisor-2010",
+      "name": "citation_count",
+      "value": 543,
+      "unit": "citations",
+      "provider": "OpenAlex",
+      "observed_at": "2026-09-28",
+      "source_id": "s-oa-W2128159601",
+      "status": "observed",
+      "details": {
+        "record_id": "https://openalex.org/W2128159601",
+        "matched_by": "title/DOI, authors, publication year",
+        "aggregation": "single_manifestation_not_family"
+      }
+    },
+    {
+      "id": "m-cites-cloudvisor-2011",
+      "entity_id": "p-cloudvisor-2011",
+      "name": "citation_count",
+      "value": 372,
+      "unit": "citations",
+      "provider": "OpenAlex",
+      "observed_at": "2026-09-28",
+      "source_id": "s-oa-W2043501224",
+      "status": "observed",
+      "details": {
+        "record_id": "https://openalex.org/W2043501224",
+        "matched_by": "title/DOI, authors, publication year",
+        "aggregation": "single_manifestation_not_family"
+      }
+    },
+    {
+      "id": "m-cites-komodo-2017",
+      "entity_id": "p-komodo-2017",
+      "name": "citation_count",
+      "value": 144,
+      "unit": "citations",
+      "provider": "OpenAlex",
+      "observed_at": "2026-09-28",
+      "source_id": "s-oa-W2762625979",
+      "status": "observed",
+      "details": {
+        "record_id": "https://openalex.org/W2762625979",
+        "matched_by": "title/DOI, authors, publication year",
+        "aggregation": "single_manifestation_not_family"
+      }
+    },
+    {
+      "id": "m-cites-mi6-2019",
+      "entity_id": "p-mi6-2019",
+      "name": "citation_count",
+      "value": 113,
+      "unit": "citations",
+      "provider": "OpenAlex",
+      "observed_at": "2026-09-28",
+      "source_id": "s-oa-W2979547870",
+      "status": "observed",
+      "details": {
+        "record_id": "https://openalex.org/W2979547870",
+        "matched_by": "title/DOI, authors, publication year",
+        "aggregation": "single_manifestation_not_family"
+      }
+    },
+    {
+      "id": "m-cites-controlled-channel-2015",
+      "entity_id": "p-controlled-channel-2015",
+      "name": "citation_count",
+      "value": 725,
+      "unit": "citations",
+      "provider": "OpenAlex",
+      "observed_at": "2026-09-28",
+      "source_id": "s-oa-W2150620897",
+      "status": "observed",
+      "details": {
+        "record_id": "https://openalex.org/W2150620897",
+        "matched_by": "title/DOI, authors, publication year",
+        "aggregation": "single_manifestation_not_family"
+      }
+    },
+    {
+      "id": "m-cites-terra-2003",
+      "entity_id": "p-terra-2003",
+      "name": "citation_count",
+      "value": 408,
+      "unit": "citations",
+      "provider": "OpenAlex",
+      "observed_at": "2026-09-28",
+      "source_id": "s-oa-W4206796831",
+      "status": "observed",
+      "details": {
+        "record_id": "https://openalex.org/W4206796831",
+        "matched_by": "title/DOI, authors, publication year",
+        "aggregation": "single_manifestation_not_family"
+      }
+    },
+    {
+      "id": "m-cites-slalom-2019",
+      "entity_id": "p-slalom-2019",
+      "name": "citation_count",
+      "value": null,
+      "unit": "citations",
+      "provider": "OpenAlex",
+      "observed_at": "2026-09-28",
+      "source_id": null,
+      "status": "unresolved_match",
+      "details": {
+        "reason": "Search matched the 2018 preprint; conference-manifestation citation count remains unresolved."
+      }
+    },
+    {
+      "id": "m-accept-trustvisor",
+      "entity_id": "p-trustvisor-2010",
+      "name": "venue_acceptance_rate",
+      "value": 10.97,
+      "unit": "percent",
+      "provider": "IEEE TCSP Cipher",
+      "observed_at": "2026-09-28",
+      "source_id": "s-sp10",
+      "status": "observed",
+      "details": {
+        "venue": "IEEE S&P",
+        "year": 2010,
+        "track": "research",
+        "submitted": 237,
+        "accepted": 26,
+        "locator": "Conference opening report",
+        "denominator_note": "Conference report states 26 research papers accepted out of 237 submissions; 5 SoK acceptances are reported separately. This is the reported research-paper ratio, not the overall conference acceptance rate."
+      }
+    },
+    {
+      "id": "m-accept-p-flicker-2008",
+      "entity_id": "p-flicker-2008",
+      "name": "venue_acceptance_rate",
+      "value": null,
+      "unit": "percent",
+      "provider": null,
+      "observed_at": "2026-09-28",
+      "source_id": null,
+      "status": "not_collected",
+      "details": {
+        "reason": "Official year/track statistics not yet verified.",
+        "venue": "EuroSys",
+        "year": 2008,
+        "track": "main research",
+        "submitted": null,
+        "accepted": null
+      }
+    },
+    {
+      "id": "m-accept-p-cloudvisor-2011",
+      "entity_id": "p-cloudvisor-2011",
+      "name": "venue_acceptance_rate",
+      "value": null,
+      "unit": "percent",
+      "provider": null,
+      "observed_at": "2026-09-28",
+      "source_id": null,
+      "status": "not_collected",
+      "details": {
+        "reason": "Official year/track statistics not yet verified.",
+        "venue": "SOSP",
+        "year": 2011,
+        "track": "main research",
+        "submitted": null,
+        "accepted": null
+      }
+    },
+    {
+      "id": "m-accept-p-komodo-2017",
+      "entity_id": "p-komodo-2017",
+      "name": "venue_acceptance_rate",
+      "value": null,
+      "unit": "percent",
+      "provider": null,
+      "observed_at": "2026-09-28",
+      "source_id": null,
+      "status": "not_collected",
+      "details": {
+        "reason": "Official year/track statistics not yet verified.",
+        "venue": "SOSP",
+        "year": 2017,
+        "track": "main research",
+        "submitted": null,
+        "accepted": null
+      }
+    },
+    {
+      "id": "m-accept-p-mi6-2019",
+      "entity_id": "p-mi6-2019",
+      "name": "venue_acceptance_rate",
+      "value": null,
+      "unit": "percent",
+      "provider": null,
+      "observed_at": "2026-09-28",
+      "source_id": null,
+      "status": "not_collected",
+      "details": {
+        "reason": "Official year/track statistics not yet verified.",
+        "venue": "MICRO",
+        "year": 2019,
+        "track": "main research",
+        "submitted": null,
+        "accepted": null
+      }
+    },
+    {
+      "id": "m-accept-p-controlled-channel-2015",
+      "entity_id": "p-controlled-channel-2015",
+      "name": "venue_acceptance_rate",
+      "value": null,
+      "unit": "percent",
+      "provider": null,
+      "observed_at": "2026-09-28",
+      "source_id": null,
+      "status": "not_collected",
+      "details": {
+        "reason": "Official year/track statistics not yet verified.",
+        "venue": "IEEE S&P",
+        "year": 2015,
+        "track": "main research",
+        "submitted": null,
+        "accepted": null
+      }
+    },
+    {
+      "id": "m-accept-p-slalom-2019",
+      "entity_id": "p-slalom-2019",
+      "name": "venue_acceptance_rate",
+      "value": null,
+      "unit": "percent",
+      "provider": null,
+      "observed_at": "2026-09-28",
+      "source_id": null,
+      "status": "not_collected",
+      "details": {
+        "reason": "Official year/track statistics not yet verified.",
+        "venue": "ICLR",
+        "year": 2019,
+        "track": "main research",
+        "submitted": null,
+        "accepted": null
+      }
+    }
+  ],
+  "research_queue": [
+    {
+      "id": "q-01",
+      "batch": "M01",
+      "topic": "early roots",
+      "question": "Find earliest scoped reference-monitor, secure-boot, coprocessor and TPM antecedents.",
+      "required_evidence": "Primary document with exact section/page or official API record and observation date.",
+      "status": "planned"
+    },
+    {
+      "id": "q-02",
+      "batch": "M01",
+      "topic": "Terra and early isolation",
+      "question": "Compare trusted VMM assumptions with later host-untrusted designs.",
+      "required_evidence": "Primary document with exact section/page or official API record and observation date.",
+      "status": "planned"
+    },
+    {
+      "id": "q-03",
+      "batch": "M02",
+      "topic": "SGX and shielded execution",
+      "question": "Trace SGX introduction, Haven, SCONE and Graphene-SGX with direct lineage evidence.",
+      "required_evidence": "Primary document with exact section/page or official API record and observation date.",
+      "status": "planned"
+    },
+    {
+      "id": "q-04",
+      "batch": "M02",
+      "topic": "RISC-V and verified monitors",
+      "question": "Trace Sanctum, Sanctorum, Keystone and CURE; distinguish sharing a concept from direct extension.",
+      "required_evidence": "Primary document with exact section/page or official API record and observation date.",
+      "status": "planned"
+    },
+    {
+      "id": "q-05",
+      "batch": "M02",
+      "topic": "Confidential VM branches",
+      "question": "Review SEV, SEV-ES, SEV-SNP, TDX and Arm CCA versions and trust boundaries.",
+      "required_evidence": "Primary document with exact section/page or official API record and observation date.",
+      "status": "planned"
+    },
+    {
+      "id": "q-06",
+      "batch": "M03",
+      "topic": "Attacks and mitigations",
+      "question": "Map controlled-channel, Foreshadow, Plundervolt, LVI, SEVered and Iago scope and responses.",
+      "required_evidence": "Primary document with exact section/page or official API record and observation date.",
+      "status": "planned"
+    },
+    {
+      "id": "q-07",
+      "batch": "M04",
+      "topic": "GPU and inference",
+      "question": "Compare Graviton, Slalom and contemporary CPU-GPU confidential inference.",
+      "required_evidence": "Primary document with exact section/page or official API record and observation date.",
+      "status": "planned"
+    },
+    {
+      "id": "q-08",
+      "batch": "M04",
+      "topic": "Attestation and privacy composition",
+      "question": "Trace RATS, attested channels, transparency, OHTTP, key release and anti-rollback.",
+      "required_evidence": "Primary document with exact section/page or official API record and observation date.",
+      "status": "planned"
+    },
+    {
+      "id": "q-09",
+      "batch": "M05",
+      "topic": "Apple",
+      "question": "Verify 2024 and 2026 PCC architecture, rollout and auditable implementation evidence.",
+      "required_evidence": "Primary document with exact section/page or official API record and observation date.",
+      "status": "planned"
+    },
+    {
+      "id": "q-10",
+      "batch": "M05",
+      "topic": "Google",
+      "question": "Obtain technical brief, audit scope and deployment evidence for persistent memory update.",
+      "required_evidence": "Primary document with exact section/page or official API record and observation date.",
+      "status": "planned"
+    },
+    {
+      "id": "q-11",
+      "batch": "M05",
+      "topic": "Meta Private Processing",
+      "question": "Review technical whitepaper and independent audit with exact product/version scope.",
+      "required_evidence": "Primary document with exact section/page or official API record and observation date.",
+      "status": "planned"
+    },
+    {
+      "id": "q-12",
+      "batch": "M05",
+      "topic": "Muse",
+      "question": "Verify whether Confidential VM has launched after 2026-09-08; keep Secure VM separate.",
+      "required_evidence": "Primary document with exact section/page or official API record and observation date.",
+      "status": "planned"
+    },
+    {
+      "id": "q-13",
+      "batch": "M06",
+      "topic": "Bibliometrics",
+      "question": "Resolve Terra manifestation and all venue-year acceptance statistics; preserve unknowns.",
+      "required_evidence": "Primary document with exact section/page or official API record and observation date.",
+      "status": "planned"
+    },
+    {
+      "id": "q-14",
+      "batch": "M06",
+      "topic": "Lineage audit",
+      "question": "Validate direct paper-to-paper inheritance; all seed papers still need full-text reading.",
+      "required_evidence": "Primary document with exact section/page or official API record and observation date.",
+      "status": "planned"
+    },
+    {
+      "id": "q-15",
+      "batch": "M07",
+      "topic": "Hardware qualification and service adoption",
+      "question": "Resolve exact SKU/firmware/driver/RIM combinations, remaining CPU families, and evidence for named B300 confidential cloud services.",
+      "required_evidence": "Versioned manufacturer compatibility rows and service-owner documentation; no inference from product naming.",
+      "status": "planned"
+    }
+  ],
+  "subtitle": "From Hardware Security to Real-World Services",
+  "primary_language": "en",
+  "mission": "Build an evidence-backed knowledge graph that traces how hardware-enforced security mechanisms are implemented and composed into system architectures and real-world services, documenting their technical lineage, trust assumptions, security guarantees, limitations, and supporting evidence.",
+  "scope": {
+    "organizing_theme": "Hardware-rooted system security",
+    "initial_focus": [
+      "Trusted execution environments",
+      "Confidential computing",
+      "Private cloud AI and stateful agents"
+    ],
+    "layers": [
+      "Hardware security mechanisms",
+      "Platform and system architectures",
+      "Security protocols and service composition",
+      "Real-world services"
+    ],
+    "cross_cutting": [
+      "Research lineage",
+      "Standards",
+      "Threat models",
+      "Attacks and mitigations",
+      "Assurance evidence",
+      "Research metrics"
+    ],
+    "coverage_status": "Target research scope; not a claim that all layers or trust-dependency paths are already complete."
+  }
+}

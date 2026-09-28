@@ -1,0 +1,22 @@
+{
+  "structural_validation": "PASS",
+  "errors": [],
+  "project": "Trust Atlas",
+  "primary_language": "en",
+  "as_of": "2026-09-28",
+  "phase": "hardware_and_configuration_graph",
+  "counts": {
+    "entities": 63,
+    "sources": 54,
+    "claims": 98,
+    "relations": 98,
+    "metrics": 29,
+    "research_queue": 15
+  },
+  "observed_citation_records": 14,
+  "unresolved_citation_records": 1,
+  "pending_venue_statistics": 12,
+  "full_text_reviews_completed": 0,
+  "dataset_v1_complete": false,
+  "caveat": "Structural validation is not scientific validation or a claim of corpus completeness."
+}

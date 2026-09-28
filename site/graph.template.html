@@ -1,0 +1,200 @@
+<div id="cca-tree">
+  <h2>Trust Atlas</h2>
+  <div class="text-small text-muted">From Hardware Security to Real-World Services · Research snapshot: 2026-09-28</div>
+  <div class="text-small cca-note" id="cca-stats"></div>
+  <nav class="viz-row text-small" aria-label="Project resources"><a href="https://github.com/bitboom/trust-atlas" target="_blank" rel="noopener noreferrer">Repository</a><a href="https://github.com/bitboom/trust-atlas/blob/main/CHARTER.md" target="_blank" rel="noopener noreferrer">Methodology</a><a href="./data/atlas.json" target="_blank" rel="noopener noreferrer">Dataset</a></nav>
+  <div class="viz-row" style="margin:16px 0">
+    <button type="button" class="btn" data-mode="hardware" aria-pressed="true">Hardware map</button>
+    <button type="button" class="btn" data-mode="tree" aria-pressed="false">Research map</button>
+    <button type="button" class="btn" data-mode="graph" aria-pressed="false">Selected-node graph</button>
+  </div>
+  <div class="viz-row text-small cca-legend">
+    <span><i class="cca-line cca-direct"></i>Explicit extension</span>
+    <span><i class="cca-line"></i>Use · support · composition</span>
+    <span><i class="cca-line cca-inferred"></i>Conceptual link</span>
+    <span><i class="cca-line cca-attack"></i>Attack</span>
+  </div>
+  <div class="text-small text-muted cca-graph-caption" id="cca-direction">Map: basis → successor or user. Select a node to inspect evidence.</div>
+  <div id="cca-diagram" role="group" aria-label="Technical lineage and related mechanisms">
+    <svg class="cca-paths" aria-hidden="true"></svg>
+    <div id="cca-levels"></div>
+  </div>
+  <div class="card" id="cca-detail" aria-live="polite"></div>
+  <details class="cca-catalog">
+    <summary>Entity catalogue <span id="cca-count"></span></summary>
+    <div id="cca-all" style="margin-top:12px"></div>
+  </details>
+</div>
+<style>
+  #cca-tree { color:var(--foreground); }
+  #cca-tree .cca-legend { gap:16px; margin:0 0 20px; }
+  #cca-tree .cca-line { display:inline-block; width:22px; margin-right:6px; vertical-align:middle; border-top:1px solid var(--muted-foreground); }
+  #cca-tree .cca-direct { border-top-color:var(--viz-series-1); border-top-width:2px; }
+  #cca-tree .cca-inferred { border-top-style:dashed; }
+  #cca-tree .cca-attack { border-top-color:var(--viz-series-2); border-top-style:dotted; }
+  #cca-diagram { position:relative; margin-bottom:20px; }
+  #cca-tree .cca-paths { position:absolute; inset:0; width:100%; height:100%; overflow:visible; pointer-events:none; }
+  #cca-tree .cca-level { position:relative; margin-bottom:26px; }
+  #cca-tree .cca-stage { margin-bottom:10px; color:var(--muted-foreground); }
+  #cca-tree .cca-nodes { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px 12px; align-items:start; }
+  #cca-tree .cca-slot { text-align:center; min-width:0; position:relative; z-index:1; }
+  #cca-tree .cca-slot-center { grid-column:2; }
+  #cca-tree .cca-caption { display:block; margin-top:4px; color:var(--muted-foreground); }
+  #cca-tree .cca-mark { display:block; height:3px; width:22px; margin:0 auto 6px; background:var(--viz-series-1); }
+  #cca-tree .cca-mark-implementation { background:var(--viz-series-3); }
+  #cca-tree .cca-mark-concept { background:var(--muted-foreground); }
+  #cca-tree .cca-mark-attack { background:var(--viz-series-2); }
+  #cca-tree .cca-name { overflow-wrap:anywhere; }
+  #cca-tree .cca-detail-meta { margin:8px 0; }
+  #cca-tree .cca-detail-desc { margin:10px 0; }
+  #cca-tree .cca-evidence { margin:12px 0 0; padding:0; list-style:none; }
+  #cca-tree .cca-evidence li { margin:12px 0; }
+  #cca-tree .cca-catalog { margin:20px 0 0; }
+  #cca-tree .cca-note { margin:12px 0; }
+  #cca-tree .cca-graph-caption { margin:0 0 16px; }
+  @media (max-width:520px) {
+    #cca-tree .cca-nodes { grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px 10px; }
+    #cca-tree .cca-slot-center { grid-column:1 / -1; }
+    #cca-tree .cca-legend { gap:8px 14px; }
+  }
+</style>
+<script type="application/json" id="cca-data">@@DATA@@</script>
+<script>
+(() => {
+  const root=document.getElementById('cca-tree');
+  const data=JSON.parse(document.getElementById('cca-data').textContent);
+  const nodes=new Map(data.entities.map(n=>[n.id,n]));
+  const claims=new Map(data.claims.map(c=>[c.id,c]));
+  const sources=new Map(data.sources.map(s=>[s.id,s]));
+  const diagram=root.querySelector('#cca-diagram'), levels=root.querySelector('#cca-levels'), svg=root.querySelector('svg');
+  const detail=root.querySelector('#cca-detail');
+  const labels=data.labels;
+  const relationNames={extends:'Extension',evolves_from:'Version extension',explicitly_inspired_by:'Explicit inspiration',uses:'Uses',studies:'Studies',cites:'Cites',alternative_to:'Design alternative',attacks:'Attack',related_to:'Conceptual link',mitigates:'Mitigation',supports:'Supports',contains:'Contains',validated_with:'Listed with',supports_mode:'Supports mode'};
+  let selected='h-nvidia-hgx-b300', mode='hardware';
+  let saved=window.openai?.widgetState;
+  if (saved?.modelContent?.selectedId && nodes.has(saved.modelContent.selectedId)) selected=saved.modelContent.selectedId;
+  if (['hardware','tree','graph'].includes(saved?.privateContent?.mode)) mode=saved.privateContent.mode;
+  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const short=id=>labels[id]||nodes.get(id)?.name||id;
+  const adjacent=id=>data.relations.filter(e=>e.from_id===id||e.to_id===id);
+  const metric=(id,name)=>data.metrics.find(m=>m.entity_id===id&&m.name===name);
+  const hardwareGroups=[
+    ['Security technologies',['t-intel-tdx','t-amd-sevsnp','t-nvidia-cc']],
+    ['CPU families · platform enablement required',['h-intel-xeon5','h-amd-epyc7003','h-amd-epyc9004']],
+    ['', ['h-intel-xeon6-gr','h-amd-epyc9005']],
+    ['GPU families · variant-specific support',['t-h100','h-nvidia-h200','h-nvidia-b200']],
+    ['', ['h-nvidia-b300','h-nvidia-hgx-b300']],
+    ['CC modes · different peer-link protection',['cfg-nv-spt','cfg-nv-ppcie','cfg-nv-mpt']],
+    ['Reference integration and documented service',['cfg-nv-coco','i-azure-ncc-h100v5']]
+  ];
+  const presentationGroups=[
+    ['Foundations · What must be trusted?',['p-saltzer-schroeder-1975','c-tcb','c-attestation']],
+    ['Early research · Code and VM isolation',['p-terra-2003','p-flicker-2008','p-trustvisor-2010']],
+    ['Branches · Isolation granularity',['c-enclave','c-confidential-vm','c-gpu-tee']],
+    ['Research and platforms',['t-intel-sgx','p-sanctum-2016','t-amd-sev']],
+    ['', ['p-haven-2014','p-mi6-2019','t-amd-seves']],
+    ['', ['p-keystone-2020','t-intel-tdx','t-amd-sevsnp']],
+    ['', ['p-graviton-2018','t-arm-cca','p-slalom-2019']],
+    ['Service-level requirements',['std-ohttp','c-transparency','c-nontargetability']],
+    ['', ['c-private-inference']],
+    ['Service implementations · Different threat models',['i-apple-pcc-2024','i-google-pac-2025','i-meta-private-processing-2025']],
+    ['', ['i-apple-pcc-gcp-2026','i-google-pac-memory-2026','i-meta-private-processing-glasses-2026']],
+    ['Persistent state and agents · Secure VM ≠ Confidential VM',['i-muse-secure-vm-2026','c-stateful-private-ai','i-muse-confidential-vm-announced-2026']]
+  ];
+  function nodeButton(id,center=false) {
+    const n=nodes.get(id), d=n.details||{};
+    const wrapper=document.createElement('div'); wrapper.className='cca-slot'+(center?' cca-slot-center':''); wrapper.dataset.node=id;
+    const kind=n.branch==='attacks'?'attack':n.type;
+    const caption=n.type==='paper' ? [d.venue,n.year].filter(Boolean).join(' · ') : n.type==='hardware'?d.hardware_kind:n.type==='configuration'?(d.mode?'CC mode':'Reference stack'):n.type==='implementation'?(n.year||'Service'):(n.year|| (n.type==='concept'?'Concept':'Technology'));
+    wrapper.innerHTML=`<span class="cca-mark cca-mark-${esc(kind)}"></span><button type="button" class="btn" aria-pressed="${id===selected}" data-id="${esc(id)}" aria-label="${esc(n.name)}" data-tooltip="${esc(n.name)}"><span class="cca-name">${esc(short(id))}</span></button><span class="text-small cca-caption">${esc(caption)}</span>`;
+    wrapper.querySelector('button').addEventListener('click',()=>select(id));
+    return wrapper;
+  }
+  function render() {
+    root.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.mode===mode));
+    levels.replaceChildren();
+    root.querySelector('#cca-direction').textContent=mode==='graph'?'Relations: subject → relation type → object. Evidence appears below.':mode==='hardware'?'Technology → hardware → supported configuration / service. Support remains source-scoped.':'Map: basis → successor or user. Dashed links are conceptual, not inheritance.';
+    let groups=mode==='hardware'?hardwareGroups:presentationGroups;
+    if(mode==='graph') {
+      const inbound=[...new Set(adjacent(selected).filter(e=>e.to_id===selected).map(e=>e.from_id))];
+      const outbound=[...new Set(adjacent(selected).filter(e=>e.from_id===selected).map(e=>e.to_id))];
+      groups=[['Users, successors, and referring works',inbound],['Selected entity',[selected]],['Components, subjects, and related entities',outbound]];
+    }
+    for(const [title,ids] of groups) {
+      if(!ids.length) continue;
+      const section=document.createElement('section'); section.className='cca-level';
+      if(title){const t=document.createElement('div');t.className='text-small cca-stage';t.textContent=title;section.append(t);}
+      const grid=document.createElement('div');grid.className='cca-nodes';
+      ids.forEach(id=>grid.append(nodeButton(id,ids.length===1)));
+      section.append(grid); levels.append(section);
+    }
+    renderDetail();
+    requestAnimationFrame(draw);
+  }
+  function select(id) {
+    selected=id;
+    mode='graph';
+    render();
+    persist();
+  }
+  function persist(){window.openai?.setWidgetState?.({modelContent:{selectedId:selected,selectedName:short(selected)},privateContent:{mode}})?.catch(()=>{});}
+  function renderDetail() {
+    const n=nodes.get(selected), d=n.details||{}, cm=metric(selected,'citation_count'), am=metric(selected,'venue_acceptance_rate');
+    const summary=d.summary||d.description||data.summaries[selected]||'Inspect the relationships and source scope for this research entity.';
+    const meta=[{paper:'Paper',implementation:'Service implementation',technology:'Technology',concept:'Concept',standard:'Standard',hardware:'Hardware',configuration:'Configuration'}[n.type],d.hardware_kind,d.vendor,d.venue,n.year].filter(Boolean).join(' · ');
+    let metricsText='';
+    if(n.type==='paper') metricsText=`<div class="text-small cca-detail-meta">Citations: ${cm?.value==null?'not verified':Number(cm.value).toLocaleString('en-US')} · OpenAlex ${data.as_of}${am?.value!=null?' · Conference report '+am.value+'% (26/237; SoK separate)':' · Acceptance rate not verified'}</div>`;
+    const edges=adjacent(selected);
+    detail.innerHTML=`<div class="text-small text-muted">${esc(meta)}</div><h3>${esc(n.name)}</h3>${metricsText}<div class="cca-detail-desc">${esc(summary)}</div>${d.support_scope||d.limitation?`<div class="text-small cca-note">Scope: ${esc(d.support_scope||d.limitation)}</div>`:''}${d.peer_link_protection?`<div class="cca-note">Peer links: ${esc(d.peer_link_protection)}</div>`:''}${d.document_version?`<div class="text-small cca-note">Version: ${esc(d.document_version)}</div>`:''}${d.component_constraints?`<ul class="text-small">${d.component_constraints.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}<div class="text-small">${['implementation','hardware','configuration'].includes(n.type)?'Vendor-documented support/design; independent validation is separate.':n.type==='paper'?'Metadata and abstract/selected sections checked; comprehensive review is pending.':'A category or specification, scoped to its sources.'}</div><div class="text-small cca-note">${(n.source_ids||[]).map((sid,i)=>{const s=sources.get(sid);return `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">Source ${i+1}</a>`;}).join(' · ')}</div><details><summary>Relationship evidence: ${edges.length}</summary><ul class="cca-evidence">${edges.map(e=>{
+      const c=claims.get(e.claim_id), ev=c.evidence[0], s=sources.get(ev.source_id);
+      return `<li><div>${esc(short(e.from_id))} → <strong>${esc(relationNames[e.type])}</strong> → ${esc(short(e.to_id))}</div><div class="text-small">${esc(c.statement)}</div><div class="text-small">Scope: ${esc(c.scope)}</div><div class="text-small text-muted">${c.epistemic_status==='analyst_inference'?'Analyst inference':c.epistemic_status==='vendor_statement'?'Vendor statement':'Research/source statement'} · ${esc(ev.locator)}</div><a class="text-small" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">Original evidence</a></li>`;
+    }).join('')}</ul></details>`;
+  }
+  function draw() {
+    const box=diagram.getBoundingClientRect(), width=diagram.clientWidth,height=diagram.offsetHeight;
+    svg.setAttribute('viewBox',`0 0 ${width} ${height}`);svg.replaceChildren();
+    const NS='http://www.w3.org/2000/svg';
+    const defs=document.createElementNS(NS,'defs');
+    for(const key of ['normal','lineage','attack']) {
+      const marker=document.createElementNS(NS,'marker');marker.setAttribute('id','cca-arrow-'+key);marker.setAttribute('viewBox','0 0 6 6');marker.setAttribute('refX','5');marker.setAttribute('refY','3');marker.setAttribute('markerWidth','5');marker.setAttribute('markerHeight','5');marker.setAttribute('orient','auto');
+      const p=document.createElementNS(NS,'path');p.setAttribute('d','M0,0 L6,3 L0,6 Z');p.setAttribute('fill',key==='lineage'?'var(--viz-series-1)':key==='attack'?'var(--viz-series-2)':'var(--muted-foreground)');marker.append(p);defs.append(marker);
+    }svg.append(defs);
+    const positions=new Map([...levels.querySelectorAll('[data-node]')].map(el=>{const b=el.querySelector('button').getBoundingClientRect();return [el.dataset.node,{x:b.x-box.x+b.width/2,y:b.y-box.y,w:b.width,h:b.height}];}));
+    const edges=data.relations.filter(e=>positions.has(e.from_id)&&positions.has(e.to_id)&&(mode!=='graph'||e.from_id===selected||e.to_id===selected));
+    for(const e of edges) {
+      let a=positions.get(e.from_id),b=positions.get(e.to_id);
+      // Tree display flows from a basis to its application; stored relations remain subject -> object.
+      if(mode!=='graph'&&e.type!=='attacks') [a,b]=[b,a];
+      if(a===b) continue;
+      const path=document.createElementNS(NS,'path');
+      const down=b.y>=a.y, y1=a.y+(down?a.h+4:-4),y2=b.y+(down?-6:b.h+6);
+      const dy=Math.max(18,Math.abs(y2-y1)*0.4);
+      const same=Math.abs(b.y-a.y)<15;
+      let d=same?`M${a.x},${a.y+a.h+3} C${a.x},${a.y+a.h+22} ${b.x},${b.y+b.h+22} ${b.x},${b.y+b.h+3}`:`M${a.x},${y1} C${a.x},${y1+(down?dy:-dy)} ${b.x},${y2-(down?dy:-dy)} ${b.x},${y2}`;
+      path.setAttribute('d',d);path.setAttribute('fill','none');
+      const inferred=claims.get(e.claim_id).epistemic_status==='analyst_inference', active=e.from_id===selected||e.to_id===selected;
+      const key=e.lineage?'lineage':e.type==='attacks'?'attack':'normal';
+      path.setAttribute('stroke',key==='lineage'?'var(--viz-series-1)':key==='attack'?'var(--viz-series-2)':'var(--muted-foreground)');
+      path.setAttribute('stroke-width',e.lineage?'2':'1');path.setAttribute('opacity',active||mode==='graph'?'0.85':e.lineage?'0.75':'0.3');
+      if(inferred||e.type==='related_to')path.setAttribute('stroke-dasharray','4 4');
+      if(e.type==='attacks')path.setAttribute('stroke-dasharray','2 3');
+      path.setAttribute('marker-end',`url(#cca-arrow-${key})`);
+      svg.append(path);
+    }
+  }
+  root.querySelectorAll('[data-mode]').forEach(b=>b.addEventListener('click',()=>{mode=b.dataset.mode;render();persist();}));
+  const all=root.querySelector('#cca-all');
+  data.inventory.catalogue.categories.forEach(category=>{
+    const section=document.createElement('details');section.className='cca-note';
+    const title=document.createElement('summary');title.textContent=`${category.name} (${category.count})`;section.append(title);
+    const row=document.createElement('div');row.className='viz-row';row.style.marginTop='12px';
+    category.entity_ids.forEach(id=>{const n=nodes.get(id),b=document.createElement('button');b.type='button';b.className='btn';b.textContent=short(id);b.setAttribute('data-tooltip',n.name);b.addEventListener('click',()=>select(id));row.append(b);});
+    section.append(row);all.append(section);
+  });
+  root.querySelector('#cca-count').textContent=`(${data.inventory.catalogue.category_count} types → ${data.entities.length} record leaves)`;
+  root.querySelector('#cca-stats').textContent=`${data.entities.length} entities · ${data.relations.length} relations · ${Object.keys(data.inventory.topic_branch_counts).length} topics`;
+  window.addEventListener('openai:set_globals',event=>{const s=event.detail?.globals?.widgetState;if(s?.modelContent?.selectedId&&nodes.has(s.modelContent.selectedId)){selected=s.modelContent.selectedId;mode=['hardware','tree','graph'].includes(s.privateContent?.mode)?s.privateContent.mode:'hardware';render();}});
+  new ResizeObserver(()=>requestAnimationFrame(draw)).observe(diagram);
+  render();
+})();
+</script>

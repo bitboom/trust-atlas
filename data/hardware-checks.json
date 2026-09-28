@@ -1,0 +1,25 @@
+{
+  "project": "Trust Atlas",
+  "as_of": "2026-09-28",
+  "status": "PASS",
+  "schema": "0.3.0",
+  "entities": 63,
+  "relations": 98,
+  "catalogue_types": 7,
+  "catalogue_record_leaves": 63,
+  "checks": {
+    "structural_validation": "PASS",
+    "type_endpoint_negative_checks": "PASS",
+    "missing_support_scope_negative_check": "PASS",
+    "citations_preserved": "PASS",
+    "catalogue_exactly_once": "PASS",
+    "graph_payload_synchronized": "PASS",
+    "javascript_syntax": "PASS",
+    "blackwell_mpt_selection_and_encrypted_peer_detail": "PASS",
+    "hopper_ppcie_selection_and_unencrypted_peer_detail": "PASS",
+    "catalogue_type_counts_visible": "PASS",
+    "hardware_map_320px_overflow": false,
+    "hardware_map_736px_visual_check": "PASS"
+  },
+  "qualification": "Documentation-backed compatibility and composition, not hardware testing or an exhaustive support matrix."
+}

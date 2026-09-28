@@ -1,0 +1,22 @@
+{
+  "project": "Trust Atlas",
+  "canonical_language": "en",
+  "status": "PASS",
+  "scope": "Naming, language, mission, and affected visualization checks; no new research completeness claim.",
+  "checks": {
+    "authored_documents_and_data_english": true,
+    "entity_and_relation_ids_preserved": true,
+    "source_and_metric_observations_unchanged": true,
+    "citation_snapshots_unchanged": true,
+    "visualization_data_synchronized": true,
+    "javascript_syntax": "PASS",
+    "keyboard_map_to_mi6_and_back": "PASS",
+    "english_detail_visual_check_360px": "PASS",
+    "english_map_visual_check_736px": "PASS",
+    "horizontal_overflow_320px": false
+  },
+  "notes": [
+    "Four compact map labels were shortened; full names remain in accessible labels, tooltips, and details.",
+    "Original third-party source evidence retains its source language."
+  ]
+}

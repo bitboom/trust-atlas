@@ -1,0 +1,212 @@
+{
+  "project": "Trust Atlas",
+  "as_of": "2026-09-28",
+  "graph_entity_count": 63,
+  "graph_relationship_count": 98,
+  "source_record_count": 54,
+  "declared_scope_layer_count": 4,
+  "scope_layers": [
+    "Hardware security mechanisms",
+    "Platform and system architectures",
+    "Security protocols and service composition",
+    "Real-world services"
+  ],
+  "scope_layer_note": "Research scope, not an exclusive populated taxonomy.",
+  "topic_branch_counts": {
+    "accelerators": 6,
+    "attacks": 2,
+    "enclaves": 3,
+    "foundations": 7,
+    "hardware": 19,
+    "open-tee": 5,
+    "private-ai": 10,
+    "stateful-agents": 7,
+    "vm-isolation": 4
+  },
+  "entity_type_counts": {
+    "paper": 15,
+    "concept": 14,
+    "technology": 9,
+    "implementation": 9,
+    "hardware": 10,
+    "standard": 2,
+    "configuration": 4
+  },
+  "hardware_kind_counts": {
+    "GPU": 4,
+    "CPU": 5,
+    "Platform": 1
+  },
+  "catalogue": {
+    "root": "Trust Atlas",
+    "depth": 3,
+    "root_count": 1,
+    "category_count": 7,
+    "leaf_count": 63,
+    "total_navigation_nodes": 71,
+    "categories": [
+      {
+        "id": "type-paper",
+        "name": "Papers",
+        "count": 15,
+        "entity_ids": [
+          "p-saltzer-schroeder-1975",
+          "p-terra-2003",
+          "p-haven-2014",
+          "p-sgx-explained-2016",
+          "p-sanctum-2016",
+          "p-foreshadow-2018",
+          "p-graviton-2018",
+          "p-keystone-2020",
+          "p-flicker-2008",
+          "p-trustvisor-2010",
+          "p-cloudvisor-2011",
+          "p-komodo-2017",
+          "p-mi6-2019",
+          "p-controlled-channel-2015",
+          "p-slalom-2019"
+        ]
+      },
+      {
+        "id": "type-concept",
+        "name": "Concepts",
+        "count": 14,
+        "entity_ids": [
+          "c-least-privilege",
+          "c-trusted-vmm",
+          "c-attestation",
+          "c-enclave",
+          "c-gpu-tee",
+          "c-transparency",
+          "c-private-inference",
+          "c-stateful-private-ai",
+          "c-runtime-sandbox",
+          "c-credential-separation",
+          "c-nontargetability",
+          "c-confidential-vm",
+          "c-tcb",
+          "c-verified-monitor"
+        ]
+      },
+      {
+        "id": "type-technology",
+        "name": "Security technologies",
+        "count": 9,
+        "entity_ids": [
+          "t-intel-sgx",
+          "t-intel-tdx",
+          "t-nvidia-cc",
+          "t-google-titan",
+          "t-amd-sev",
+          "t-amd-seves",
+          "t-amd-sevsnp",
+          "t-arm-cca",
+          "t-arm-trustzone"
+        ]
+      },
+      {
+        "id": "type-hardware",
+        "name": "Hardware families and platforms",
+        "count": 10,
+        "entity_ids": [
+          "t-h100",
+          "h-intel-xeon5",
+          "h-intel-xeon6-gr",
+          "h-amd-epyc7003",
+          "h-amd-epyc9004",
+          "h-amd-epyc9005",
+          "h-nvidia-h200",
+          "h-nvidia-b200",
+          "h-nvidia-b300",
+          "h-nvidia-hgx-b300"
+        ]
+      },
+      {
+        "id": "type-configuration",
+        "name": "Modes and reference configurations",
+        "count": 4,
+        "entity_ids": [
+          "cfg-nv-spt",
+          "cfg-nv-ppcie",
+          "cfg-nv-mpt",
+          "cfg-nv-coco"
+        ]
+      },
+      {
+        "id": "type-implementation",
+        "name": "Service/design versions",
+        "count": 9,
+        "entity_ids": [
+          "i-apple-pcc-2024",
+          "i-apple-pcc-gcp-2026",
+          "i-google-pac-2025",
+          "i-google-pac-memory-2026",
+          "i-meta-private-processing-2025",
+          "i-meta-private-processing-glasses-2026",
+          "i-muse-secure-vm-2026",
+          "i-muse-confidential-vm-announced-2026",
+          "i-azure-ncc-h100v5"
+        ]
+      },
+      {
+        "id": "type-standard",
+        "name": "Standards",
+        "count": 2,
+        "entity_ids": [
+          "std-rats",
+          "std-ohttp"
+        ]
+      }
+    ],
+    "leaf_definition": "Each entity appears once under its primary type. Catalogue leaves are records, not terminal vertices of the knowledge graph."
+  },
+  "graph_endpoint_diagnostics": {
+    "stored_direction_zero_outdegree": [
+      "c-least-privilege",
+      "c-trusted-vmm",
+      "c-attestation",
+      "c-transparency",
+      "c-runtime-sandbox",
+      "c-credential-separation",
+      "c-nontargetability",
+      "t-intel-sgx",
+      "t-nvidia-cc",
+      "t-google-titan",
+      "t-amd-sev",
+      "t-arm-trustzone",
+      "c-verified-monitor",
+      "std-ohttp",
+      "h-nvidia-b300"
+    ],
+    "stored_direction_zero_indegree": [
+      "p-terra-2003",
+      "p-sgx-explained-2016",
+      "p-foreshadow-2018",
+      "p-graviton-2018",
+      "p-keystone-2020",
+      "i-apple-pcc-gcp-2026",
+      "i-google-pac-memory-2026",
+      "i-meta-private-processing-glasses-2026",
+      "i-muse-confidential-vm-announced-2026",
+      "p-trustvisor-2010",
+      "p-cloudvisor-2011",
+      "p-komodo-2017",
+      "p-mi6-2019",
+      "p-controlled-channel-2015",
+      "p-slalom-2019",
+      "t-arm-cca",
+      "std-rats",
+      "h-amd-epyc9005",
+      "cfg-nv-coco",
+      "i-azure-ncc-h100v5"
+    ],
+    "lineage_latest_leaves": [
+      "i-apple-pcc-gcp-2026",
+      "i-google-pac-memory-2026",
+      "i-meta-private-processing-glasses-2026",
+      "p-mi6-2019",
+      "t-amd-sevsnp"
+    ],
+    "note": "Endpoint counts depend on edge selection, direction, and incomplete coverage. They do not establish historical or scientific finality."
+  }
+}
