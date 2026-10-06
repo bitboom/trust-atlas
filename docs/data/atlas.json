@@ -3,7 +3,7 @@
   "project": "Trust Atlas",
   "as_of": "2026-09-28",
   "phase": "hardware_and_configuration_graph",
-  "coverage_note": "Hardware families, security technologies, modes, reference configurations, and a documented service are distinguished. This is not a complete compatibility catalogue.",
+  "coverage_note": "Hardware, security technologies, configurations and service versions remain distinct. Muse launch-runtime composition is vendor-described; component paths do not establish provider exclusion or a complete trust argument.",
   "entities": [
     {
       "id": "p-saltzer-schroeder-1975",
@@ -383,7 +383,9 @@
       ],
       "details": {
         "taxonomy_status": "editorial_category",
-        "origin_claim": null
+        "origin_claim": null,
+        "summary": "A restricted execution domain for agent-controlled work.",
+        "limitation": "Runtime containment and provider exclusion are different properties."
       }
     },
     {
@@ -398,7 +400,9 @@
       ],
       "details": {
         "taxonomy_status": "editorial_category",
-        "origin_claim": null
+        "origin_claim": null,
+        "summary": "Separate execution, credential release and action permission.",
+        "limitation": "Concealing credential values does not itself prevent misuse of delegated authority."
       }
     },
     {
@@ -652,7 +656,7 @@
       "name": "Meta Muse Secure VM — launch architecture",
       "year": 2026,
       "branch": "stateful-agents",
-      "review_status": "screened",
+      "review_status": "source_checked",
       "source_ids": [
         "s-muse26"
       ],
@@ -666,11 +670,39 @@
         "independent_validation_reviewed": false,
         "threat_model_status": "preliminary_vendor_description",
         "unknowns": [
-          "full TCB review",
-          "current deployment verification",
-          "independent audit scope"
+          "Exact platform, kernel and policy versions; no hardware-rooted provider-exclusion path established",
+          "Implementation review of mediation completeness and taint propagation",
+          "Inference and telemetry destinations, data categories, retention and independent protection",
+          "Independent audit scope and deployed configuration evidence"
         ],
-        "summary": "Per-user VMs, runtime isolation, and separated credential/permission services. Distinct from an operator-excluding confidential VM."
+        "summary": "Per-user VMs, runtime isolation, and separated credential/permission services. Distinct from an operator-excluding confidential VM.",
+        "limitation": "Trust-boundary analysis (analyst inference): Containment relies on the user VM's kernel and separated security services. This is our trust analysis; 'host' here is relative to the runtime cell, not a claim about the physical hypervisor. Vendor-described limits: Provider access remains; inference and telemetry can leave the VM.",
+        "trust_boundary_analysis": {
+          "statement": "Containment relies on the user VM's kernel and separated security services. This is our trust analysis; 'host' here is relative to the runtime cell, not a claim about the physical hypervisor.",
+          "epistemic_status": "analyst_inference",
+          "evidence": [
+            {
+              "source_id": "s-muse26",
+              "locator": "Muse Secure VM: runtime cell, separate services and IPC",
+              "supports": "The runtime cell and separate services reside in one user VM and communicate through peer-checked local IPC.",
+              "checked_at": "2026-10-07"
+            }
+          ],
+          "reviewed_at": "2026-10-07"
+        },
+        "data_flow_boundary": {
+          "statement": "Provider access remains; inference and telemetry can leave the VM.",
+          "epistemic_status": "vendor_statement",
+          "evidence": [
+            {
+              "source_id": "s-muse26",
+              "locator": "Coming Soon: Muse Confidential VM; Your computer, your data; Muse Secure VM",
+              "supports": "Provider access remains; inference and telemetry can leave the VM.",
+              "checked_at": "2026-10-07"
+            }
+          ],
+          "reviewed_at": "2026-10-07"
+        }
       }
     },
     {
@@ -1390,6 +1422,142 @@
         "summary": "Microsoft documents this VM family with AMD EPYC Genoa, SEV-SNP, and an NVIDIA H100 NVL GPU.",
         "support_scope": "Service-specific CPU/GPU path. Availability, quotas, region, guest image, and driver/attestation configuration must be checked separately.",
         "independent_validation_reviewed": false
+      }
+    },
+    {
+      "id": "t-systemd-nspawn",
+      "type": "technology",
+      "name": "systemd-nspawn container isolation",
+      "year": null,
+      "branch": "stateful-agents",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-muse26"
+      ],
+      "details": {
+        "summary": "Runtime container isolation.",
+        "limitation": "This record concerns the documented runtime cell, not a confidential-VM guarantee.",
+        "review_scope": "vendor_usage_only"
+      }
+    },
+    {
+      "id": "t-linux-user-namespaces",
+      "type": "technology",
+      "name": "Linux user namespaces",
+      "year": null,
+      "branch": "stateful-agents",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-muse26"
+      ],
+      "details": {
+        "summary": "User identity isolation.",
+        "limitation": "A container UID boundary does not establish exclusion of the provider.",
+        "review_scope": "vendor_usage_only"
+      }
+    },
+    {
+      "id": "t-linux-peer-credentials",
+      "type": "technology",
+      "name": "Unix socket peer credentials (SO_PEERCRED)",
+      "year": null,
+      "branch": "stateful-agents",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-muse26"
+      ],
+      "details": {
+        "summary": "Local peer identification.",
+        "limitation": "Identifying a caller and authorizing its requested action are separate decisions.",
+        "review_scope": "vendor_usage_only"
+      }
+    },
+    {
+      "id": "c-action-scoped-authorization",
+      "type": "concept",
+      "name": "Action-scoped authorization",
+      "year": null,
+      "branch": "stateful-agents",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-muse26"
+      ],
+      "details": {
+        "summary": "Permission scoped to an action.",
+        "limitation": "Recorded approval scope is not proof that the implementation cannot be bypassed.",
+        "review_scope": "vendor_usage_only",
+        "taxonomy_status": "editorial_category",
+        "origin_claim": null
+      }
+    },
+    {
+      "id": "c-mediated-egress",
+      "type": "concept",
+      "name": "Mediated network egress",
+      "year": null,
+      "branch": "stateful-agents",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-muse26"
+      ],
+      "details": {
+        "summary": "Network actions through a policy boundary.",
+        "limitation": "Coverage of alternate egress paths still requires implementation evidence.",
+        "review_scope": "vendor_usage_only",
+        "taxonomy_status": "editorial_category",
+        "origin_claim": null
+      }
+    },
+    {
+      "id": "c-taint-aware-egress",
+      "type": "concept",
+      "name": "Taint-aware egress approval",
+      "year": null,
+      "branch": "stateful-agents",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-muse26"
+      ],
+      "details": {
+        "summary": "Approval affected by data provenance.",
+        "limitation": "An approval fallback is not a proof of complete information-flow protection.",
+        "review_scope": "vendor_usage_only",
+        "taxonomy_status": "editorial_category",
+        "origin_claim": null
+      }
+    },
+    {
+      "id": "t-ebpf-policy-hooks",
+      "type": "technology",
+      "name": "eBPF cgroup and LSM policy hooks",
+      "year": null,
+      "branch": "stateful-agents",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-muse26"
+      ],
+      "details": {
+        "summary": "Kernel policy instrumentation.",
+        "limitation": "Hook presence does not establish the completeness of a tracking policy.",
+        "review_scope": "vendor_usage_only"
+      }
+    },
+    {
+      "id": "c-brokered-browser",
+      "type": "concept",
+      "name": "Brokered browser control",
+      "year": null,
+      "branch": "stateful-agents",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-muse26"
+      ],
+      "details": {
+        "summary": "A constrained browser interface.",
+        "limitation": "Browser-interface restrictions must not be generalized to all agent execution.",
+        "review_scope": "vendor_usage_only",
+        "taxonomy_status": "editorial_category",
+        "origin_claim": null
       }
     }
   ],
@@ -3405,6 +3573,134 @@
       ],
       "valid_at": "2026-09-28",
       "scope": "GPU CC is part of the documented CPU/GPU TEE; no connection to B300 is asserted."
+    },
+    {
+      "id": "cl-104",
+      "subject_id": "i-muse-secure-vm-2026",
+      "statement": "Muse runs its agent cell with systemd-nspawn.",
+      "epistemic_status": "vendor_statement",
+      "valid_at": "2026-09-08",
+      "scope": "September 8 launch design only; provider-described use, not independently validated security.",
+      "evidence": [
+        {
+          "source_id": "s-muse26",
+          "locator": "Muse Secure VM: runtime container paragraph",
+          "supports": "Muse runs its agent cell with systemd-nspawn.",
+          "checked_at": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": "cl-105",
+      "subject_id": "i-muse-secure-vm-2026",
+      "statement": "The cell root maps to an unprivileged VM user.",
+      "epistemic_status": "vendor_statement",
+      "valid_at": "2026-09-08",
+      "scope": "September 8 launch design only; provider-described use, not independently validated security.",
+      "evidence": [
+        {
+          "source_id": "s-muse26",
+          "locator": "Muse Secure VM: root mapping; Network egress: userns",
+          "supports": "The cell root maps to an unprivileged VM user.",
+          "checked_at": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": "cl-106",
+      "subject_id": "i-muse-secure-vm-2026",
+      "statement": "Muse checks local peers using SO_PEERCRED and ACLs.",
+      "epistemic_status": "vendor_statement",
+      "valid_at": "2026-09-08",
+      "scope": "September 8 launch design only; provider-described use, not independently validated security.",
+      "evidence": [
+        {
+          "source_id": "s-muse26",
+          "locator": "Muse Secure VM: final IPC paragraph",
+          "supports": "Muse checks local peers using SO_PEERCRED and ACLs.",
+          "checked_at": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": "cl-107",
+      "subject_id": "i-muse-secure-vm-2026",
+      "statement": "Sentinel applies action-bound approvals.",
+      "epistemic_status": "vendor_statement",
+      "valid_at": "2026-09-08",
+      "scope": "September 8 launch design only; provider-described use, not independently validated security.",
+      "evidence": [
+        {
+          "source_id": "s-muse26",
+          "locator": "Human in the Loop: approval capabilities",
+          "supports": "Sentinel applies action-bound approvals.",
+          "checked_at": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": "cl-108",
+      "subject_id": "i-muse-secure-vm-2026",
+      "statement": "A proxy mediates network egress.",
+      "epistemic_status": "vendor_statement",
+      "valid_at": "2026-09-08",
+      "scope": "September 8 launch design only; provider-described use, not independently validated security.",
+      "evidence": [
+        {
+          "source_id": "s-muse26",
+          "locator": "A Built-In Sentinel: Network egress",
+          "supports": "A proxy mediates network egress.",
+          "checked_at": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": "cl-109",
+      "subject_id": "i-muse-secure-vm-2026",
+      "statement": "Tainted or unverifiable processes lose automatic egress approval.",
+      "epistemic_status": "vendor_statement",
+      "valid_at": "2026-09-08",
+      "scope": "September 8 launch design only; provider-described use, not independently validated security.",
+      "evidence": [
+        {
+          "source_id": "s-muse26",
+          "locator": "Network egress: tainted egress and fallback paragraphs",
+          "supports": "Tainted or unverifiable processes lose automatic egress approval.",
+          "checked_at": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": "cl-110",
+      "subject_id": "i-muse-secure-vm-2026",
+      "statement": "Muse uses eBPF cgroup programs and LSM hooks.",
+      "epistemic_status": "vendor_statement",
+      "valid_at": "2026-09-08",
+      "scope": "September 8 launch design only; provider-described use, not independently validated security.",
+      "evidence": [
+        {
+          "source_id": "s-muse26",
+          "locator": "Network egress: process attribution and taint propagation",
+          "supports": "Muse uses eBPF cgroup programs and LSM hooks.",
+          "checked_at": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": "cl-111",
+      "subject_id": "i-muse-secure-vm-2026",
+      "statement": "A separate broker limits browser control.",
+      "epistemic_status": "vendor_statement",
+      "valid_at": "2026-09-08",
+      "scope": "September 8 launch design only; provider-described use, not independently validated security.",
+      "evidence": [
+        {
+          "source_id": "s-muse26",
+          "locator": "Least Privilege: CDP broker; Browser: controlled interface",
+          "supports": "A separate broker limits browser control.",
+          "checked_at": "2026-10-07"
+        }
+      ]
     }
   ],
   "relations": [
@@ -4287,6 +4583,78 @@
       "to_id": "t-nvidia-cc",
       "type": "uses",
       "claim_id": "cl-099",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-104",
+      "from_id": "i-muse-secure-vm-2026",
+      "to_id": "t-systemd-nspawn",
+      "type": "uses",
+      "claim_id": "cl-104",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-105",
+      "from_id": "i-muse-secure-vm-2026",
+      "to_id": "t-linux-user-namespaces",
+      "type": "uses",
+      "claim_id": "cl-105",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-106",
+      "from_id": "i-muse-secure-vm-2026",
+      "to_id": "t-linux-peer-credentials",
+      "type": "uses",
+      "claim_id": "cl-106",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-107",
+      "from_id": "i-muse-secure-vm-2026",
+      "to_id": "c-action-scoped-authorization",
+      "type": "uses",
+      "claim_id": "cl-107",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-108",
+      "from_id": "i-muse-secure-vm-2026",
+      "to_id": "c-mediated-egress",
+      "type": "uses",
+      "claim_id": "cl-108",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-109",
+      "from_id": "i-muse-secure-vm-2026",
+      "to_id": "c-taint-aware-egress",
+      "type": "uses",
+      "claim_id": "cl-109",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-110",
+      "from_id": "i-muse-secure-vm-2026",
+      "to_id": "t-ebpf-policy-hooks",
+      "type": "uses",
+      "claim_id": "cl-110",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-111",
+      "from_id": "i-muse-secure-vm-2026",
+      "to_id": "c-brokered-browser",
+      "type": "uses",
+      "claim_id": "cl-111",
       "lineage": false,
       "review_status": "source_checked"
     }
@@ -5229,6 +5597,14 @@
       "question": "Resolve exact SKU/firmware/driver/RIM combinations, remaining CPU families, and evidence for named B300 confidential cloud services.",
       "required_evidence": "Versioned manufacturer compatibility rows and service-owner documentation; no inference from product naming.",
       "status": "planned"
+    },
+    {
+      "id": "q-16",
+      "batch": "M08",
+      "topic": "Agent runtime trust boundaries",
+      "question": "Review Muse runtime mechanisms against versioned Linux/systemd documentation, implementation and audits; trace credential authority, egress, inference/telemetry and policy-update boundaries.",
+      "required_evidence": "Primary specifications/code with revisions, scoped audits and service-owner flow/configuration evidence; no transfer of launch-runtime properties to the announced Confidential VM.",
+      "status": "planned"
     }
   ],
   "subtitle": "From Hardware Security to Real-World Services",
@@ -5256,5 +5632,6 @@
       "Research metrics"
     ],
     "coverage_status": "Target research scope; not a claim that all layers or trust-dependency paths are already complete."
-  }
+  },
+  "reviewed_at": "2026-10-07"
 }

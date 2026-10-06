@@ -62,7 +62,15 @@
     "cfg-nv-ppcie": "Hopper PPCIe",
     "cfg-nv-mpt": "Blackwell MPT",
     "cfg-nv-coco": "NVIDIA CoCo",
-    "i-azure-ncc-h100v5": "Azure H100 CVM"
+    "i-azure-ncc-h100v5": "Azure H100 CVM",
+    "t-systemd-nspawn": "systemd-nspawn",
+    "t-linux-user-namespaces": "User namespaces",
+    "t-linux-peer-credentials": "Peer credentials",
+    "c-action-scoped-authorization": "Action approval",
+    "c-mediated-egress": "Mediated egress",
+    "c-taint-aware-egress": "Taint-aware egress",
+    "t-ebpf-policy-hooks": "eBPF policy hooks",
+    "c-brokered-browser": "Browser broker"
   },
   "summaries": {
     "p-saltzer-schroeder-1975": "A starting point for studying protection architectures and design principles.",

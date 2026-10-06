@@ -1,8 +1,8 @@
 {
   "project": "Trust Atlas",
   "as_of": "2026-09-28",
-  "graph_entity_count": 63,
-  "graph_relationship_count": 98,
+  "graph_entity_count": 71,
+  "graph_relationship_count": 106,
   "source_record_count": 54,
   "declared_scope_layer_count": 4,
   "scope_layers": [
@@ -20,13 +20,13 @@
     "hardware": 19,
     "open-tee": 5,
     "private-ai": 10,
-    "stateful-agents": 7,
+    "stateful-agents": 15,
     "vm-isolation": 4
   },
   "entity_type_counts": {
     "paper": 15,
-    "concept": 14,
-    "technology": 9,
+    "concept": 18,
+    "technology": 13,
     "implementation": 9,
     "hardware": 10,
     "standard": 2,
@@ -42,8 +42,8 @@
     "depth": 3,
     "root_count": 1,
     "category_count": 7,
-    "leaf_count": 63,
-    "total_navigation_nodes": 71,
+    "leaf_count": 71,
+    "total_navigation_nodes": 79,
     "categories": [
       {
         "id": "type-paper",
@@ -70,7 +70,7 @@
       {
         "id": "type-concept",
         "name": "Concepts",
-        "count": 14,
+        "count": 18,
         "entity_ids": [
           "c-least-privilege",
           "c-trusted-vmm",
@@ -85,13 +85,17 @@
           "c-nontargetability",
           "c-confidential-vm",
           "c-tcb",
-          "c-verified-monitor"
+          "c-verified-monitor",
+          "c-action-scoped-authorization",
+          "c-mediated-egress",
+          "c-taint-aware-egress",
+          "c-brokered-browser"
         ]
       },
       {
         "id": "type-technology",
         "name": "Security technologies",
-        "count": 9,
+        "count": 13,
         "entity_ids": [
           "t-intel-sgx",
           "t-intel-tdx",
@@ -101,7 +105,11 @@
           "t-amd-seves",
           "t-amd-sevsnp",
           "t-arm-cca",
-          "t-arm-trustzone"
+          "t-arm-trustzone",
+          "t-systemd-nspawn",
+          "t-linux-user-namespaces",
+          "t-linux-peer-credentials",
+          "t-ebpf-policy-hooks"
         ]
       },
       {
@@ -176,7 +184,15 @@
       "t-arm-trustzone",
       "c-verified-monitor",
       "std-ohttp",
-      "h-nvidia-b300"
+      "h-nvidia-b300",
+      "t-systemd-nspawn",
+      "t-linux-user-namespaces",
+      "t-linux-peer-credentials",
+      "c-action-scoped-authorization",
+      "c-mediated-egress",
+      "c-taint-aware-egress",
+      "t-ebpf-policy-hooks",
+      "c-brokered-browser"
     ],
     "stored_direction_zero_indegree": [
       "p-terra-2003",

@@ -2,19 +2,19 @@
 
 Snapshot: 2026-09-28
 
-**63 entities · 98 relationships · 54 source records**
+**71 entities · 106 relationships · 54 source records**
 
 ## Classification to leaf
 
-The catalogue has three levels: **Trust Atlas → 7 entity-type categories → 63 entity leaves**. Including the root and categories, that is 71 navigation nodes. Classification nodes are presentation metadata, not additional research entities.
+The catalogue has three levels: **Trust Atlas → 7 entity-type categories → 71 entity leaves**. Including the root and categories, that is 79 navigation nodes. Classification nodes are presentation metadata, not additional research entities.
 
 Each entity appears once under its primary type. Catalogue leaves are records, not terminal vertices of the knowledge graph.
 
 | Entity type | Records / catalogue leaves |
 |---|---:|
 | Papers | 15 |
-| Concepts | 14 |
-| Security technologies | 9 |
+| Concepts | 18 |
+| Security technologies | 13 |
 | Hardware families and platforms | 10 |
 | Modes and reference configurations | 4 |
 | Service/design versions | 9 |
@@ -33,7 +33,7 @@ There are 4 declared scope layers and 9 populated topic branches. These are sepa
 | hardware | 19 |
 | open-tee | 5 |
 | private-ai | 10 |
-| stateful-agents | 7 |
+| stateful-agents | 15 |
 | vm-isolation | 4 |
 
 ## Hardware detail

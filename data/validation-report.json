@@ -6,12 +6,12 @@
   "as_of": "2026-09-28",
   "phase": "hardware_and_configuration_graph",
   "counts": {
-    "entities": 63,
+    "entities": 71,
     "sources": 54,
-    "claims": 98,
-    "relations": 98,
+    "claims": 106,
+    "relations": 106,
     "metrics": 29,
-    "research_queue": 15
+    "research_queue": 16
   },
   "observed_citation_records": 14,
   "unresolved_citation_records": 1,

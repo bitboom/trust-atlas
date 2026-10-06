@@ -12,7 +12,7 @@ TEE, confidential computing, and Private AI are the initial research focus. The 
 
 ## Current status
 
-Research snapshot: **2026-09-28**. The graph contains **63 entities, 98 relationships, and 54 source records**, including 15 papers, ten hardware families/platforms, four mode/reference configurations, and nine service/design-version profiles. Citation observations have been matched for 14 papers. The complete literature review, most venue statistics, and independent assurance reviews remain unfinished.
+Research snapshot: **2026-09-28**. Muse source extraction checked: **2026-10-07**. The graph contains **71 entities, 106 relationships, and 54 source records**, including 15 papers, ten hardware families/platforms, four mode/reference configurations, and nine service/design-version profiles. Citation observations have been matched for 14 papers. The complete literature review, most venue statistics, and independent assurance reviews remain unfinished. The later extraction date does not refresh historical metrics or establish current deployment.
 
 The interactive exploration view includes hardware, research, and selected-node maps. The public site is published from `docs/` on the `main` branch using GitHub Pages. See [hardware coverage](HARDWARE_COVERAGE.md) for the new Intel, AMD, NVIDIA, and Azure paths and their limits.
 
@@ -28,7 +28,7 @@ The dataset is a typed graph. A technology tree is one way to navigate it; it is
 
 ## Read next
 
-Current counts: [inventory and leaf definitions](INVENTORY.md). Latest expansion: [hardware and configurations](HARDWARE_COVERAGE.md).
+Current counts: [inventory and leaf definitions](INVENTORY.md). Latest extraction: [Muse runtime composition and trust boundaries](MUSE_COVERAGE.md). Earlier expansion: [hardware and configurations](HARDWARE_COVERAGE.md).
 
 1. [Project charter](CHARTER.md): mission, scope, and the questions each system profile must answer.
 2. [Research plan](RESEARCH_PLAN.md): how to find, review, and expand the evidence.
