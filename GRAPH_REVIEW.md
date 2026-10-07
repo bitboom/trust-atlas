@@ -45,4 +45,4 @@ The dataset passed `python3 validate.py` checks for references, duplicate IDs, p
 
 The English revision passed language-completeness, graph/data synchronization, and JavaScript syntax checks. The MI6 selection and map return were exercised with keyboard input. English details were inspected at 360px and the map at 736px. Four labels were shortened after a 320px check; the final root width and scroll width both measured 288px, with no overflowing node labels. See `data/language-revision-checks.json` for this revision’s checks.
 
-The full dataset-v1 review and GitHub Pages publication are not complete. Next research priorities are hardware roots and early attestation, explicit trust dependencies, transparency origins, and service-specific audit/deployment scope.
+This is a historical review of the 49-entity snapshot. A public preview has since been published; see [README.md](README.md) for current corpus counts and release limitations. The accepted dataset-v1 review remains incomplete, and the dataset's research queue records remaining public-evidence gaps.

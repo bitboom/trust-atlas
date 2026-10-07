@@ -4,7 +4,7 @@
 
 ## Mission
 
-Build an evidence-backed knowledge graph that traces how hardware-enforced security mechanisms are implemented and composed into system architectures and real-world services, documenting their technical lineage, trust assumptions, security guarantees, limitations, and supporting evidence.
+Organize publicly available papers, standards, technical documentation, implementation artifacts, and disclosed evaluations into an evidence-backed knowledge graph of hardware-rooted system security, preserving source locations, technical relationships, trust assumptions, claimed guarantees, limitations, and explicit unknowns.
 
 ## The question the project should answer
 
@@ -29,9 +29,11 @@ Research papers, standards, attacks, mitigations, audits, and deployment evidenc
 
 ## Initial focus
 
-Start with TEE and confidential-computing research, then trace the mechanisms used in Apple Private Cloud Compute, Google Private AI Compute, Meta Private Processing, and Meta Muse Secure VM. Preserve the distinction between an isolated runtime and a system that claims to exclude its operator from accessing protected data. Track proposed capabilities separately from deployed ones.
+Start with TEE and confidential-computing research, then trace the mechanisms used in Apple Private Cloud Compute, Google Private AI Compute, Meta Private Processing, Meta Muse Secure VM, and OpenAI dots. Preserve the distinction between an isolated runtime and a system that claims to exclude its operator from accessing protected data. Dots enters through documented service-composition controls with an explicit unresolved hardware path. Track proposed capabilities separately from deployed ones.
 
 Earlier system-security principles belong in the graph when they explain a mechanism or design decision. Additional service domains enter through evidence-backed connections, not simply because they have a security feature.
+
+An application area such as robotics is not a separate coverage objective. Include its directly documented hardware-rooted mechanisms, or the source-backed context needed to explain a specific in-scope implementation or paper. A TEE actuation case can qualify on that basis; a general robotics, middleware, perception, motion-planning or functional-safety survey does not qualify merely by sharing the application area.
 
 ## Questions every substantial system profile must address
 
@@ -57,6 +59,12 @@ An unresolved answer is a visible research gap. It is not replaced with a guesse
 ## Boundaries
 
 This is a research and architecture knowledge graph, not a certification system or a universal ranking of secure products. Citation counts and venue statistics guide literature exploration; they do not establish security.
+
+The project's work is public-source discovery, extraction, normalization and knowledge-graph presentation. It does not select future development projects, propose a product roadmap, build new security systems, or conduct original penetration, hardware or robotics experiments. Published experimental and audit results may be represented with their authors, scope and evidence status. Validation of the atlas data and generated views remains part of maintaining this deliverable.
+
+The research queue records missing public evidence and source-checking questions only. It is curation metadata, not a list of new development tasks or graph entities. Source-backed interpretations must remain labeled separately from direct source statements; they must not introduce speculative designs or guarantees.
+
+Admission requires both public evidence and relevance to the central trust-boundary question. A record must document a hardware-rooted mechanism/implementation, or explain a source-backed dependency, limitation, attack or comparison for an in-scope case. Public availability, industry labels and shared words such as “enclave” are insufficient by themselves. An explicit gap in a focal service profile is not permission to connect unrelated technologies speculatively.
 
 Do not attempt to catalogue all cybersecurity topics. General web/application security, organizational controls, and unrelated privacy technologies are included only when they explain a dependency, limitation, attack, or alternative relevant to the scoped hardware-to-service path. FHE, MPC, ORAM, and differential privacy may be represented as complementary or alternative approaches where a source establishes the connection.
 

@@ -1,9 +1,9 @@
 {
   "schema_version": "0.3.0",
   "project": "Trust Atlas",
-  "as_of": "2026-09-28",
+  "as_of": "2026-10-07",
   "phase": "hardware_and_configuration_graph",
-  "coverage_note": "Hardware, security technologies, configurations and service versions remain distinct. Muse launch-runtime composition is vendor-described; component paths do not establish provider exclusion or a complete trust argument.",
+  "coverage_note": "Hardware-rooted platform and agent-service observations, with one bounded TEE actuation case. Application domains do not independently determine inclusion.",
   "entities": [
     {
       "id": "p-saltzer-schroeder-1975",
@@ -1559,6 +1559,309 @@
         "taxonomy_status": "editorial_category",
         "origin_claim": null
       }
+    },
+    {
+      "id": "c-capability-permission-domains",
+      "type": "concept",
+      "name": "Separate capability permission domains",
+      "year": null,
+      "branch": "stateful-agents",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-dots-admin"
+      ],
+      "details": {
+        "summary": "Independent permission decisions for execution, browsers, connected apps and communication.",
+        "limitation": "Permission to use one capability does not establish permission to use another.",
+        "taxonomy_status": "editorial_category",
+        "origin_claim": null
+      }
+    },
+    {
+      "id": "c-explicit-local-computer-access",
+      "type": "concept",
+      "name": "Explicit local-computer access",
+      "year": null,
+      "branch": "stateful-agents",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-dots-computers"
+      ],
+      "details": {
+        "summary": "A separately authorized connection from cloud coordination to a user computer.",
+        "limitation": "Offline availability and revocation are different states.",
+        "taxonomy_status": "editorial_category",
+        "origin_claim": null
+      }
+    },
+    {
+      "id": "c-advisory-agent-rules",
+      "type": "concept",
+      "name": "Advisory agent rules",
+      "year": null,
+      "branch": "stateful-agents",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-dots-controls"
+      ],
+      "details": {
+        "summary": "User-authored instructions that guide agent decisions.",
+        "limitation": "Fallible instructions are not a hardware boundary or a substitute for capability permissions.",
+        "taxonomy_status": "editorial_category",
+        "origin_claim": null
+      }
+    },
+    {
+      "id": "c-delegated-task-lifecycle",
+      "type": "concept",
+      "name": "Separate delegated-task lifecycle controls",
+      "year": null,
+      "branch": "stateful-agents",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-dots-controls"
+      ],
+      "details": {
+        "summary": "Distinct stop controls for an orchestrator, delegated work and scheduled runs.",
+        "limitation": "Stopping one execution scope does not imply global revocation or undo completed actions.",
+        "taxonomy_status": "editorial_category",
+        "origin_claim": null
+      }
+    },
+    {
+      "id": "c-automated-action-review",
+      "type": "concept",
+      "name": "Automated action review",
+      "year": null,
+      "branch": "stateful-agents",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-dots-controls"
+      ],
+      "details": {
+        "summary": "Review that routes an action to execution, user approval or user handoff.",
+        "limitation": "Documented review behavior is not proof of deterministic or non-bypassable enforcement.",
+        "taxonomy_status": "editorial_category",
+        "origin_claim": null
+      }
+    },
+    {
+      "id": "i-openai-dots-2026-10",
+      "type": "implementation",
+      "name": "OpenAI dots - October 2026 documentation",
+      "year": 2026,
+      "branch": "stateful-agents",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-dots-overview",
+        "s-dots-controls",
+        "s-dots-admin",
+        "s-dots-computers"
+      ],
+      "details": {
+        "organization": "OpenAI",
+        "product_family": "openai-dots",
+        "version_label": "Documentation observed 2026-10-07",
+        "as_of": "2026-10-07",
+        "deployment_status": "documented_gradual_rollout",
+        "independent_validation_reviewed": false,
+        "summary": "Cloud agent with distinct app, browser, local-computer and action permissions.",
+        "limitation": "Custom rules are fallible instructions. Main-task pause does not stop all delegated or scheduled work. These sources do not establish hardware-rooted provider exclusion.",
+        "protected_assets": [
+          "Connected-app content",
+          "Browser sessions",
+          "Local files made accessible",
+          "Saved context and delegated work"
+        ],
+        "threat_model_status": "documentation_scope_only",
+        "unknowns": [
+          "CPU/TEE, hypervisor, guest-kernel and attestation architecture",
+          "Low-level enforcement and audit coverage of every tool and escalation path",
+          "Property-specific TCB and independent audit evidence",
+          "Data-copy retention and revocation across tasks, saved context, apps and website sessions"
+        ],
+        "trust_boundary_analysis": {
+          "epistemic_status": "analyst_inference",
+          "statement": "Review the cloud orchestrator, each executor, browser sessions and connected-account authority separately; documentation of one control does not establish the whole boundary.",
+          "evidence": [
+            {
+              "source_id": "s-dots-admin",
+              "locator": "Available admin controls; Dots FAQ",
+              "supports": "Separate computer, app, website-session and role controls.",
+              "checked_at": "2026-10-07"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "t-op-tee",
+      "type": "technology",
+      "name": "OP-TEE secure-world runtime",
+      "year": null,
+      "branch": "open-tee",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-jetson-r38-optee"
+      ],
+      "details": {
+        "summary": "Secure-world OS and trusted applications using Arm TrustZone.",
+        "limitation": "Protecting selected trusted applications does not establish confidentiality of every Linux or GPU workload."
+      }
+    },
+    {
+      "id": "t-hafnium-spm",
+      "type": "technology",
+      "name": "Hafnium secure partition management",
+      "year": null,
+      "branch": "open-tee",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-jetson-r38-hafnium"
+      ],
+      "details": {
+        "summary": "An S-EL2 manager for secure partitions.",
+        "limitation": "Secure partitions are not automatically Arm CCA Realms or confidential cloud VMs."
+      }
+    },
+    {
+      "id": "t-verified-boot",
+      "type": "technology",
+      "name": "Verified boot chain",
+      "year": null,
+      "branch": "hardware",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-jetson-r38-secureboot"
+      ],
+      "details": {
+        "summary": "Authenticate boot code through a configured chain of trust.",
+        "limitation": "Approved code identity does not establish runtime correctness or physical safety."
+      }
+    },
+    {
+      "id": "t-firmware-rollback-protection",
+      "type": "technology",
+      "name": "Firmware rollback protection",
+      "year": null,
+      "branch": "hardware",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-jetson-r38-rollback"
+      ],
+      "details": {
+        "summary": "Reject boot-component versions below configured thresholds.",
+        "limitation": "Provisioning and component scope matter; this is not rollback protection for application state or robot history."
+      }
+    },
+    {
+      "id": "h-jetson-agx-thor",
+      "type": "hardware",
+      "name": "NVIDIA Jetson AGX Thor platform",
+      "year": null,
+      "branch": "hardware",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-jetson-r38-optee",
+        "s-jetson-r38-hafnium",
+        "s-jetson-r38-secureboot",
+        "s-jetson-r38-rollback"
+      ],
+      "details": {
+        "hardware_kind": "Platform",
+        "vendor": "NVIDIA",
+        "support_scope": "Capabilities documented in Jetson Linux R38.4; verify keys/fuses, firmware and deployment configuration separately.",
+        "summary": "Edge platform with documented secure-world and boot-security mechanisms.",
+        "limitation": "No confidential-GPU mode or named robot deployment is established here."
+      }
+    },
+    {
+      "id": "h-rpi3-contego",
+      "type": "hardware",
+      "name": "Raspberry Pi 3 Model B - Contego-TEE test platform",
+      "year": null,
+      "branch": "trusted-actuation",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-contego-tee-author"
+      ],
+      "details": {
+        "hardware_kind": "Platform",
+        "vendor": "Raspberry Pi",
+        "support_scope": "Platform reported by the Contego-TEE prototype; this is not general security qualification of Raspberry Pi systems.",
+        "summary": "The platform reported in the paper evaluation.",
+        "context_entity_id": "p-contego-tee-2019",
+        "scope_role": "Supporting context for the reported TEE actuation case; not an independent robotics survey."
+      }
+    },
+    {
+      "id": "p-contego-tee-2019",
+      "type": "paper",
+      "name": "Protecting Actuators in Safety-Critical IoT Systems from Control Spoofing Attacks",
+      "year": 2019,
+      "branch": "trusted-actuation",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-contego-tee-author"
+      ],
+      "details": {
+        "authors": [
+          "Monowar Hasan",
+          "Sibin Mohan"
+        ],
+        "venue": "ACM IoT S&P",
+        "publication_type": "conference",
+        "work_family": "contego-tee",
+        "doi": "https://doi.org/10.1145/3338507.3358615",
+        "full_text_reviewed": false,
+        "reading_scope": "Selected sections 2.3, 3.1-3.2 and 4; Figure 3 visually inspected.",
+        "summary": "TrustZone-based checking of actuator requests.",
+        "limitation": "Prototype evidence only. Physical attackers are excluded; application-specific invariants, deadlines and privileged I/O mediation require separate review.",
+        "evaluation_scope": "Reported I2C robotic-vehicle prototype; no hardware reproduction performed in this atlas.",
+        "unresolved_assumptions": [
+          "Completeness of normal-world dispatcher mediation under privileged compromise",
+          "Sensor-state integrity and secure peripheral ownership",
+          "Coverage of each application invariant and timing bound"
+        ]
+      }
+    },
+    {
+      "id": "c-actuation-invariant-checking",
+      "type": "concept",
+      "name": "Actuation invariant checking",
+      "year": null,
+      "branch": "trusted-actuation",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-contego-tee-author"
+      ],
+      "details": {
+        "summary": "Check actuator requests against permitted states and rates.",
+        "limitation": "Authenticated requests can still be physically unsafe; coverage and deadlines remain application-specific.",
+        "taxonomy_status": "editorial_category",
+        "origin_claim": null,
+        "context_entity_id": "p-contego-tee-2019",
+        "scope_role": "Supporting context for the reported TEE actuation case; not an independent robotics survey."
+      }
+    },
+    {
+      "id": "c-runtime-assurance-fallback",
+      "type": "concept",
+      "name": "Runtime assurance with fallback control",
+      "year": null,
+      "branch": "trusted-actuation",
+      "review_status": "source_checked",
+      "source_ids": [
+        "s-contego-tee-author"
+      ],
+      "details": {
+        "summary": "Use a defined fallback when a control output violates specified conditions.",
+        "limitation": "Stopping or holding the last command is not universally a safe response.",
+        "taxonomy_status": "editorial_category",
+        "origin_claim": null,
+        "context_entity_id": "p-contego-tee-2019",
+        "scope_role": "Supporting context for the reported TEE actuation case; not an independent robotics survey."
+      }
     }
   ],
   "sources": [
@@ -2101,6 +2404,128 @@
       "published_date": null,
       "accessed_date": "2026-09-28",
       "access_status": "read"
+    },
+    {
+      "id": "s-dots-overview",
+      "title": "Meet dots",
+      "url": "https://learn.chatgpt.com/docs/dots",
+      "publisher": "OpenAI",
+      "kind": "vendor_documentation",
+      "published_date": null,
+      "accessed_date": "2026-10-07",
+      "access_status": "read",
+      "version_note": "Live official documentation observed on the access date; immutable revision not supplied."
+    },
+    {
+      "id": "s-dots-controls",
+      "title": "Control your dot",
+      "url": "https://learn.chatgpt.com/docs/dots/controls",
+      "publisher": "OpenAI",
+      "kind": "vendor_documentation",
+      "published_date": null,
+      "accessed_date": "2026-10-07",
+      "access_status": "read",
+      "version_note": "Live official documentation observed on the access date; immutable revision not supplied."
+    },
+    {
+      "id": "s-dots-admin",
+      "title": "Manage dots permissions and capabilities",
+      "url": "https://learn.chatgpt.com/docs/enterprise/dots-admin-guide",
+      "publisher": "OpenAI",
+      "kind": "vendor_documentation",
+      "published_date": null,
+      "accessed_date": "2026-10-07",
+      "access_status": "read",
+      "version_note": "Live official documentation observed on the access date; immutable revision not supplied."
+    },
+    {
+      "id": "s-dots-computers",
+      "title": "Connect computers and apps to your dot",
+      "url": "https://learn.chatgpt.com/docs/dots/computers-and-apps",
+      "publisher": "OpenAI",
+      "kind": "vendor_documentation",
+      "published_date": null,
+      "accessed_date": "2026-10-07",
+      "access_status": "read",
+      "version_note": "Live official documentation observed on the access date; immutable revision not supplied."
+    },
+    {
+      "id": "s-jetson-r38-optee",
+      "title": "Jetson Linux R38.4: OP-TEE",
+      "url": "https://docs.nvidia.com/jetson/archives/r38.4/DeveloperGuide/SD/Security/OpTee.html",
+      "publisher": "NVIDIA",
+      "kind": "vendor_documentation",
+      "published_date": null,
+      "accessed_date": "2026-10-07",
+      "access_status": "read",
+      "version_note": "Archived R38.4 documentation; deployment and exact SKU configuration not independently checked."
+    },
+    {
+      "id": "s-jetson-r38-hafnium",
+      "title": "Jetson Linux R38.4: Hafnium Secure Partition Manager",
+      "url": "https://docs.nvidia.com/jetson/archives/r38.4/DeveloperGuide/SD/Security/Hafnium.html",
+      "publisher": "NVIDIA",
+      "kind": "vendor_documentation",
+      "published_date": null,
+      "accessed_date": "2026-10-07",
+      "access_status": "read",
+      "version_note": "Archived R38.4; applies to Jetson AGX Thor."
+    },
+    {
+      "id": "s-jetson-r38-secureboot",
+      "title": "Jetson Linux R38.4: Secure Boot",
+      "url": "https://docs.nvidia.com/jetson/archives/r38.4/DeveloperGuide/SD/Security/SecureBoot.html",
+      "publisher": "NVIDIA",
+      "kind": "vendor_documentation",
+      "published_date": null,
+      "accessed_date": "2026-10-07",
+      "access_status": "read",
+      "version_note": "Archived R38.4; BootROM/fuse and UEFI trust-chain scopes differ."
+    },
+    {
+      "id": "s-jetson-r38-rollback",
+      "title": "Jetson Linux R38.4: Rollback Protection",
+      "url": "https://docs.nvidia.com/jetson/archives/r38.4/DeveloperGuide/SD/Security/RollbackProtection.html",
+      "publisher": "NVIDIA",
+      "kind": "vendor_documentation",
+      "published_date": null,
+      "accessed_date": "2026-10-07",
+      "access_status": "read",
+      "version_note": "Archived R38.4; boot-component version policy and provisioning constraints apply."
+    },
+    {
+      "id": "s-contego-tee-author",
+      "title": "Contego-TEE: author-hosted IoT S&P 2019 manuscript",
+      "url": "https://sibin.github.io/papers/2019_IoTSnP_ContegoTee_Monowar.pdf",
+      "publisher": "Monowar Hasan and Sibin Mohan",
+      "kind": "author_paper",
+      "published_date": "2019-11-15",
+      "accessed_date": "2026-10-07",
+      "access_status": "read",
+      "version_note": "Conference reference and DOI are printed on page 1. Selected threat-model, architecture and implementation sections were checked; not a comprehensive full-text review.",
+      "content_sha256": "457a588b818249c80856ec144472f5ba1c95a8c402554825686b8ada717c336b"
+    },
+    {
+      "id": "s-janus-crossref",
+      "title": "Janus: publisher-deposited Crossref metadata",
+      "url": "https://api.crossref.org/works/10.1109/TETC.2024.3390435",
+      "publisher": "IEEE / Crossref",
+      "kind": "publication_metadata",
+      "published_date": null,
+      "accessed_date": "2026-10-07",
+      "access_status": "read",
+      "version_note": "Issue metadata: 2025-01, volume 13(1), pages 185-195. No abstract is supplied in this record; technical claims were not accepted from metadata."
+    },
+    {
+      "id": "s-janus-author-list",
+      "title": "Stefano Longari: selected publications",
+      "url": "https://ascarecrowhat.github.io/",
+      "publisher": "Stefano Longari",
+      "kind": "author_publication_list",
+      "published_date": null,
+      "accessed_date": "2026-10-07",
+      "access_status": "read",
+      "version_note": "Author lists Janus under 2024; distinguish early publication from the 2025 issue metadata. The institutional manuscript returned HTTP 403 during this review."
     }
   ],
   "claims": [
@@ -3701,6 +4126,262 @@
           "checked_at": "2026-10-07"
         }
       ]
+    },
+    {
+      "id": "cl-112",
+      "subject_id": "i-openai-dots-2026-10",
+      "statement": "Dots access, local access, cloud browser/network capabilities and app authorization are separate controls.",
+      "epistemic_status": "vendor_statement",
+      "valid_at": "2026-10-07",
+      "scope": "Workspace and rollout dependent. Do not import Work or Codex executor settings as dots guarantees.",
+      "evidence": [
+        {
+          "source_id": "s-dots-admin",
+          "locator": "Available admin controls; Access and eligibility",
+          "supports": "Dots access, local access, cloud browser/network capabilities and app authorization are separate controls.",
+          "checked_at": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": "cl-113",
+      "subject_id": "i-openai-dots-2026-10",
+      "statement": "Dots requires a separate local-computer connection; an offline computer has not thereby revoked access.",
+      "epistemic_status": "vendor_statement",
+      "valid_at": "2026-10-07",
+      "scope": "Documented connection lifecycle, not proof of endpoint sandbox implementation.",
+      "evidence": [
+        {
+          "source_id": "s-dots-computers",
+          "locator": "Connect your computer",
+          "supports": "Dots requires a separate local-computer connection; an offline computer has not thereby revoked access.",
+          "checked_at": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": "cl-114",
+      "subject_id": "i-openai-dots-2026-10",
+      "statement": "Custom rules are instructions dots tries to follow and can get wrong.",
+      "epistemic_status": "vendor_statement",
+      "valid_at": "2026-10-07",
+      "scope": "They do not grant app/computer access or override built-in safety requirements.",
+      "evidence": [
+        {
+          "source_id": "s-dots-controls",
+          "locator": "Set custom rules",
+          "supports": "Custom rules are instructions dots tries to follow and can get wrong.",
+          "checked_at": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": "cl-115",
+      "subject_id": "i-openai-dots-2026-10",
+      "statement": "Pausing the main task, stopping delegated work and canceling schedules are separate operations.",
+      "epistemic_status": "vendor_statement",
+      "valid_at": "2026-10-07",
+      "scope": "Stopping work does not undo completed actions; global cancellation is not inferred.",
+      "evidence": [
+        {
+          "source_id": "s-dots-controls",
+          "locator": "Stop work",
+          "supports": "Pausing the main task, stopping delegated work and canceling schedules are separate operations.",
+          "checked_at": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": "cl-116",
+      "subject_id": "i-openai-dots-2026-10",
+      "statement": "Automatic review determines whether an action proceeds, needs approval or requires user handoff.",
+      "epistemic_status": "vendor_statement",
+      "valid_at": "2026-10-07",
+      "scope": "Product-described review behavior; no cryptographic capability binding or formal reference-monitor proof asserted.",
+      "evidence": [
+        {
+          "source_id": "s-dots-controls",
+          "locator": "How action review works",
+          "supports": "Automatic review determines whether an action proceeds, needs approval or requires user handoff.",
+          "checked_at": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": "cl-117",
+      "subject_id": "i-openai-dots-2026-10",
+      "statement": "The private sign-in form sends credentials to the remote browser outside the conversation.",
+      "epistemic_status": "vendor_statement",
+      "valid_at": "2026-10-07",
+      "scope": "This sign-in path does not establish universal credential invisibility or provider exclusion. An existing session differs from a new saved-login use.",
+      "evidence": [
+        {
+          "source_id": "s-dots-computers",
+          "locator": "Sign in to a website; Saving and reusing a login",
+          "supports": "The private sign-in form sends credentials to the remote browser outside the conversation.",
+          "checked_at": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": "cl-118",
+      "subject_id": "h-jetson-agx-thor",
+      "statement": "R38.4 documents OP-TEE on Jetson AGX Thor.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-jetson-r38-optee",
+          "locator": "Applicability; Architecture",
+          "supports": "R38.4 documents OP-TEE on Jetson AGX Thor.",
+          "checked_at": "2026-10-07"
+        }
+      ],
+      "valid_at": "2026-10-07",
+      "scope": "Platform capability, not a verified deployed configuration."
+    },
+    {
+      "id": "cl-119",
+      "subject_id": "h-jetson-agx-thor",
+      "statement": "R38.4 documents Hafnium at S-EL2 on Jetson AGX Thor.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-jetson-r38-hafnium",
+          "locator": "Applicability; Architecture Components",
+          "supports": "R38.4 documents Hafnium at S-EL2 on Jetson AGX Thor.",
+          "checked_at": "2026-10-07"
+        }
+      ],
+      "valid_at": "2026-10-07",
+      "scope": "Secure-partition support, not inference of CCA or confidential GPU execution."
+    },
+    {
+      "id": "cl-120",
+      "subject_id": "h-jetson-agx-thor",
+      "statement": "The Jetson boot chain authenticates boot code using provisioned trust anchors.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-jetson-r38-secureboot",
+          "locator": "Secure Boot introduction; UEFI Secure Boot",
+          "supports": "The Jetson boot chain authenticates boot code using provisioned trust anchors.",
+          "checked_at": "2026-10-07"
+        }
+      ],
+      "valid_at": "2026-10-07",
+      "scope": "Fuse-rooted validation and UEFI payload authentication have distinct boundaries; configuration must be verified."
+    },
+    {
+      "id": "cl-121",
+      "subject_id": "h-jetson-agx-thor",
+      "statement": "R38.4 documents boot-component version checks for Jetson AGX Thor.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-jetson-r38-rollback",
+          "locator": "MB2 and Later Components; Jetson AGX Thor example",
+          "supports": "R38.4 documents boot-component version checks for Jetson AGX Thor.",
+          "checked_at": "2026-10-07"
+        }
+      ],
+      "valid_at": "2026-10-07",
+      "scope": "Not universal/default protection of every component; opt-in and ratchet-update constraints apply."
+    },
+    {
+      "id": "cl-122",
+      "subject_id": "t-op-tee",
+      "statement": "OP-TEE uses Arm TrustZone for its secure-world environment.",
+      "epistemic_status": "vendor_statement",
+      "evidence": [
+        {
+          "source_id": "s-jetson-r38-optee",
+          "locator": "Introduction; Architecture",
+          "supports": "OP-TEE uses Arm TrustZone for its secure-world environment.",
+          "checked_at": "2026-10-07"
+        }
+      ],
+      "valid_at": "2026-10-07",
+      "scope": "Architecture composition only; not a guarantee for arbitrary normal-world applications."
+    },
+    {
+      "id": "cl-123",
+      "subject_id": "p-contego-tee-2019",
+      "statement": "Contego-TEE uses TrustZone.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-contego-tee-author",
+          "locator": "Sections 2.1.2 and 3.1; Figure 3",
+          "supports": "Contego-TEE uses TrustZone.",
+          "checked_at": "2026-10-07"
+        }
+      ],
+      "valid_at": "2026-10-07",
+      "scope": "Reported prototype; no independent security validation."
+    },
+    {
+      "id": "cl-124",
+      "subject_id": "p-contego-tee-2019",
+      "statement": "The prototype uses OP-TEE.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-contego-tee-author",
+          "locator": "Section 4.1; Table 2",
+          "supports": "The prototype uses OP-TEE.",
+          "checked_at": "2026-10-07"
+        }
+      ],
+      "valid_at": "2026-10-07",
+      "scope": "Paper-specific implementation, not all OP-TEE deployments."
+    },
+    {
+      "id": "cl-125",
+      "subject_id": "p-contego-tee-2019",
+      "statement": "The prototype uses Raspberry Pi 3 Model B.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-contego-tee-author",
+          "locator": "Section 4.1; Table 2",
+          "supports": "The prototype uses Raspberry Pi 3 Model B.",
+          "checked_at": "2026-10-07"
+        }
+      ],
+      "valid_at": "2026-10-07",
+      "scope": "Reported evaluation hardware only."
+    },
+    {
+      "id": "cl-126",
+      "subject_id": "p-contego-tee-2019",
+      "statement": "Contego-TEE checks actuation invariants.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-contego-tee-author",
+          "locator": "Section 3.2.1",
+          "supports": "Contego-TEE checks actuation invariants.",
+          "checked_at": "2026-10-07"
+        }
+      ],
+      "valid_at": "2026-10-07",
+      "scope": "Application-specific rules and timing assumptions."
+    },
+    {
+      "id": "cl-127",
+      "subject_id": "p-contego-tee-2019",
+      "statement": "The design uses fallback responses.",
+      "epistemic_status": "paper_report",
+      "evidence": [
+        {
+          "source_id": "s-contego-tee-author",
+          "locator": "Sections 3.1 and 3.2.2",
+          "supports": "The design uses fallback responses.",
+          "checked_at": "2026-10-07"
+        }
+      ],
+      "valid_at": "2026-10-07",
+      "scope": "Responses depend on plant state; no universal safe-stop guarantee."
     }
   ],
   "relations": [
@@ -4657,6 +5338,150 @@
       "claim_id": "cl-111",
       "lineage": false,
       "review_status": "source_checked"
+    },
+    {
+      "id": "r-112",
+      "from_id": "i-openai-dots-2026-10",
+      "to_id": "c-capability-permission-domains",
+      "type": "uses",
+      "claim_id": "cl-112",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-113",
+      "from_id": "i-openai-dots-2026-10",
+      "to_id": "c-explicit-local-computer-access",
+      "type": "uses",
+      "claim_id": "cl-113",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-114",
+      "from_id": "i-openai-dots-2026-10",
+      "to_id": "c-advisory-agent-rules",
+      "type": "uses",
+      "claim_id": "cl-114",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-115",
+      "from_id": "i-openai-dots-2026-10",
+      "to_id": "c-delegated-task-lifecycle",
+      "type": "uses",
+      "claim_id": "cl-115",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-116",
+      "from_id": "i-openai-dots-2026-10",
+      "to_id": "c-automated-action-review",
+      "type": "uses",
+      "claim_id": "cl-116",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-117",
+      "from_id": "i-openai-dots-2026-10",
+      "to_id": "c-credential-separation",
+      "type": "uses",
+      "claim_id": "cl-117",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-118",
+      "from_id": "h-jetson-agx-thor",
+      "to_id": "t-op-tee",
+      "type": "supports",
+      "claim_id": "cl-118",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-119",
+      "from_id": "h-jetson-agx-thor",
+      "to_id": "t-hafnium-spm",
+      "type": "supports",
+      "claim_id": "cl-119",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-120",
+      "from_id": "h-jetson-agx-thor",
+      "to_id": "t-verified-boot",
+      "type": "supports",
+      "claim_id": "cl-120",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-121",
+      "from_id": "h-jetson-agx-thor",
+      "to_id": "t-firmware-rollback-protection",
+      "type": "supports",
+      "claim_id": "cl-121",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-122",
+      "from_id": "t-op-tee",
+      "to_id": "t-arm-trustzone",
+      "type": "uses",
+      "claim_id": "cl-122",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-123",
+      "from_id": "p-contego-tee-2019",
+      "to_id": "t-arm-trustzone",
+      "type": "uses",
+      "claim_id": "cl-123",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-124",
+      "from_id": "p-contego-tee-2019",
+      "to_id": "t-op-tee",
+      "type": "uses",
+      "claim_id": "cl-124",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-125",
+      "from_id": "p-contego-tee-2019",
+      "to_id": "h-rpi3-contego",
+      "type": "uses",
+      "claim_id": "cl-125",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-126",
+      "from_id": "p-contego-tee-2019",
+      "to_id": "c-actuation-invariant-checking",
+      "type": "studies",
+      "claim_id": "cl-126",
+      "lineage": false,
+      "review_status": "source_checked"
+    },
+    {
+      "id": "r-127",
+      "from_id": "p-contego-tee-2019",
+      "to_id": "c-runtime-assurance-fallback",
+      "type": "uses",
+      "claim_id": "cl-127",
+      "lineage": false,
+      "review_status": "source_checked"
     }
   ],
   "metrics": [
@@ -5475,6 +6300,34 @@
         "submitted": null,
         "accepted": null
       }
+    },
+    {
+      "id": "m-citation-contego-tee",
+      "entity_id": "p-contego-tee-2019",
+      "name": "citation_count",
+      "value": null,
+      "unit": "citations",
+      "provider": null,
+      "observed_at": "2026-10-07",
+      "source_id": null,
+      "status": "not_collected",
+      "details": {
+        "reason": "Newly screened paper; no provider/manifestation citation match collected."
+      }
+    },
+    {
+      "id": "m-accept-contego-tee",
+      "entity_id": "p-contego-tee-2019",
+      "name": "venue_acceptance_rate",
+      "value": null,
+      "unit": "percent",
+      "provider": null,
+      "observed_at": "2026-10-07",
+      "source_id": null,
+      "status": "not_collected",
+      "details": {
+        "reason": "Workshop-specific submission/acceptance counts not collected; flagship ACM conference rates are not substitutes."
+      }
     }
   ],
   "research_queue": [
@@ -5578,7 +6431,7 @@
       "id": "q-13",
       "batch": "M06",
       "topic": "Bibliometrics",
-      "question": "Resolve Terra manifestation and all venue-year acceptance statistics; preserve unknowns.",
+      "question": "Resolve missing citation observations for the Slalom 2019 conference manifestation and Contego-TEE, and collect missing venue-year/track acceptance statistics; preserve unknowns.",
       "required_evidence": "Primary document with exact section/page or official API record and observation date.",
       "status": "planned"
     },
@@ -5602,14 +6455,58 @@
       "id": "q-16",
       "batch": "M08",
       "topic": "Agent runtime trust boundaries",
-      "question": "Review Muse runtime mechanisms against versioned Linux/systemd documentation, implementation and audits; trace credential authority, egress, inference/telemetry and policy-update boundaries.",
-      "required_evidence": "Primary specifications/code with revisions, scoped audits and service-owner flow/configuration evidence; no transfer of launch-runtime properties to the announced Confidential VM.",
+      "question": "Collect public specifications, versioned source code and disclosed audits for Muse runtime mechanisms; document reported credential authority, egress, inference/telemetry and policy-update boundaries.",
+      "required_evidence": "Public primary specifications/code, disclosed scoped audits and service-owner flow/configuration documentation; no transfer of launch-runtime properties to the announced Confidential VM.",
+      "status": "planned"
+    },
+    {
+      "id": "q-17",
+      "batch": "M09",
+      "topic": "Dots execution and hardware boundaries",
+      "question": "Find publicly disclosed dots-specific hardware, executor, sandbox, attestation and audit evidence without borrowing Work, Codex or Muse guarantees.",
+      "required_evidence": "Public product-specific versioned architecture, implementation or scoped audit; explicit unknowns where unavailable.",
+      "status": "planned"
+    },
+    {
+      "id": "q-18",
+      "batch": "M09",
+      "topic": "Dots authority and lifecycle enforcement",
+      "question": "Collect public documentation on app/website authority, action review, local-access revocation, delegated-task stopping and saved-data retention, preserving each control scope.",
+      "required_evidence": "Public control semantics and disclosed enforcement/audit evidence; do not equate model instructions with mandatory controls.",
+      "status": "planned"
+    },
+    {
+      "id": "q-19",
+      "batch": "M10",
+      "topic": "Trusted actuation and real-time assurance",
+      "question": "Extract publicly reported Contego-TEE evidence and limitations for dispatcher mediation, peripheral ownership, sensor authenticity, invariants and timing; distinguish author claims from published reproduction results.",
+      "required_evidence": "Public versioned artifacts, documented board configuration and published adversarial/timing evaluations; no new experiments are part of this queue.",
+      "status": "planned"
+    },
+    {
+      "id": "q-20",
+      "batch": "M10",
+      "topic": "Embedded platform deployment evidence",
+      "question": "Find public integration evidence for systems using the recorded Jetson boot/TEE mechanisms; document exact configurations and boundaries without opening a general robot catalogue.",
+      "required_evidence": "Public system-owner integration documentation and exact board/firmware/mode evidence; a domain label or shared chip-family name is not an adoption link.",
+      "status": "planned"
+    },
+    {
+      "id": "q-21",
+      "batch": "M10",
+      "topic": "Janus robot-controller monitoring",
+      "question": "Obtain the Janus manuscript (DOI 10.1109/TETC.2024.3390435), resolve 2024 early-publication versus 2025 journal manifestation, and extract platform, observer/input trust and attack/latency coverage.",
+      "required_evidence": "Readable primary full text and publisher metadata. The institutional PDF returned HTTP 403; no technical relationship was accepted from search snippets.",
+      "source_ids": [
+        "s-janus-crossref",
+        "s-janus-author-list"
+      ],
       "status": "planned"
     }
   ],
   "subtitle": "From Hardware Security to Real-World Services",
   "primary_language": "en",
-  "mission": "Build an evidence-backed knowledge graph that traces how hardware-enforced security mechanisms are implemented and composed into system architectures and real-world services, documenting their technical lineage, trust assumptions, security guarantees, limitations, and supporting evidence.",
+  "mission": "Organize publicly available papers, standards, technical documentation, implementation artifacts, and disclosed evaluations into an evidence-backed knowledge graph of hardware-rooted system security, preserving source locations, technical relationships, trust assumptions, claimed guarantees, limitations, and explicit unknowns.",
   "scope": {
     "organizing_theme": "Hardware-rooted system security",
     "initial_focus": [
@@ -5631,7 +6528,11 @@
       "Assurance evidence",
       "Research metrics"
     ],
-    "coverage_status": "Target research scope; not a claim that all layers or trust-dependency paths are already complete."
+    "coverage_status": "Target research scope; not a claim that all layers or trust-dependency paths are already complete.",
+    "curation_boundary": "Public-source collection and knowledge-graph curation only; development proposals and original security experiments are outside scope.",
+    "admission_rule": "Include directly documented hardware-rooted mechanisms, their implementations, or source-backed context for an in-scope case. Public availability, domain labels and shared terminology alone do not qualify a record."
   },
-  "reviewed_at": "2026-10-07"
+  "reviewed_at": "2026-10-07",
+  "snapshot_note": "Incremental snapshot. Earlier sources, claims and metrics retain their own dates; they were not all re-reviewed.",
+  "research_queue_note": "Curation metadata for missing public evidence and source verification; these are not graph entities, development tasks or follow-on project proposals."
 }

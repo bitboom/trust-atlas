@@ -1,9 +1,9 @@
 {
   "project": "Trust Atlas",
-  "as_of": "2026-09-28",
-  "graph_entity_count": 71,
-  "graph_relationship_count": 106,
-  "source_record_count": 54,
+  "as_of": "2026-10-07",
+  "graph_entity_count": 86,
+  "graph_relationship_count": 122,
+  "source_record_count": 65,
   "declared_scope_layer_count": 4,
   "scope_layers": [
     "Hardware security mechanisms",
@@ -17,38 +17,39 @@
     "attacks": 2,
     "enclaves": 3,
     "foundations": 7,
-    "hardware": 19,
-    "open-tee": 5,
+    "hardware": 22,
+    "open-tee": 7,
     "private-ai": 10,
-    "stateful-agents": 15,
+    "stateful-agents": 21,
+    "trusted-actuation": 4,
     "vm-isolation": 4
   },
   "entity_type_counts": {
-    "paper": 15,
-    "concept": 18,
-    "technology": 13,
-    "implementation": 9,
-    "hardware": 10,
+    "paper": 16,
+    "concept": 25,
+    "technology": 17,
+    "implementation": 10,
+    "hardware": 12,
     "standard": 2,
     "configuration": 4
   },
   "hardware_kind_counts": {
     "GPU": 4,
     "CPU": 5,
-    "Platform": 1
+    "Platform": 3
   },
   "catalogue": {
     "root": "Trust Atlas",
     "depth": 3,
     "root_count": 1,
     "category_count": 7,
-    "leaf_count": 71,
-    "total_navigation_nodes": 79,
+    "leaf_count": 86,
+    "total_navigation_nodes": 94,
     "categories": [
       {
         "id": "type-paper",
         "name": "Papers",
-        "count": 15,
+        "count": 16,
         "entity_ids": [
           "p-saltzer-schroeder-1975",
           "p-terra-2003",
@@ -64,13 +65,14 @@
           "p-komodo-2017",
           "p-mi6-2019",
           "p-controlled-channel-2015",
-          "p-slalom-2019"
+          "p-slalom-2019",
+          "p-contego-tee-2019"
         ]
       },
       {
         "id": "type-concept",
         "name": "Concepts",
-        "count": 18,
+        "count": 25,
         "entity_ids": [
           "c-least-privilege",
           "c-trusted-vmm",
@@ -89,13 +91,20 @@
           "c-action-scoped-authorization",
           "c-mediated-egress",
           "c-taint-aware-egress",
-          "c-brokered-browser"
+          "c-brokered-browser",
+          "c-capability-permission-domains",
+          "c-explicit-local-computer-access",
+          "c-advisory-agent-rules",
+          "c-delegated-task-lifecycle",
+          "c-automated-action-review",
+          "c-actuation-invariant-checking",
+          "c-runtime-assurance-fallback"
         ]
       },
       {
         "id": "type-technology",
         "name": "Security technologies",
-        "count": 13,
+        "count": 17,
         "entity_ids": [
           "t-intel-sgx",
           "t-intel-tdx",
@@ -109,13 +118,17 @@
           "t-systemd-nspawn",
           "t-linux-user-namespaces",
           "t-linux-peer-credentials",
-          "t-ebpf-policy-hooks"
+          "t-ebpf-policy-hooks",
+          "t-op-tee",
+          "t-hafnium-spm",
+          "t-verified-boot",
+          "t-firmware-rollback-protection"
         ]
       },
       {
         "id": "type-hardware",
         "name": "Hardware families and platforms",
-        "count": 10,
+        "count": 12,
         "entity_ids": [
           "t-h100",
           "h-intel-xeon5",
@@ -126,7 +139,9 @@
           "h-nvidia-h200",
           "h-nvidia-b200",
           "h-nvidia-b300",
-          "h-nvidia-hgx-b300"
+          "h-nvidia-hgx-b300",
+          "h-jetson-agx-thor",
+          "h-rpi3-contego"
         ]
       },
       {
@@ -143,7 +158,7 @@
       {
         "id": "type-implementation",
         "name": "Service/design versions",
-        "count": 9,
+        "count": 10,
         "entity_ids": [
           "i-apple-pcc-2024",
           "i-apple-pcc-gcp-2026",
@@ -153,7 +168,8 @@
           "i-meta-private-processing-glasses-2026",
           "i-muse-secure-vm-2026",
           "i-muse-confidential-vm-announced-2026",
-          "i-azure-ncc-h100v5"
+          "i-azure-ncc-h100v5",
+          "i-openai-dots-2026-10"
         ]
       },
       {
@@ -192,7 +208,18 @@
       "c-mediated-egress",
       "c-taint-aware-egress",
       "t-ebpf-policy-hooks",
-      "c-brokered-browser"
+      "c-brokered-browser",
+      "c-capability-permission-domains",
+      "c-explicit-local-computer-access",
+      "c-advisory-agent-rules",
+      "c-delegated-task-lifecycle",
+      "c-automated-action-review",
+      "t-hafnium-spm",
+      "t-verified-boot",
+      "t-firmware-rollback-protection",
+      "h-rpi3-contego",
+      "c-actuation-invariant-checking",
+      "c-runtime-assurance-fallback"
     ],
     "stored_direction_zero_indegree": [
       "p-terra-2003",
@@ -214,7 +241,10 @@
       "std-rats",
       "h-amd-epyc9005",
       "cfg-nv-coco",
-      "i-azure-ncc-h100v5"
+      "i-azure-ncc-h100v5",
+      "i-openai-dots-2026-10",
+      "h-jetson-agx-thor",
+      "p-contego-tee-2019"
     ],
     "lineage_latest_leaves": [
       "i-apple-pcc-gcp-2026",

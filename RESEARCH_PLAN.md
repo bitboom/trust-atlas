@@ -4,6 +4,8 @@
 
 Use the [Trust Atlas charter](CHARTER.md) as the source of truth. Research both directions: hardware mechanisms upward into systems and services, and service claims downward into dependencies, assumptions, and evidence.
 
+Here, research means collecting and structuring publicly available evidence. Review published implementations, experiments and audits without turning their gaps into a new product or experimental program. The deliverable remains the knowledge graph and its provenance; development-candidate selection is separate. Test the atlas's data and presentation as needed to maintain that deliverable.
+
 Private cloud AI is the first end-to-end case study. Keep Apple's product name, Private Cloud Compute, distinct from the generic category of private cloud AI. General enterprise private-cloud infrastructure is outside the initial focus.
 
 The initial historical frame runs from early system-protection principles through material published by **2026-09-28**. Follow earlier references when necessary. Record the earliest example observed within the search scope rather than making unsupported claims of historical priority. Later developments require a new research snapshot.

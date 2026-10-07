@@ -70,7 +70,22 @@
     "c-mediated-egress": "Mediated egress",
     "c-taint-aware-egress": "Taint-aware egress",
     "t-ebpf-policy-hooks": "eBPF policy hooks",
-    "c-brokered-browser": "Browser broker"
+    "c-brokered-browser": "Browser broker",
+    "i-openai-dots-2026-10": "OpenAI dots",
+    "c-capability-permission-domains": "Permission domains",
+    "c-explicit-local-computer-access": "Local access",
+    "c-advisory-agent-rules": "Advisory rules",
+    "c-delegated-task-lifecycle": "Task lifecycles",
+    "c-automated-action-review": "Action review",
+    "t-op-tee": "OP-TEE",
+    "t-hafnium-spm": "Hafnium",
+    "t-verified-boot": "Verified boot",
+    "t-firmware-rollback-protection": "Firmware rollback",
+    "h-jetson-agx-thor": "Jetson AGX Thor",
+    "h-rpi3-contego": "RPi 3B prototype",
+    "p-contego-tee-2019": "Contego-TEE",
+    "c-actuation-invariant-checking": "Actuation invariants",
+    "c-runtime-assurance-fallback": "Fallback control"
   },
   "summaries": {
     "p-saltzer-schroeder-1975": "A starting point for studying protection architectures and design principles.",

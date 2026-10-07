@@ -1,6 +1,6 @@
 # Muse Runtime Composition and Trust Boundaries
 
-Extraction checked: **2026-10-07**. Source design: **2026-09-08**. The research snapshot remains **2026-09-28**; this is additional extraction of an already included source, not a refresh of deployment or citation observations.
+Extraction checked: **2026-10-07**. Source design: **2026-09-08**. The research snapshot at this extraction was **2026-09-28**; this was additional extraction of an already included source, not a refresh of deployment or citation observations. See the README for subsequent incremental snapshots.
 
 ## Scope
 

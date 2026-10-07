@@ -13,13 +13,17 @@ The top-level project profile records the canonical name, English language polic
 | `claims` | Statements bounded by scope and time | `id`, `subject_id`, `statement`, `epistemic_status`, `evidence`, `valid_at`, `scope` |
 | `relations` | Typed links between entities | `id`, `from_id`, `to_id`, `type`, `claim_id`, `lineage`, `review_status` |
 | `metrics` | Versioned, provider-specific observations | `id`, `entity_id`, `name`, `value`, `unit`, `provider`, `observed_at`, `source_id`, `status`, `details` |
-| `research_queue` | Concrete remaining investigations | `id`, `batch`, `topic`, `question`, `required_evidence`, `status` |
+| `research_queue` | Missing public evidence and source-verification questions | `id`, `batch`, `topic`, `question`, `required_evidence`, `status` |
 
 Schema 0.3 distinguishes `hardware` (CPU/GPU families and physical platforms) from `technology` (security capabilities), and `configuration` (CC modes or reference integrations) from `implementation` (service/design profiles). Hardware needs vendor, kind, and support scope; configurations need a document version, date, and component constraints. A capability record does not imply that every SKU or deployment enables it.
 
 `data/inventory.json` is a derived type catalogue. Its leaves are entity records assigned once to a primary type. Its classification root and categories are not extra graph entities; graph-theoretic endpoints depend on edge selection and direction.
 
+Topic branches are navigation metadata, not permission to expand coverage by industry. General embedded mechanisms belong under their mechanism/platform topics; application-specific context must identify the included case it explains. When records are separated from the active graph for scope reasons, preserve their identifiers, source observations and decision separately. A scope exclusion does not make the original observation false.
+
 Use stable IDs. Collections may later be split into separate files without changing identity. JSON is the reviewed source of truth; SQLite or web payloads may be generated from it. A dedicated graph database is not required for the initial corpus.
+
+`research_queue` is curation metadata, not part of the entity graph and not a development roadmap. Requests for implementation, experimental or audit evidence mean collecting publicly disclosed artifacts/results. They do not authorize building or testing a new system. Proposed follow-on projects remain outside the repository.
 
 `null` means unknown. Distinguish not collected, inaccessible, unpublished, unresolved matching, and not applicable. An empty list does not establish that a property or dependency is absent.
 

@@ -1,28 +1,28 @@
 # Inventory
 
-Snapshot: 2026-09-28
+Snapshot: 2026-10-07
 
-**71 entities · 106 relationships · 54 source records**
+**86 entities · 122 relationships · 65 source records**
 
 ## Classification to leaf
 
-The catalogue has three levels: **Trust Atlas → 7 entity-type categories → 71 entity leaves**. Including the root and categories, that is 79 navigation nodes. Classification nodes are presentation metadata, not additional research entities.
+The catalogue has three levels: **Trust Atlas → 7 entity-type categories → 86 entity leaves**. Including the root and categories, that is 94 navigation nodes. Classification nodes are presentation metadata, not additional research entities.
 
 Each entity appears once under its primary type. Catalogue leaves are records, not terminal vertices of the knowledge graph.
 
 | Entity type | Records / catalogue leaves |
 |---|---:|
-| Papers | 15 |
-| Concepts | 18 |
-| Security technologies | 13 |
-| Hardware families and platforms | 10 |
+| Papers | 16 |
+| Concepts | 25 |
+| Security technologies | 17 |
+| Hardware families and platforms | 12 |
 | Modes and reference configurations | 4 |
-| Service/design versions | 9 |
+| Service/design versions | 10 |
 | Standards | 2 |
 
 ## Other organizing dimensions
 
-There are 4 declared scope layers and 9 populated topic branches. These are separate views, not successive levels of the type catalogue.
+There are 4 declared scope layers and 10 populated topic branches. These are separate views, not successive levels of the type catalogue.
 
 | Topic branch | Records |
 |---|---:|
@@ -30,14 +30,15 @@ There are 4 declared scope layers and 9 populated topic branches. These are sepa
 | attacks | 2 |
 | enclaves | 3 |
 | foundations | 7 |
-| hardware | 19 |
-| open-tee | 5 |
+| hardware | 22 |
+| open-tee | 7 |
 | private-ai | 10 |
-| stateful-agents | 15 |
+| stateful-agents | 21 |
+| trusted-actuation | 4 |
 | vm-isolation | 4 |
 
 ## Hardware detail
 
-4 GPU, 5 CPU, 1 Platform.
+4 GPU, 5 CPU, 3 Platform.
 
 The full typed graph has no single canonical leaf count. Directed endpoint diagnostics are included in `data/inventory.json`; they are not the same as the catalogue leaves.

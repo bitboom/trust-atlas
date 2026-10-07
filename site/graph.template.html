@@ -1,6 +1,6 @@
 <div id="cca-tree">
   <h2>Trust Atlas</h2>
-  <div class="text-small text-muted">From Hardware Security to Real-World Services · Research snapshot: 2026-09-28</div>
+  <div class="text-small text-muted" id="cca-snapshot"></div>
   <div class="text-small cca-note" id="cca-stats"></div>
   <nav class="viz-row text-small" aria-label="Project resources"><a href="https://github.com/bitboom/trust-atlas" target="_blank" rel="noopener noreferrer">Repository</a><a href="https://github.com/bitboom/trust-atlas/blob/main/CHARTER.md" target="_blank" rel="noopener noreferrer">Methodology</a><a href="./data/atlas.json" target="_blank" rel="noopener noreferrer">Dataset</a></nav>
   <div class="viz-row" style="margin:16px 0">
@@ -99,7 +99,11 @@
     ['', ['c-private-inference']],
     ['Service implementations · Different threat models',['i-apple-pcc-2024','i-google-pac-2025','i-meta-private-processing-2025']],
     ['', ['i-apple-pcc-gcp-2026','i-google-pac-memory-2026','i-meta-private-processing-glasses-2026']],
-    ['Persistent state and agents · Secure VM ≠ Confidential VM',['i-muse-secure-vm-2026','c-stateful-private-ai','i-muse-confidential-vm-announced-2026']]
+    ['Persistent state and agents · Secure VM ≠ Confidential VM',['i-muse-secure-vm-2026','c-stateful-private-ai','i-muse-confidential-vm-announced-2026']],
+    ['Cloud-agent controls · hardware path unresolved',['i-openai-dots-2026-10']],
+    ['Embedded roots · documented mechanisms',['h-jetson-agx-thor','h-rpi3-contego','t-arm-trustzone']],
+    ['Secure-world and boot composition',['t-op-tee','t-hafnium-spm','t-verified-boot']],
+    ['TEE application case · trusted actuation',['p-contego-tee-2019','c-actuation-invariant-checking','c-runtime-assurance-fallback']]
   ];
   function nodeButton(id,center=false) {
     const n=nodes.get(id), d=n.details||{};
@@ -143,7 +147,7 @@
     const summary=d.summary||d.description||data.summaries[selected]||'Inspect the relationships and source scope for this research entity.';
     const meta=[{paper:'Paper',implementation:'Service implementation',technology:'Technology',concept:'Concept',standard:'Standard',hardware:'Hardware',configuration:'Configuration'}[n.type],d.hardware_kind,d.vendor,d.venue,n.year].filter(Boolean).join(' · ');
     let metricsText='';
-    if(n.type==='paper') metricsText=`<div class="text-small cca-detail-meta">Citations: ${cm?.value==null?'not verified':Number(cm.value).toLocaleString('en-US')} · OpenAlex ${data.as_of}${am?.value!=null?' · Conference report '+am.value+'% (26/237; SoK separate)':' · Acceptance rate not verified'}</div>`;
+    if(n.type==='paper') metricsText=`<div class="text-small cca-detail-meta">Citations: ${cm?.value==null?'not verified':Number(cm.value).toLocaleString('en-US')+' · '+esc(cm.provider)+' '+esc(cm.observed_at)}${am?.value!=null?' · Conference report '+am.value+'% (26/237; SoK separate)':' · Acceptance rate not verified'}</div>`;
     const edges=adjacent(selected);
     detail.innerHTML=`<div class="text-small text-muted">${esc(meta)}</div><h3>${esc(n.name)}</h3>${metricsText}<div class="cca-detail-desc">${esc(summary)}</div>${d.support_scope||d.limitation?`<div class="text-small cca-note">Scope: ${esc(d.support_scope||d.limitation)}</div>`:''}${d.peer_link_protection?`<div class="cca-note">Peer links: ${esc(d.peer_link_protection)}</div>`:''}${d.document_version?`<div class="text-small cca-note">Version: ${esc(d.document_version)}</div>`:''}${d.component_constraints?`<ul class="text-small">${d.component_constraints.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}<div class="text-small">${['implementation','hardware','configuration'].includes(n.type)?'Vendor-documented support/design; independent validation is separate.':n.type==='paper'?'Metadata and abstract/selected sections checked; comprehensive review is pending.':'A category or specification, scoped to its sources.'}</div><div class="text-small cca-note">${(n.source_ids||[]).map((sid,i)=>{const s=sources.get(sid);return `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">Source ${i+1}</a>`;}).join(' · ')}</div><details><summary>Relationship evidence: ${edges.length}</summary><ul class="cca-evidence">${edges.map(e=>{
       const c=claims.get(e.claim_id), ev=c.evidence[0], s=sources.get(ev.source_id);
@@ -193,6 +197,7 @@
   });
   root.querySelector('#cca-count').textContent=`(${data.inventory.catalogue.category_count} types → ${data.entities.length} record leaves)`;
   root.querySelector('#cca-stats').textContent=`${data.entities.length} entities · ${data.relations.length} relations · ${Object.keys(data.inventory.topic_branch_counts).length} topics`;
+  root.querySelector('#cca-snapshot').textContent=`From Hardware Security to Real-World Services · Incremental snapshot: ${data.as_of}. Earlier records retain their observation dates.`;
   window.addEventListener('openai:set_globals',event=>{const s=event.detail?.globals?.widgetState;if(s?.modelContent?.selectedId&&nodes.has(s.modelContent.selectedId)){selected=s.modelContent.selectedId;mode=['hardware','tree','graph'].includes(s.privateContent?.mode)?s.privateContent.mode:'hardware';render();}});
   new ResizeObserver(()=>requestAnimationFrame(draw)).observe(diagram);
   render();

@@ -4,7 +4,7 @@ Status: the first bounded eight-paper batch was submitted and completed on 2026-
 
 ## Shared research contract
 
-Research one bounded batch for **Trust Atlas: From Hardware Security to Real-World Services**. The goal is an evidence-backed graph connecting hardware security mechanisms, platform/system architectures, security protocols, and real-world services, while recording lineage, trust assumptions, guarantees, limitations, and evidence. TEE, confidential computing, and Private AI are the initial focus. Use the research snapshot date specified for the batch; the current corpus cutoff is 2026-09-28.
+Research one bounded batch for **Trust Atlas: From Hardware Security to Real-World Services**. The goal is an evidence-backed graph connecting hardware security mechanisms, platform/system architectures, security protocols, and real-world services, while recording lineage, trust assumptions, guarantees, limitations, and evidence. TEE, confidential computing, and Private AI are the initial focus. Use the research snapshot date specified for the batch; the initial corpus cutoff was 2026-09-28. The dataset's `as_of` records the current incremental snapshot, while each source and metric retains its own observation date.
 
 Limit a batch to 10–15 publication candidates or four product-version profiles. Do not create recurring jobs, indefinite investigations, or unbounded sub-work. Use public research sources; do not use unrelated personal data or conversations.
 

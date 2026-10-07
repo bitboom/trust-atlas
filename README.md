@@ -6,13 +6,15 @@
 
 Trust Atlas is an evidence-backed knowledge graph tracing how hardware-enforced security mechanisms are implemented and composed into system architectures and real-world services. It records technical lineage, trust assumptions, security guarantees, limitations, and the evidence supporting each relationship.
 
+Its purpose is to organize **publicly available material into a knowledge graph**. Future project proposals, product roadmaps and original security experiments are outside the repository's scope. Supporting documents explain provenance and curation methods; the research queue tracks missing public evidence.
+
 The central question is: **What must be trusted for a service's security claim to hold, how is that trust enforced, and what evidence supports the chain?**
 
 TEE, confidential computing, and Private AI are the initial research focus. The wider organizing scope is hardware-rooted system security. Read [the project charter](CHARTER.md) for the mission, boundaries, and acceptance criteria.
 
 ## Current status
 
-Research snapshot: **2026-09-28**. Muse source extraction checked: **2026-10-07**. The graph contains **71 entities, 106 relationships, and 54 source records**, including 15 papers, ten hardware families/platforms, four mode/reference configurations, and nine service/design-version profiles. Citation observations have been matched for 14 papers. The complete literature review, most venue statistics, and independent assurance reviews remain unfinished. The later extraction date does not refresh historical metrics or establish current deployment.
+Incremental research snapshot: **2026-10-07**. After the application-scope review, the graph contains **86 entities, 122 relationships, and 65 source records**, including 16 papers, 12 hardware families/platforms, four mode/reference configurations, and ten service/design-version profiles. Earlier sources, claims and citation observations retain their own dates; this snapshot does not refresh all prior records. Citation observations have been matched for 14 papers; two paper records have explicit missing citation observations. Full literature extraction and review of publicly disclosed independent assurance remain unfinished.
 
 The interactive exploration view includes hardware, research, and selected-node maps. The public site is published from `docs/` on the `main` branch using GitHub Pages. See [hardware coverage](HARDWARE_COVERAGE.md) for the new Intel, AMD, NVIDIA, and Azure paths and their limits.
 
@@ -28,7 +30,7 @@ The dataset is a typed graph. A technology tree is one way to navigate it; it is
 
 ## Read next
 
-Current counts: [inventory and leaf definitions](INVENTORY.md). Latest extraction: [Muse runtime composition and trust boundaries](MUSE_COVERAGE.md). Earlier expansion: [hardware and configurations](HARDWARE_COVERAGE.md).
+Current counts: [inventory and leaf definitions](INVENTORY.md). Latest extraction: [dots governance and execution boundaries](DOTS_COVERAGE.md). Scope review: [embedded mechanisms and the bounded TEE actuation case](ROBOTICS_COVERAGE.md). Related: [Muse runtime composition](MUSE_COVERAGE.md) and [hardware and configurations](HARDWARE_COVERAGE.md).
 
 1. [Project charter](CHARTER.md): mission, scope, and the questions each system profile must answer.
 2. [Research plan](RESEARCH_PLAN.md): how to find, review, and expand the evidence.
